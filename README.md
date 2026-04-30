@@ -58,4 +58,16 @@
 
 ---
 
+## 你回來時推上 GitHub 的步驟
+
+```powershell
+cd "$env:USERPROFILE\Desktop\test"
+& "C:\Program Files\GitHub CLI\gh.exe" auth login   # 跟著瀏覽器登入
+& "C:\Program Files\GitHub CLI\gh.exe" repo create kueipang-inventor-learning --public --source . --push
+```
+
+或如果你想私人 repo：把 `--public` 改成 `--private`。
+
+---
+
 🤖 Built with [Claude Code](https://claude.com/claude-code)
