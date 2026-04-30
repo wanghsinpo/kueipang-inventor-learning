@@ -1,5 +1,32 @@
 # Inventor COM 建模循環 — Lessons Learned
 
+---
+
+## Round 20 Redo - Plain Box Template Works
+
+R20 `SDE300_baffle` looked like a failed non-ring case, but `inspect_real.ps1`
+showed the real IPT is a pure six-plane rectangular strip:
+
+- BBox: `1 x 7.7 x 61 mm`
+- Volume: `469.7 mm^3`
+- Faces: six planes, zero cylinders
+
+Actionable rule:
+
+- If `SurfaceType 5890` count is exactly 6 and cylinder count is 0, do not run
+  `auto_ring`. Use `auto_box_v1.ps1`.
+- A pure bbox extrusion can be exact for strip/bar/spacer-shim parts.
+- Put `param(...)` before `$ErrorActionPreference` in PowerShell scripts; otherwise
+  PowerShell treats `param` as a command.
+- Inventor COM may fail inside sandbox with `CO_E_SERVER_EXEC_FAILURE`; rerun the
+  Inventor command outside sandbox/escalated when the script needs to launch the GUI
+  automation server.
+
+Result:
+
+- `auto_box_v1.ps1` generated `round20_SDE300_baffle/my_attempt_box_v1.ipt`
+  with bbox `1 x 7.7 x 61` and volume diff `0.0000%`.
+
 > 從 PDF/照片 → Inventor COM API → 對答案 → 檢討 的循環學習筆記。
 > 每完成一輪累加，下一輪開頭先讀一遍。
 
@@ -440,6 +467,5 @@ R8 發現了 **頂底鍵槽互相垂直 90°** 的 pattern。看 plane normal �
 | 9 | +14% | 徑向銷孔（axis Z=0）|
 | 10 | +10% | 通用 auto-ring 工具 |
 | 11 | (跳過) | 多軸承座法蘭超出當前能力 |
-
 
 

@@ -1,44 +1,44 @@
-# 自主執行已停止
+# STOPPED HERE - Codex continuation on 2026-04-30
 
-> Claude 在用戶離開期間自主執行循環學習。已暫停等用戶回來決定下一步。
+## Completed This Pass
 
-## 最終狀態
+- Read local repo state and Claude handoff files.
+- Verified current Google Drive connector profile is `andy30383917@gmail.com`,
+  not the `servicekueipang@servicekueipangcompany.com` account noted in
+  `AGENTS.md`.
+- Searched Drive for `ipt`, `pdf`, `KE-SP`, `EV-L200`, and `Inventor`; no new
+  usable company part source appeared through the currently connected account.
+- Checked GitHub: no local remote is configured, `gh auth status` reports not
+  logged in, and GitHub connector search did not find `kueipang-inventor-learning`.
+- Reworked failed Round 20 instead of idling.
 
-- **共 22 輪**循環（R1-R22，含跳過的 R11、R14）
-- **24 個 git commits** 在 local 等待推上 GitHub
-- **26 個 .ipt 檔案**生成（my_attempt + real 對比）
-- **2 個通用工具**：`auto_ring.ps1` (v1) 和 `auto_ring_v2.ps1`
+## Round 20 Redo Result
 
-## 用戶離開時 vs 回來時的進度
+Target: `round20_SDE300_baffle/real.ipt`
 
-| 階段 | 完成內容 |
-|---|---|
-| 離開前 | R1-R6（培林座 v6 完成）|
-| 離開期間（自主）| R7-R22 共 16 輪新嘗試 |
-| 完美匹配 | R3 (0.07%), R13 (0.00%), R15 (0.00%), R18 (-0.15%) |
-| 接近匹配 | R5 (+2.7%), R7 (+5.89%), R10 (+10%), R16 (-5%) |
-| 失敗案例 | R11 (跳過), R12 (+103%), R14 (誤抓子件), R19/R20/R21/R22 |
+Inspection:
 
-## 主要產出
+- BBox: `1 x 7.7 x 61 mm`
+- Volume: `469.7 mm^3`
+- Faces: six planes
+- Cylinder faces: `0`
 
-1. **`auto_ring.ps1`** — 自動讀真檔尺寸建簡單環，**對 6/6 簡單環達 0-5% 收斂**
-2. **`auto_ring_v2.ps1`** — 改進版，過濾螺栓孔（仍對某些 case 失效）
-3. **`LESSONS_LEARNED.md`** — 11 條跨輪累積教訓
-4. **`README.md`** — 概覽 + 黃金 5 步流程
-5. **`AUTONOMOUS_RUN_SUMMARY.md`** — 詳細自主執行報告
+New tool:
 
-## 推薦你回來後做什麼
+- `auto_box_v1.ps1`
+- Round wrapper: `round20_SDE300_baffle/auto_box_v1.ps1`
+- Inspection helper: `round20_SDE300_baffle/inspect_real.ps1`
 
-1. **`git log --oneline`** 看我做了哪 24 commits
-2. 開幾個 `round{N}/my_attempt.ipt` vs `real.ipt` 比對
-3. 推上 GitHub:
-   ```
-   cd "$env:USERPROFILE\Desktop\test"
-   & "C:\Program Files\GitHub CLI\gh.exe" auth login
-   & "C:\Program Files\GitHub CLI\gh.exe" repo create kueipang-inventor-learning --public --source . --push
-   ```
-4. 或繼續 R23 — 我會等你的指令再繼續
+Generated:
 
----
+- `round20_SDE300_baffle/my_attempt_box_v1.ipt`
+- Result: bbox `1 x 7.7 x 61`, volume `469.7 mm^3`, diff `0.0000%`
 
-🤖 22 rounds autonomously by Claude Code. Stopped to await user.
+## Next Useful Action
+
+1. Restore/connect the intended Drive account or service-account MCP, then search
+  /download the next IPT/PDF pair.
+2. If Drive is still blocked, keep mining failed old rounds for reusable templates:
+   R19 arc sector, R21 gasket with bolt holes, R22 IGX spacer.
+3. Once GitHub auth exists, add remote/repo `kueipang-inventor-learning` and push.
+

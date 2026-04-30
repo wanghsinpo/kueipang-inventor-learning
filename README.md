@@ -1,5 +1,16 @@
 # Inventor COM 自動建模 — 學習日誌
 
+## Latest Codex Continuation - Round 20 Redo
+
+- Added `auto_box_v1.ps1` for pure six-plane rectangular parts.
+- Re-inspected `round20_SDE300_baffle/real.ipt`: bbox `1 x 7.7 x 61 mm`,
+  volume `469.7 mm^3`, zero cylinder faces.
+- Generated `round20_SDE300_baffle/my_attempt_box_v1.ipt` with `0.0000%`
+  volume error.
+- Current Drive connector profile is `andy30383917@gmail.com`, not the
+  service account recorded in `AGENTS.md`; searches for `KE-SP`, `EV-L200`,
+  and `Inventor` did not expose new part files in this session.
+
 > Claude 透過 Inventor COM API 從 PDF / 照片 / 真檔 .ipt 學習機械零件建模的循環學習實驗。
 > 每輪：拿真檔工程圖 → 用 PowerShell COM 自動畫 → 跟真檔對答案 → 總結經驗 → 改進下輪。
 
