@@ -1,0 +1,29 @@
+# Inventor binary files (large, regenerable)
+*.ipt
+*.iam
+*.idw
+*.ipn
+*.ifw
+
+# Old version directories
+**/OldVersions/
+
+# Rendered images (regenerable)
+*.png
+*.jpg
+*.jpeg
+
+# But keep the photos in test/ root which were the original input
+!微信圖片*.jpg
+
+# PDF drawings (kept for reference)
+# (PDFs are not ignored)
+
+# Temp files
+*.tmp
+*.log
+*.bak
+
+# OS
+Thumbs.db
+.DS_Store
