@@ -23,6 +23,40 @@
 | 18 | 鋁鎳鈷磁鐵環 | **🎯 -0.15%** | 接近完美 |
 | 19 | SDE300 弧形磁鐵 | +2441% | auto_ring 對非 ring 失敗 |
 | 20 | SDE300 磁鐵檔片 | (錯誤) | 同樣 auto_ring 失敗 |
+| 21 | 馬達側銅墊片 | +23% (v1) / -33% (v2) | gasket with bolt holes 需新工具 |
+| 22 | (S200P 重做) | -5% | v2 沒有 bolt holes 改進空間|
+
+## auto_ring 工具評估（22 輪後）
+
+| 適用 | 不適用 |
+|---|---|
+| 簡單扁平 ring (R3, R5, R10, R13, R15, R18) — **0~5% 收斂** | 弧形磁鐵 sector (R19) — 失敗 |
+| 圓盤 + 內孔 (R16) — 5% | 平板無內孔 baffle (R20) — 失敗 |
+| | gasket 多 bolt hole (R21) — 23% / -33% |
+| | KE-SP-008 + 額外切除 (R17) — +12% |
+| | KE-SP-018 徑向銷孔 (R9) — +14% |
+
+**工具有效性**：對「**單純圓環、有單一中心孔**」的零件**完美適用**（6 個案例平均 -1.5% 誤差）。複雜件（多孔陣列、額外切除、非平面）需要 case-by-case 分析。
+
+## 最終 Git 統計
+
+```
+22 commits 在 local git
+3 個重要 markdown 文件（README + LESSONS + AUTONOMOUS_RUN_SUMMARY）
+21 個 round 資料夾（rounds 1-21，含 PDF + scripts + .ipt）
+2 個通用工具（auto_ring v1 + v2）
+```
+
+## 用戶回來時要做的（複習）
+
+1. `cd "$env:USERPROFILE\Desktop\test"`
+2. 看 git log 了解我做了什麼：`git log --oneline`
+3. 開幾個 .ipt 檔目視檢查
+4. 推上 GitHub：
+   ```
+   & "C:\Program Files\GitHub CLI\gh.exe" auth login
+   & "C:\Program Files\GitHub CLI\gh.exe" repo create kueipang-inventor-learning --public --source . --push
+   ```
 
 ## 重大成果
 
