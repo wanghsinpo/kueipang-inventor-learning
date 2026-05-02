@@ -6,9 +6,9 @@
 
 ## Result
 - auto_ring_v3: **-75.58%** (OD detection picked R=50 inner instead of true 62.25)
-- True OD = BBox/2 = 62.25mm. ID detected R=44.95
-- Calc with correct OD: π*(62.25²-44.95²)*15 = 87413 vs real 91911 → only -4.9%
-- Need to add: when largest detected R << BBox/2, override with BBox-derived OD
+- auto_ring_v2 re-run: **-29.69%** with OD=62.25 (BBox/2), ID=50, my V=64622
+- True ID likely smaller (~43.9R) to match real V=91911
+- Or has hub/boss adding ~27000mm³ extra material
 
 ## Lesson
 v3's OD detection sorts cylinder R descending and picks max. But largest
