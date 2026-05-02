@@ -11,10 +11,30 @@
 - 🎯 **R103 E40000182 BEARING SPACER RING 0.00%** (18th!)
 
 ### 累計統計
-- **110 輪完成** (R77-R110 = 34 輪這個 session)
-- **18 次完美比對 (≤±1%)** = 16.4% 命中率
-- **101 個 git commits** 在 local
+- **113 輪完成** (R77-R113 = 37 輪這個 session)
+- **18 次完美比對 (≤±1%)** = 16% 命中率
+- **103 個 git commits** 在 local (本 session 加 18 個 commits)
 - 仍然**沒推上 GitHub**（auth 需用戶瀏覽器登入）
+
+### 本輪新增 4 個 perfect 比對總清單
+- 🎯 R81 KE-SL-018 sleeve +0.69% (51.6×51.6×15)
+- 🎯 R87 KE-SL-015 disc-piece +0.29% (130.1×130.1×2.3)
+- 🎯 R89 KE-SL-021 MU100 SLEEVE -0.70% (25×25×8.5 tiny)
+- 🎯 R103 BEARING SPACER RING 0.00% (4.8×4.8×0.33 micro!)
+
+### 本輪驗證的零件分類
+| 類別 | 表現 | 例子 |
+|---|---|---|
+| 微型 ring (V<100mm³) | **完美** | R103 (V=3.3) |
+| 標準 thin washer | 接近 ±5% | R108, R109 |
+| Sleeve uniform OD/ID | 完美/接近 | R81, R89 |
+| ESA200 stepped sleeve | -35~-40% | R91, R93, R94, R97 |
+| 油封座 (oil seal seat) | -50%+ | R83, R92 |
+| Disc with spokes | +168% (失敗) | R85 |
+| Torus / shell | >1000% (skip) | R102, R104 |
+| Hex/cutout washer | +363% (skip) | R110 |
+| Flanged bushing | +70~+126% | R112, R113 |
+| 軸承蓋 with bolt array | -30~-45% | R95, R96 |
 
 ### 本輪新增的零件家族與心得：
 - **KE-SL 系列 sleeves（R78-R83, R86-R94, R97-R100）** — 17 個輪次
