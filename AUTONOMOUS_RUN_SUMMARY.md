@@ -73,6 +73,52 @@
 - **stepped bore / cup-shape / 桶狀**：當前工具不適用，需新建
 - **rectangular flange / racetrack**：當前工具不適用
 
+---
+
+## 🚀 R51-R68 第二波（晚餐後深夜持續循環）
+
+| 輪次 | 零件 | Δ | 備註 |
+|---|---|---|---|
+| R51 KMB601PT 油封 t10.4 | -9.26% | bolt holes |
+| R52 KE-SL-023 KMB601PT | +157% | cup |
+| R53 AA200 NW50 adapter | -0.51% | 接近完美 |
+| R54 AA200 NW50 part 7 | +12% | 大件 Ø187 |
+| R55 SD120H SPACER 2020 | -58% | 同 R32 cup |
+| R56 M20 nut | (skip) | hexagonal |
+| **R57 Teflon 大環 Ø307.7** | **-0.27%** | 大環也精準 |
+| R58 IGX 間隔環 | -73% | 複雜 |
+| R59 O-shape spacer | -30% | |
+| **R60 simple spacer 60x30x5** | **-0.67%** | 60-輪里程碑 |
+| R61 brass gasket 15mm | -44% | 方形 outline |
+| R62 aluminum half-circle 644 | (skip) | 大板 |
+| R63 irregular rubber 半圓 634 | (skip) | 大件 |
+| R64 mother mold 半圓 634 | (skip) | 大件 |
+| R65 aluminum quarter 322 | (skip) | 大板 |
+| R66 brass gasket 2 | -44% | 同 R61 |
+| R67 irregular rubber 1/4 | (skip) | 大件 |
+| R68 M5x50 spring pin | (skip) | slotted pin |
+
+## 累計 perfect (≤ ±1%) 統計（68 輪後）
+1. R3 N52 磁鐵 +0.07%
+2. R13 KE-SP-003 ESR100 0.00%
+3. R15 KE-SP-007 ESR100 MP 0.00%
+4. R18/R26 鋁鎳鈷磁鐵 -0.15%
+5. R37 KE-SP-017 ESR200 小 0.00%
+6. R40 KE-SP-005 ESR100 BP 0.00%
+7. R45 KE-SP-013 -0.77%
+8. R48 KE-SP-001 0.00%
+9. R53 AA200 NW50 adapter -0.51%
+10. R57 Teflon 大環 Ø307.7 -0.27%
+11. R60 simple spacer -0.67%
+
+**11 次 ≤ ±1% 精準匹配** — auto_ring v2 工具在簡單環上極其穩定。
+
+## 最終 Git 統計（68 輪後）
+- **75 commits** 在 local git
+- 68 個 round 資料夾
+- 4 個通用工具：auto_ring v1/v2/v3 + auto_box v1
+- 4 個重要 markdown：CLAUDE.md + README + LESSONS + AUTONOMOUS_RUN_SUMMARY
+
 ### Git 統計（50 輪後）
 - **56 commits** 在 local git
 - 50 個 round 資料夾
