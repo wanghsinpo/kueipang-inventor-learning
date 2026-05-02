@@ -1,44 +1,46 @@
-# STOPPED HERE - Codex continuation on 2026-04-30
+# 重啟後本輪工作狀態 (R77 → R106)
 
-## Completed This Pass
+## 本輪做的事
 
-- Read local repo state and Claude handoff files.
-- Verified current Google Drive connector profile is `andy30383917@gmail.com`,
-  not the `servicekueipang@servicekueipangcompany.com` account noted in
-  `AGENTS.md`.
-- Searched Drive for `ipt`, `pdf`, `KE-SP`, `EV-L200`, and `Inventor`; no new
-  usable company part source appeared through the currently connected account.
-- Checked GitHub: no local remote is configured, `gh auth status` reports not
-  logged in, and GitHub connector search did not find `kueipang-inventor-learning`.
-- Reworked failed Round 20 instead of idling.
+從電腦重啟後繼續循環，**完成 30 個新輪次 (R77-R106)**，共 **14 個新 commits**。
 
-## Round 20 Redo Result
+### 本輪新增 perfect (≤±1%) 比對：
+- 🎯 **R81 KE-SL-018 sleeve +0.69%** (15th)
+- 🎯 **R87 KE-SL-015 disc-piece +0.29%** (16th)
+- 🎯 **R89 KE-SL-021 MU100 SLEEVE -0.70%** (17th)
+- 🎯 **R103 E40000182 BEARING SPACER RING 0.00%** (18th!)
 
-Target: `round20_SDE300_baffle/real.ipt`
+### 累計統計
+- **106 輪完成**
+- **18 次完美比對 (≤±1%)** = 17% 命中率
+- **99 個 git commits** 在 local
+- 仍然**沒推上 GitHub**（auth 需用戶瀏覽器登入）
 
-Inspection:
+### 本輪新增的零件家族與心得：
+- **KE-SL 系列 sleeves（R78-R83, R86-R94, R97-R100）** — 17 個輪次
+  - 簡單薄環：完美 (R81, R87, R89)
+  - ESA200 stepped-bore family：穩定 -35~-40% (R91, R93, R94, R97)
+  - 油封座/cup-shape：失敗 -50%+ (R83, R92)
+- **KE-BC bearing covers（R77, R95-R96）**
+  - 多 bolt holes，v2 比 v3 好 (v3 OD 偵測會錯)
+- **小型 spacer/ring（R101-R106）**
+  - 微型 spacer: 完美 (R103, V=3.3mm³)
+  - 大型 torus shape: 完全失敗 (R102, R104)
 
-- BBox: `1 x 7.7 x 61 mm`
-- Volume: `469.7 mm^3`
-- Faces: six planes
-- Cylinder faces: `0`
+### 工具有效性結論
+| 形狀 | auto_ring_v2 表現 |
+|---|---|
+| 薄圓環 (BBox 等寬高、無內部變化) | **17% 完美** |
+| 簡單環 + 1-2 bolt holes | ±5-10% |
+| Stepped bore sleeve | -35~-40% 偏低 |
+| Cup / 油封座 | -50%+ 偏低 |
+| 矩形法蘭軸承蓋 (大 BBox + 小 cylinder hub) | -30~-45% |
+| Torus / hollow shell | 完全失敗 (>1000% 偏離) |
 
-New tool:
+### 給下一個 Claude 的工作建議
+1. **R107+ 繼續尋找新零件家族** — 已用盡 KE-SL/KE-BC，可探索 Kashiyama, MU100, EBARA
+2. **建 auto_ring_v4** — 加 stepped-bore 偵測 (V_ring < V_real 時嘗試更小 ID)
+3. **建 auto_cup** — 處理油封座 (法蘭+槽口形狀)
+4. **GitHub push** 仍待 — gh auth login 需用戶完成設備驗證
 
-- `auto_box_v1.ps1`
-- Round wrapper: `round20_SDE300_baffle/auto_box_v1.ps1`
-- Inspection helper: `round20_SDE300_baffle/inspect_real.ps1`
-
-Generated:
-
-- `round20_SDE300_baffle/my_attempt_box_v1.ipt`
-- Result: bbox `1 x 7.7 x 61`, volume `469.7 mm^3`, diff `0.0000%`
-
-## Next Useful Action
-
-1. Restore/connect the intended Drive account or service-account MCP, then search
-  /download the next IPT/PDF pair.
-2. If Drive is still blocked, keep mining failed old rounds for reusable templates:
-   R19 arc sector, R21 gasket with bolt holes, R22 IGX spacer.
-3. Once GitHub auth exists, add remote/repo `kueipang-inventor-learning` and push.
-
+🤖 Built autonomously per CLAUDE.md rules: never stop, never ask permission.
