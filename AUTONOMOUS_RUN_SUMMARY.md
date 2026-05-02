@@ -26,6 +26,58 @@
 | 21 | 馬達側銅墊片 | +23% (v1) / -33% (v2) | gasket with bolt holes 需新工具 |
 | 22 | (S200P 重做) | -5% | v2 沒有 bolt holes 改進空間|
 
+## 🎯 50 輪 milestone（用戶吃飯期間 R23-R50）
+
+| 輪次區間 | 結果 | 備註 |
+|---|---|---|
+| R23 KE-BH-026 法蘭 | -56% | rectangular 非 ring |
+| R24 SDE300 軸心墊片 | +2.97% | 薄環 |
+| R25 環型強力磁鐵 40.8 | -3.05% | |
+| R26 N52 磁鐵（同 R18）| -0.15% | dup, 證明可重現 |
+| R27 KE-BH-007 ESR80 | (skip) | 93x79 rect flange |
+| R28 迫緊環 | -67% | 桶狀 |
+| R29 M2x5 彈簧銷 | (skip) | slotted pin |
+| R30 KMB601 油封墊片 | +27% | stepped bore |
+| R31 KMB602PT 油封 | +18% | bolt holes |
+| R32 SD120H spacer | -58% | cup shape |
+| R33 齒輪 | (skip) | gear teeth |
+| R34 O-ring 3mm | (skip) | torus |
+| R35 KMB1201T 油封 | +235% | cup shape |
+| R36 KE-SP-016 ESR200 大 | +7.64% | |
+| **R37 KE-SP-017 ESR200 小** | **🎯 0.00%** | PERFECT |
+| R38 KE-SP-004-P1 | +9.23% | 1 bolt hole |
+| R39 KE-SP-008-P1 | +11.62% | 1 bolt hole |
+| **R40 KE-SP-005 ESR100 BP** | **🎯 0.00%** | PERFECT |
+| R41 KE-SP-006-P1 | +5.42% | |
+| R42 KE-SP-006-P2 | +87% | tiny pin |
+| R43 KE-SP-011 31x25x3 | -4.63% | |
+| R44 KE-SP-012 36x30x3.7 | -3.84% | |
+| R45 KE-SP-013 37x25x7 | -0.77% | |
+| R46 KE-SP-014 35x30x3 | -4.38% | |
+| R47 KE-SP-015 42x30x3 | -2.78% | |
+| **R48 KE-SP-001** | **🎯 0.00%** | PERFECT |
+| R49 KE-SP-002-P1 | +8.05% | 1 bolt hole |
+| R50 KE-SP-002-P2 | +87% | tiny pin (milestone!) |
+
+### 50-輪累計 perfect 0.00% 對位
+1. R3 N52 磁鐵 +0.07%
+2. R13 KE-SP-003 ESR100 0.00%
+3. R15 KE-SP-007 ESR100 MP 0.00%
+4. R37 KE-SP-017 ESR200 小 0.00%
+5. R40 KE-SP-005 ESR100 BP 0.00%
+6. R48 KE-SP-001 0.00%
+
+### 工具總結
+- **簡單扁平 ring（無 bolt hole）**：6 次 0.00% 完美對位
+- **附 1-2 bolt holes**：穩定 +5~12% 偏多
+- **stepped bore / cup-shape / 桶狀**：當前工具不適用，需新建
+- **rectangular flange / racetrack**：當前工具不適用
+
+### Git 統計（50 輪後）
+- **56 commits** 在 local git
+- 50 個 round 資料夾
+- 3 個通用工具（auto_ring v1/v2/v3 + auto_box v1）
+
 ## auto_ring 工具評估（22 輪後）
 
 | 適用 | 不適用 |
