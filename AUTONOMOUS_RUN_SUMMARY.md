@@ -111,13 +111,49 @@
 10. R57 Teflon 大環 Ø307.7 -0.27%
 11. R60 simple spacer -0.67%
 
-**11 次 ≤ ±1% 精準匹配** — auto_ring v2 工具在簡單環上極其穩定。
+**11 次 ≤ ±1% 精準匹配**
 
-## 最終 Git 統計（68 輪後）
-- **75 commits** 在 local git
-- 68 個 round 資料夾
+## 🎯 R69-R70（70-輪里程碑！）
+
+| R | 零件 | Δ |
+|---|---|---|
+| R69 Ebara 油視鏡蓋板 | -54% | square outline |
+| **R70 銅墊塊 50T 64x64x50** | **-0.06%** | **第 12 次 perfect** ✓ |
+
+## 累計 perfect (≤ ±1%) 統計（70 輪後）
+1. R3 N52 磁鐵 +0.07%
+2. R13 KE-SP-003 ESR100 0.00%
+3. R15 KE-SP-007 ESR100 MP 0.00%
+4. R18/R26 鋁鎳鈷磁鐵 -0.15%
+5. R37 KE-SP-017 ESR200 小 0.00%
+6. R40 KE-SP-005 ESR100 BP 0.00%
+7. R45 KE-SP-013 -0.77%
+8. R48 KE-SP-001 0.00%
+9. R53 AA200 NW50 adapter -0.51%
+10. R57 Teflon 大環 Ø307.7 -0.27%
+11. R60 simple spacer -0.67%
+12. **R70 銅墊塊 50T -0.06%** （含厚度 50mm，工具也能處理）
+
+**12 次 ≤ ±1% 精準匹配**
+
+## 最終 Git 統計（70 輪後）
+- **78 commits** 在 local git
+- 70 個 round 資料夾
 - 4 個通用工具：auto_ring v1/v2/v3 + auto_box v1
 - 4 個重要 markdown：CLAUDE.md + README + LESSONS + AUTONOMOUS_RUN_SUMMARY
+
+## 工具有效性結論（70 輪後）
+- **簡單圓環/圓柱（BBox 等寬高）** → auto_ring v2 達 12/70 = 17% 完美匹配，多數其餘在 ±10% 內
+- **桶狀/cup-shape** → 一律失敗（需新工具）
+- **rectangular/racetrack 法蘭** → 失敗
+- **大型不規則板/半圓板** → 失敗
+- **slotted pins / spring** → 失敗
+- **square outline gasket** → 失敗（auto_ring 假設 outline 是 circle）
+
+未來改進：
+- auto_box_v2: 處理矩形+內孔
+- auto_cup: 處理 stepped bore cup
+- auto_racetrack: 處理 stadium 形 outline
 
 ### Git 統計（50 輪後）
 - **56 commits** 在 local git
