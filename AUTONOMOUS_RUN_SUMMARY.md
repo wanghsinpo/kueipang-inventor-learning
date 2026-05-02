@@ -136,6 +136,67 @@
 
 **12 次 ≤ ±1% 精準匹配**
 
+## 🚀 R71-R97（深夜 + 重啟後持續循環）
+
+| R | 零件 | Δ | 備註 |
+|---|---|---|---|
+| **R71** 銅墊塊 20T | **-0.15%** | 第 13 次 perfect |
+| **R72** 銅墊塊 4.5T | **-0.06%** | 第 14 次 perfect |
+| R73 OLG-004 Ebara 油視鏡 | -41% | square outline |
+| R74 Kashiyama 油封 62 | +17.46% | bolt holes |
+| R75 Kashiyama 油封 (dup) | +17.46% | dup of R74 |
+| R76 Kashiyama 移動輪固定軸 | +53% | internal cavity |
+| R77 KE-BC-002 ESA300BP 軸承蓋 | +13.68% | 12 bolt holes |
+| R78 KE-SL-010 ESR-BP-M sleeve | +5.82% | 接近 |
+| R79 KE-SL-006 AA-BP-G sleeve | -36.76% | stepped bore |
+| R80 KE-SL-013 sleeve | +139% | ID 沒偵測到 |
+| **R81** KE-SL-018 sleeve | **+0.69%** | 第 15 次 perfect |
+| R82 KE-SL-017 SD90/120 | +14.5% | cube BBox |
+| R83 KE-SL-020 KMB2003 | -43% | 需要 flange |
+| R84 KE-SL-014 disc-sleeve | -72% | 整合式碟形 |
+| R85 KE-SL-014 disc-piece | +168% | 有輻條/切口 |
+| R86 KE-SL-015 disc-sleeve | +39% | 內部 pocket |
+| **R87** KE-SL-015 disc-piece | **+0.29%** | 第 16 次 perfect |
+| R88 KE-SL-019 | -37% | stepped bore |
+| **R89** KE-SL-021 MU100 | **-0.70%** | 第 17 次 perfect |
+| R90 KE-SL-022 A200 | +72% | 軸向切口 |
+| R91 KE-SL-024 ESA200-MP-G | -36% | ESA200 family |
+| R92 KE-SL-031 QDP 油封座 | -57% | thick base |
+| R93 KE-SL-032 ESA200 BP G | -38% | ESA200 family |
+| R94 KE-SL-033 ESA200-MP M | -37% | ESA200 family |
+| R95 KE-BC-003 ESA300MP-G | -29.69% (v2) | 用 v2 比 v3 好 |
+| R96 KE-BC-004 ESA300MP-M | -43% | 7 bolt holes |
+| R97 KE-SL-001 ESA200-G | -37.50% | ESA200 family |
+
+## 累計 perfect (≤ ±1%) 統計（97 輪後）
+
+1. R3 N52 磁鐵 +0.07%
+2. R13 KE-SP-003 ESR100 0.00%
+3. R15 KE-SP-007 ESR100 MP 0.00%
+4. R18/R26 鋁鎳鈷磁鐵 -0.15%
+5. R37 KE-SP-017 ESR200 小 0.00%
+6. R40 KE-SP-005 ESR100 BP 0.00%
+7. R45 KE-SP-013 -0.77%
+8. R48 KE-SP-001 0.00%
+9. R53 AA200 NW50 adapter -0.51%
+10. R57 Teflon 大環 Ø307.7 -0.27%
+11. R60 simple spacer -0.67%
+12. R70 銅墊塊 64x64x50 -0.06%
+13. R71 銅墊塊 20T -0.15%
+14. R72 銅墊塊 4.5T -0.06%
+15. **R81 KE-SL-018 sleeve +0.69%**
+16. **R87 KE-SL-015 disc-piece +0.29%**
+17. **R89 KE-SL-021 MU100 -0.70%**
+
+**17 次 ≤ ±1% 精準匹配 / 97 輪 = 17.5% 命中率**
+
+### 工具使用心得（97 輪後）
+- **薄環 / 平板環 / 銅墊塊**：auto_ring_v2 完美 (~17% 命中)
+- **Sleeve with stepped bore (ESA200 family)**：穩定 -35~-40% 偏低
+- **油封座 / cup-shape**：偏低 50%+（需 flange 模板）
+- **Bearing cover with bolt array**：v2 比 v3 好（v3 OD 偵測會錯）
+- **Disc with spokes**：完全失敗 (+168%)
+
 ## 最終 Git 統計（70 輪後）
 - **78 commits** 在 local git
 - 70 個 round 資料夾
