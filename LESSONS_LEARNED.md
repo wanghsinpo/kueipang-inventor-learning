@@ -63,6 +63,8 @@ Tool result:
 - R201 checked EV-S200P. BP spacer improves to `-0.95%`; thin G washer remains
   around `-4%`, good enough for mass/bbox but still wants a washer-specific
   visual template.
+- R202 checked KE-SP/EV-M502. v3 helps ring-like spacers and EV-M502 mass/bbox,
+  but tiny pins should still be skipped unless specifically needed.
 
 ---
 

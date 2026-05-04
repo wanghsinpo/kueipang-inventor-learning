@@ -39,6 +39,8 @@
   around `-1%`.
 - R201 checked EV-S200P. BP spacer moved to `-0.95%`; G washer stayed at
   `-4.09%`.
+- R202 checked KE-SP/EV-M502. Ring-like spacers improved to roughly `-1.6%..-2.9%`;
+  EV-M502 moved to `-0.69%`; tiny pin remains low priority.
 
 ## New Failure Pattern
 

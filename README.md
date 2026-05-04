@@ -33,6 +33,8 @@
   around `-1.02%..-0.32%`.
 - R201 checked EV-S200P: BP spacer improved to `-0.95%`; thin G washer remains
   `-4.09%`, acceptable but still a washer-template candidate.
+- R202 checked KE-SP/EV-M502: ring-like spacers improved to `-1.6%..-2.9%`,
+  EV-M502 moved from `-43%` to `-0.69%`; tiny pin remains low priority.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
