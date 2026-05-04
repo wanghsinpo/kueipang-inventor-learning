@@ -24,6 +24,12 @@ Actionable rule:
 - Treat `length ~= OD` KE-SL sleeves as suspicious; inspect or back-calc before
   trusting the largest valid inner cylinder.
 
+Tool result:
+
+- `auto_ring_v3.ps1` applies that gate automatically.
+- On R189 it changed ID radius from detected `24.0000 mm` to effective
+  `24.8638 mm` and improved volume error from `+72.20%` to `-0.8462%`.
+
 ---
 
 ## Round 20 Redo - Plain Box Template Works
@@ -491,4 +497,3 @@ R8 發現了 **頂底鍵槽互相垂直 90°** 的 pattern。看 plane normal �
 | 9 | +14% | 徑向銷孔（axis Z=0）|
 | 10 | +10% | 通用 auto-ring 工具 |
 | 11 | (跳過) | 多軸承座法蘭超出當前能力 |
-

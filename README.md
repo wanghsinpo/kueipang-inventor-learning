@@ -7,6 +7,8 @@
 - `auto_ring_v2` overestimated volume by `+72.20%` because it detected an
   internal stepped-seat radius (`24 mm`) instead of the effective bore
   (`~24.86 mm`).
+- Added `auto_ring_v3.ps1`; on R189 it back-calculated ID radius `24.8638 mm`
+  and improved the error to `-0.8462%`.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

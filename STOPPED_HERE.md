@@ -13,6 +13,8 @@
   `9441.3 mm^3`.
 - `auto_ring_v2` chose inner radius `24 mm`, but back-calculated real bore is
   about `24.86 mm`. That 0.86 mm radius miss creates `+72.20%` volume error.
+- Added `auto_ring_v3.ps1` and tested it on R189. It chose effective ID radius
+  `24.8638 mm` and reduced error to `-0.8462%`.
 
 ## New Failure Pattern
 
@@ -21,9 +23,8 @@ is not necessarily the through bore. This is the same family as R184 SDE300C.
 
 Rule to add next:
 
-- If ring wall thickness is close to 1 mm and volume is far below the simple
-  OD/ID cylinder estimate, back-calculate the effective bore from mass volume
-  before saving the attempt.
+- Use `auto_ring_v3.ps1` for thin-wall sleeves: it back-calculates effective
+  bore when simple OD/ID volume is far too high.
 - Flag square-format sleeves where `length ~= OD`; these appear often in KE-SL
   parts and can hide stepped bores.
 
