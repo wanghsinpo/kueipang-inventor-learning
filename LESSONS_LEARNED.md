@@ -37,7 +37,7 @@ Tool result:
 - R192 batch-tested R179-R182. A150/ESA200 thin-collar failures from
   `-45%..-38%` also improved to sub-1%, confirming v3 should be the default
   KE-SL sleeve template.
-- R193 batch-tested R174-R178. The 15% gate rescued AA/KMB thin-collar failures
+- R193 batch-tested R174-R178. The volume sanity gate rescued AA/KMB thin-collar failures
   but left already-good A70W/GE024 simple rings unchanged, so v3 is not
   over-eager.
 - R194 batch-tested R170-R173. v3 fixed KMB1203E and SD90 sleeve, but SD90 ring
@@ -56,6 +56,8 @@ Tool result:
 - R198 batch-tested R158-R161. HC60 motor, ESA200-G, and KMB1203 also converge
   under v3; KE-SL-056 remains stable. `auto_ring_v3.ps1` should replace v2 as
   the default sleeve learner.
+- R199 lowered the v3 gate from `15%` to `8%`. R155 improved from `-10.39%` to
+  `-1.02%`, while MU100/A70W/GE024 good cases remained unchanged.
 
 ---
 

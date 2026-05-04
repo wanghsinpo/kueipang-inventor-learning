@@ -15,7 +15,7 @@ reasonable models alone.
 
 ## Lesson
 
-The 15% volume sanity threshold behaves well:
+The volume sanity threshold behaves well:
 
 - It rescues thin-collar failures into sub-1% mass matches.
 - It does not rewrite already-good simple-ring cases like A70W and GE024.

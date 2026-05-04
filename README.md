@@ -27,6 +27,8 @@
   known-good KE-SL-056 stayed unchanged.
 - R198 batch-tested R158-R161: HC60 motor, ESA200-G, and KMB1203 moved to
   sub-0.6%; KE-SL-056 stayed unchanged.
+- R199 lowered v3 gate from `15%` to `8%`; R155 improved from `-10.39%` to
+  `-1.02%` without disturbing known-good cases.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

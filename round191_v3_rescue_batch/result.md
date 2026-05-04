@@ -22,7 +22,7 @@ The v3 gate is now validated across both failure directions:
 - Detected bore too large: R183, R185, R186, R187, R188, R190.
 
 When a simple OD/ID ring estimate differs from real mass volume by more than
-15%, use the effective bore:
+8%, use the effective bore:
 
 `rIn = sqrt(rOut^2 - realVol / (pi * length))`
 

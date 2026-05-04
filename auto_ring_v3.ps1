@@ -101,7 +101,7 @@ if ($thick -gt 0) {
 }
 
 $shouldBackCalc = $false
-if ($detectedRIn -gt 0 -and [Math]::Abs($simpleDiff) -gt 15 -and $backCalcRIn -gt 0 -and $backCalcRIn -lt $rOut) {
+if ($detectedRIn -gt 0 -and [Math]::Abs($simpleDiff) -gt 8 -and $backCalcRIn -gt 0 -and $backCalcRIn -lt $rOut) {
     if ([Math]::Abs($backCalcRIn - $detectedRIn) -gt 0.05) { $shouldBackCalc = $true }
 }
 
