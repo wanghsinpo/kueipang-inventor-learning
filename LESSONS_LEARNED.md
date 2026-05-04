@@ -44,6 +44,9 @@ Tool result:
   stayed `-7%` because the fixed `0.5 mm` chamfer is too aggressive for small
   rings. Next tool improvement: scale chamfer by part size or disable it when
   edge treatment dominates mass error.
+- R195 implemented scaled chamfer: `min(0.5, max(0.1, OD * 0.01))`. SD90 ring
+  improved from `-7.05%` to `+0.585%`, while large-sleeve R189/R190 stayed
+  unchanged.
 
 ---
 

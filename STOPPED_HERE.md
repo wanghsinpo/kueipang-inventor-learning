@@ -25,6 +25,8 @@
   already-good A70W/GE024 stayed unchanged.
 - R194 batch-tested v3 against R170-R173. KMB1203E/SD90 sleeve moved to sub-1%;
   SD90 ring stayed `-7%`, likely from fixed 0.5mm chamfer on a small ring.
+- R195 scaled chamfer by OD. SD90 ring improved from `-7.05%` to `+0.585%`;
+  large-sleeve R189/R190 outputs stayed unchanged.
 
 ## New Failure Pattern
 

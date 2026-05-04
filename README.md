@@ -19,6 +19,8 @@
   already-good A70W/GE024 cases were left unchanged.
 - R194 batch-tested R170-R173: KMB1203E/SD90 sleeve improved to sub-1%, but
   small SD90 ring stayed at `-7%`, pointing to over-large generic chamfers.
+- R195 scaled chamfer by OD; SD90 ring improved from `-7.05%` to `+0.585%`
+  without changing large-sleeve results.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

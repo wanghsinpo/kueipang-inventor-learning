@@ -133,7 +133,8 @@ foreach ($e in $body.Edges) {
     if ($e.GeometryType -eq 5124) { $null = $ec.Add($e) }
 }
 if ($ec.Count -gt 0) {
-    try { $null = $cd.Features.ChamferFeatures.AddUsingDistance($ec, (MM 0.5), $false) } catch { }
+    $chamferMm = [Math]::Min(0.5, [Math]::Max(0.1, $diam * 0.01))
+    try { $null = $cd.Features.ChamferFeatures.AddUsingDistance($ec, (MM $chamferMm), $false) } catch { }
 }
 
 $body = $cd.SurfaceBodies.Item(1)
