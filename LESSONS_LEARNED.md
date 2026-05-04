@@ -29,6 +29,9 @@ Tool result:
 - `auto_ring_v3.ps1` applies that gate automatically.
 - On R189 it changed ID radius from detected `24.0000 mm` to effective
   `24.8638 mm` and improved volume error from `+72.20%` to `-0.8462%`.
+- R190 proved the same gate must be bidirectional. Detected ID radius was too
+  large (`25.5000 mm`), volume was `-34.38%`, and back-calc ID
+  `24.4116 mm` improved it to `-0.4906%`.
 
 ---
 

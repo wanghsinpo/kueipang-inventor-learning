@@ -9,6 +9,8 @@
   (`~24.86 mm`).
 - Added `auto_ring_v3.ps1`; on R189 it back-calculated ID radius `24.8638 mm`
   and improved the error to `-0.8462%`.
+- R190 validated the bidirectional version: detected bore was too large, and
+  back-calc improved `-34.38%` to `-0.4906%`.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

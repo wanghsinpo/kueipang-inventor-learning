@@ -15,6 +15,8 @@
   about `24.86 mm`. That 0.86 mm radius miss creates `+72.20%` volume error.
 - Added `auto_ring_v3.ps1` and tested it on R189. It chose effective ID radius
   `24.8638 mm` and reduced error to `-0.8462%`.
+- R190 `KE-SL-024 old` tested the opposite failure: detected ID radius too
+  large. Bidirectional v3 back-calc improved `-34.38%` to `-0.4906%`.
 
 ## New Failure Pattern
 
@@ -25,6 +27,8 @@ Rule to add next:
 
 - Use `auto_ring_v3.ps1` for thin-wall sleeves: it back-calculates effective
   bore when simple OD/ID volume is far too high.
+- Keep the v3 gate bidirectional; both overfilled and underfilled simple rings
+  are evidence that detected cylinder radius is not the effective bore.
 - Flag square-format sleeves where `length ~= OD`; these appear often in KE-SL
   parts and can hide stepped bores.
 

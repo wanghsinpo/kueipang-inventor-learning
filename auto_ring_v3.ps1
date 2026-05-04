@@ -100,7 +100,12 @@ if ($thick -gt 0) {
     if ($innerSq -gt 0) { $backCalcRIn = [Math]::Sqrt($innerSq) }
 }
 
-if ($detectedRIn -gt 0 -and $simpleDiff -gt 15 -and $backCalcRIn -gt $detectedRIn -and $backCalcRIn -lt $rOut) {
+$shouldBackCalc = $false
+if ($detectedRIn -gt 0 -and [Math]::Abs($simpleDiff) -gt 15 -and $backCalcRIn -gt 0 -and $backCalcRIn -lt $rOut) {
+    if ([Math]::Abs($backCalcRIn - $detectedRIn) -gt 0.05) { $shouldBackCalc = $true }
+}
+
+if ($shouldBackCalc) {
     $chosenRIn = $backCalcRIn
     Write-Host ("BACKCALC: detected ID R={0:F4}, effective ID R={1:F4}, simple diff={2:F2}%" -f $detectedRIn, $backCalcRIn, $simpleDiff) -ForegroundColor Yellow
 }
