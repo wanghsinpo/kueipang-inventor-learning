@@ -44,6 +44,8 @@
 - R203 checked KMB oil seals. +18~27% overfills moved to sub-1% mass error.
 - R204 added zero-ID fallback and thickness/wall-scaled chamfer. R141/R144
   ultra-thin rings moved from catastrophic `+2599%/+1355%` to about `-0.98%`.
+- R205 checked KE-SP-019/flinger2. Spacer improved to `-1.22%`; close flinger
+  stayed stable at `+2.15%`.
 
 ## New Failure Pattern
 

@@ -70,6 +70,9 @@ Tool result:
 - R204 added zero-ID fallback and thickness/wall-scaled chamfer. Ultra-thin
   tube rings with no detected bore (R141/R144) now move from catastrophic
   `+2599%/+1355%` to about `-0.98%`.
+- R205 checked KE-SP-019 and MP flinger2. v3 improves spacer mass estimates and
+  does not overcorrect close flingers, but flinger visual/top-hat details remain
+  a separate template problem.
 
 ---
 

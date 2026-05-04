@@ -38,6 +38,8 @@
 - R203 checked KMB oil seals: +18~27% overfills moved to sub-1% mass error.
 - R204 added zero-ID fallback and thickness/wall-scaled chamfer; ultra-thin
   tube rings R141/R144 moved from `+2599%/+1355%` to about `-0.98%`.
+- R205 checked KE-SP-019/flinger2: spacer improved to `-1.22%`; close flinger
+  remained stable at `+2.15%`.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
