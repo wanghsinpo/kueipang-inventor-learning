@@ -52,6 +52,8 @@
   stayed near-perfect.
 - R208 checked R126-R129. Oilseal/MSB3600/KMB1202 moved to sub-1%; KE-SL-056
   stayed stable.
+- R209 checked R119-R125. KE-SL-045/047 and HC60 series landed within about
+  0.5%.
 
 ## New Failure Pattern
 

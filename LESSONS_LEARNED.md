@@ -80,6 +80,8 @@ Tool result:
   at `-0.42%`; simple sleeve remains near-perfect.
 - R208 checked R126-R129. Oilseal/MSB3600/KMB1202 also converge under v3, while
   KE-SL-056 remains a stable no-back-calc case.
+- R209 checked R119-R125. Simple KE-SL-045/047 stay near-perfect and HC60 B/C/D/E
+  plus motor sleeve all converge within about 0.5%.
 
 ---
 

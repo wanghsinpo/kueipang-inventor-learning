@@ -46,6 +46,8 @@
   sleeve stayed near-perfect, KE-SP/EV spacers improved.
 - R208 checked R126-R129: oilseal/MSB3600/KMB1202 moved to sub-1%, KE-SL-056
   stayed stable.
+- R209 checked R119-R125: KE-SL-045/047 and HC60 series all landed within about
+  0.5% volume error.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
