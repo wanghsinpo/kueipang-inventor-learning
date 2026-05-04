@@ -48,6 +48,8 @@
   stayed stable at `+2.15%`.
 - R206 checked ESR/EV/AA mix. AA-BP and BP flinger moved below 0.5%; ESR remains
   around `+6%`.
+- R207 checked R130-R133. IGX spacer moved from `-73%` to `-0.42%`; simple sleeve
+  stayed near-perfect.
 
 ## New Failure Pattern
 

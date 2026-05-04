@@ -76,6 +76,8 @@ Tool result:
 - R206 checked ESR/EV/AA mix. v3 helps AA-BP and BP flinger mass/bbox estimates;
   ESR remains around `+6%`, likely needing an ESR-specific template if visual
   fidelity matters.
+- R207 checked R130-R133. IGX spacer, originally a -73% bore failure, now lands
+  at `-0.42%`; simple sleeve remains near-perfect.
 
 ---
 

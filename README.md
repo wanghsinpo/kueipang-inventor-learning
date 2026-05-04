@@ -42,6 +42,8 @@
   remained stable at `+2.15%`.
 - R206 checked ESR/EV/AA mix: AA-BP and BP flinger moved below 0.5%, EV spacers
   stayed stable, ESR remains about `+6%`.
+- R207 checked R130-R133: IGX spacer moved from `-73%` to `-0.42%`, simple
+  sleeve stayed near-perfect, KE-SP/EV spacers improved.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
