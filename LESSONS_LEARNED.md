@@ -73,6 +73,9 @@ Tool result:
 - R205 checked KE-SP-019 and MP flinger2. v3 improves spacer mass estimates and
   does not overcorrect close flingers, but flinger visual/top-hat details remain
   a separate template problem.
+- R206 checked ESR/EV/AA mix. v3 helps AA-BP and BP flinger mass/bbox estimates;
+  ESR remains around `+6%`, likely needing an ESR-specific template if visual
+  fidelity matters.
 
 ---
 

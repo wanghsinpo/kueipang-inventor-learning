@@ -46,6 +46,8 @@
   ultra-thin rings moved from catastrophic `+2599%/+1355%` to about `-0.98%`.
 - R205 checked KE-SP-019/flinger2. Spacer improved to `-1.22%`; close flinger
   stayed stable at `+2.15%`.
+- R206 checked ESR/EV/AA mix. AA-BP and BP flinger moved below 0.5%; ESR remains
+  around `+6%`.
 
 ## New Failure Pattern
 

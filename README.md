@@ -40,6 +40,8 @@
   tube rings R141/R144 moved from `+2599%/+1355%` to about `-0.98%`.
 - R205 checked KE-SP-019/flinger2: spacer improved to `-1.22%`; close flinger
   remained stable at `+2.15%`.
+- R206 checked ESR/EV/AA mix: AA-BP and BP flinger moved below 0.5%, EV spacers
+  stayed stable, ESR remains about `+6%`.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
