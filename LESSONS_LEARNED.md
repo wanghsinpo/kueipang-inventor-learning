@@ -47,6 +47,9 @@ Tool result:
 - R195 implemented scaled chamfer: `min(0.5, max(0.1, OD * 0.01))`. SD90 ring
   improved from `-7.05%` to `+0.585%`, while large-sleeve R189/R190 stayed
   unchanged.
+- R196 batch-tested R166-R169. Even HC60E/ESA300G/EV-X200N large failures can be
+  mass-matched with v3 effective bore. Treat these as bbox/volume baselines,
+  not visually complete groove/lip models.
 
 ---
 

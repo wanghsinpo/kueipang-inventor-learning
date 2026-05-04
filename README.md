@@ -21,6 +21,8 @@
   small SD90 ring stayed at `-7%`, pointing to over-large generic chamfers.
 - R195 scaled chamfer by OD; SD90 ring improved from `-7.05%` to `+0.585%`
   without changing large-sleeve results.
+- R196 batch-tested R166-R169: HC60E/ESA300G/EV-X200N failures moved to
+  roughly sub-0.5% volume error; MU100 stayed around 1%.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
