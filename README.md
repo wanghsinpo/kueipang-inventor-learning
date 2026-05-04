@@ -1,5 +1,15 @@
 # Inventor COM 自動建模 — 學習日誌
 
+## Latest Codex Continuation - Round 189
+
+- Captured `round189_KE-SL-022/result.md` from the prior unfinished run.
+- Real part: square sleeve `52 x 52 x 52 mm`, volume `9441.3 mm^3`.
+- `auto_ring_v2` overestimated volume by `+72.20%` because it detected an
+  internal stepped-seat radius (`24 mm`) instead of the effective bore
+  (`~24.86 mm`).
+- New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
+  back-calculation before trusting detected cylinder radii.
+
 ## Latest Codex Continuation - Round 20 Redo
 
 - Added `auto_box_v1.ps1` for pure six-plane rectangular parts.

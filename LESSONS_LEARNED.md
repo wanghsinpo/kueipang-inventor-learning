@@ -2,6 +2,30 @@
 
 ---
 
+## Round 189 - Thin Stepped Sleeve Bore Trap
+
+`KE-SL-022` is a square-format sleeve (`OD ~= length == 52 mm`) where
+`auto_ring_v2` detected inner radius `24 mm`, but the real mass volume implies
+an effective bore radius of about `24.86 mm`.
+
+Why it matters:
+
+- A 0.86 mm radius error on a thin-wall sleeve caused `+72.20%` volume error.
+- The detected cylinder can be a smaller internal seat/step, not the through
+  bore.
+- This repeats the R184 SDE300C failure mode: stepped bore too small means the
+  model keeps too much material.
+
+Actionable rule:
+
+- For thin-wall sleeves, compare simple ring volume to real volume before saving.
+- If simple ring volume is far too high, back-calculate effective bore:
+  `rIn = sqrt(rOut^2 - realVol / (pi * length))`.
+- Treat `length ~= OD` KE-SL sleeves as suspicious; inspect or back-calc before
+  trusting the largest valid inner cylinder.
+
+---
+
 ## Round 20 Redo - Plain Box Template Works
 
 R20 `SDE300_baffle` looked like a failed non-ring case, but `inspect_real.ps1`
@@ -467,5 +491,4 @@ R8 發現了 **頂底鍵槽互相垂直 90°** 的 pattern。看 plane normal �
 | 9 | +14% | 徑向銷孔（axis Z=0）|
 | 10 | +10% | 通用 auto-ring 工具 |
 | 11 | (跳過) | 多軸承座法蘭超出當前能力 |
-
 
