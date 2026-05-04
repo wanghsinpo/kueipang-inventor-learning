@@ -37,6 +37,9 @@ Tool result:
 - R192 batch-tested R179-R182. A150/ESA200 thin-collar failures from
   `-45%..-38%` also improved to sub-1%, confirming v3 should be the default
   KE-SL sleeve template.
+- R193 batch-tested R174-R178. The 15% gate rescued AA/KMB thin-collar failures
+  but left already-good A70W/GE024 simple rings unchanged, so v3 is not
+  over-eager.
 
 ---
 

@@ -21,6 +21,8 @@
   moved to sub-1% volume error.
 - R192 batch-tested v3 against R179-R182. Four A150/ESA200 failures from
   `-45%..-38%` also moved to sub-1%.
+- R193 batch-tested v3 against R174-R178. AA/KMB failures moved to sub-1%;
+  already-good A70W/GE024 stayed unchanged.
 
 ## New Failure Pattern
 

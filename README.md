@@ -15,6 +15,8 @@
   all improved to sub-1% volume error.
 - R192 batch-tested R179-R182: four A150/ESA200 failures from `-45%..-38%`
   all improved to sub-1% volume error.
+- R193 batch-tested R174-R178: AA/KMB failures improved to sub-1%, while
+  already-good A70W/GE024 cases were left unchanged.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
