@@ -50,6 +50,9 @@ Tool result:
 - R196 batch-tested R166-R169. Even HC60E/ESA300G/EV-X200N large failures can be
   mass-matched with v3 effective bore. Treat these as bbox/volume baselines,
   not visually complete groove/lip models.
+- R197 batch-tested R162-R165. ESA300M and HC60 C/D are also v3-fixable, while
+  known-good KE-SL-056 remains unchanged. HC60 C/D/E now share one effective
+  bore strategy.
 
 ---
 

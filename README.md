@@ -23,6 +23,8 @@
   without changing large-sleeve results.
 - R196 batch-tested R166-R169: HC60E/ESA300G/EV-X200N failures moved to
   roughly sub-0.5% volume error; MU100 stayed around 1%.
+- R197 batch-tested R162-R165: ESA300M and HC60 C/D failures moved to sub-0.5%;
+  known-good KE-SL-056 stayed unchanged.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

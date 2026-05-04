@@ -29,6 +29,8 @@
   large-sleeve R189/R190 outputs stayed unchanged.
 - R196 batch-tested v3 against R166-R169. HC60E/ESA300G/EV-X200N moved to
   roughly sub-0.5%; MU100 stayed around 1%.
+- R197 batch-tested v3 against R162-R165. ESA300M and HC60 C/D moved to sub-0.5%;
+  KE-SL-056 stayed unchanged.
 
 ## New Failure Pattern
 
