@@ -32,6 +32,8 @@ Tool result:
 - R190 proved the same gate must be bidirectional. Detected ID radius was too
   large (`25.5000 mm`), volume was `-34.38%`, and back-calc ID
   `24.4116 mm` improved it to `-0.4906%`.
+- R191 batch-tested R183-R188. All six recent KE-SL sleeve failures improved
+  from `-57%..+33%` to sub-1% error with the same v3 effective-bore rule.
 
 ---
 

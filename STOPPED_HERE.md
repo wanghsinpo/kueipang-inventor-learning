@@ -17,6 +17,8 @@
   `24.8638 mm` and reduced error to `-0.8462%`.
 - R190 `KE-SL-024 old` tested the opposite failure: detected ID radius too
   large. Bidirectional v3 back-calc improved `-34.38%` to `-0.4906%`.
+- R191 batch-tested v3 against R183-R188. Six failures from `-57%..+33%` all
+  moved to sub-1% volume error.
 
 ## New Failure Pattern
 

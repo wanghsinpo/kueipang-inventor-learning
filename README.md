@@ -11,6 +11,8 @@
   and improved the error to `-0.8462%`.
 - R190 validated the bidirectional version: detected bore was too large, and
   back-calc improved `-34.38%` to `-0.4906%`.
+- R191 batch-tested v3 on R183-R188: six recent failures from `-57%..+33%`
+  all improved to sub-1% volume error.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
