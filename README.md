@@ -31,6 +31,8 @@
   `-1.02%` without disturbing known-good cases.
 - R200 summarized R154-R157: early KE-SL failures from `+140%..-38%` now land
   around `-1.02%..-0.32%`.
+- R201 checked EV-S200P: BP spacer improved to `-0.95%`; thin G washer remains
+  `-4.09%`, acceptable but still a washer-template candidate.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

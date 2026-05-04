@@ -60,6 +60,9 @@ Tool result:
   `-1.02%`, while MU100/A70W/GE024 good cases remained unchanged.
 - R200 summarized R154-R157. Early KE-SL sleeve errors from `+140%..-38%` now
   land around `-1.02%..-0.32%` with v3.
+- R201 checked EV-S200P. BP spacer improves to `-0.95%`; thin G washer remains
+  around `-4%`, good enough for mass/bbox but still wants a washer-specific
+  visual template.
 
 ---
 

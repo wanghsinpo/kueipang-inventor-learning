@@ -37,6 +37,8 @@
   `-1.02%`; known-good MU100/A70W/GE024 did not change.
 - R200 summarized R154-R157. Early KE-SL failures from `+140%..-38%` now sit
   around `-1%`.
+- R201 checked EV-S200P. BP spacer moved to `-0.95%`; G washer stayed at
+  `-4.09%`.
 
 ## New Failure Pattern
 
