@@ -58,6 +58,8 @@ Tool result:
   the default sleeve learner.
 - R199 lowered the v3 gate from `15%` to `8%`. R155 improved from `-10.39%` to
   `-1.02%`, while MU100/A70W/GE024 good cases remained unchanged.
+- R200 summarized R154-R157. Early KE-SL sleeve errors from `+140%..-38%` now
+  land around `-1.02%..-0.32%` with v3.
 
 ---
 

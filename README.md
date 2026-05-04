@@ -29,6 +29,8 @@
   sub-0.6%; KE-SL-056 stayed unchanged.
 - R199 lowered v3 gate from `15%` to `8%`; R155 improved from `-10.39%` to
   `-1.02%` without disturbing known-good cases.
+- R200 summarized R154-R157: early KE-SL failures from `+140%..-38%` now land
+  around `-1.02%..-0.32%`.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
