@@ -25,6 +25,8 @@
   roughly sub-0.5% volume error; MU100 stayed around 1%.
 - R197 batch-tested R162-R165: ESA300M and HC60 C/D failures moved to sub-0.5%;
   known-good KE-SL-056 stayed unchanged.
+- R198 batch-tested R158-R161: HC60 motor, ESA200-G, and KMB1203 moved to
+  sub-0.6%; KE-SL-056 stayed unchanged.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

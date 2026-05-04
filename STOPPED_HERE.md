@@ -31,6 +31,8 @@
   roughly sub-0.5%; MU100 stayed around 1%.
 - R197 batch-tested v3 against R162-R165. ESA300M and HC60 C/D moved to sub-0.5%;
   KE-SL-056 stayed unchanged.
+- R198 batch-tested v3 against R158-R161. HC60 motor, ESA200-G, and KMB1203
+  moved to sub-0.6%; KE-SL-056 stayed unchanged.
 
 ## New Failure Pattern
 

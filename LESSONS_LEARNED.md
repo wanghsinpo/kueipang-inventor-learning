@@ -53,6 +53,9 @@ Tool result:
 - R197 batch-tested R162-R165. ESA300M and HC60 C/D are also v3-fixable, while
   known-good KE-SL-056 remains unchanged. HC60 C/D/E now share one effective
   bore strategy.
+- R198 batch-tested R158-R161. HC60 motor, ESA200-G, and KMB1203 also converge
+  under v3; KE-SL-056 remains stable. `auto_ring_v3.ps1` should replace v2 as
+  the default sleeve learner.
 
 ---
 
