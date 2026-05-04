@@ -23,6 +23,8 @@
   `-45%..-38%` also moved to sub-1%.
 - R193 batch-tested v3 against R174-R178. AA/KMB failures moved to sub-1%;
   already-good A70W/GE024 stayed unchanged.
+- R194 batch-tested v3 against R170-R173. KMB1203E/SD90 sleeve moved to sub-1%;
+  SD90 ring stayed `-7%`, likely from fixed 0.5mm chamfer on a small ring.
 
 ## New Failure Pattern
 

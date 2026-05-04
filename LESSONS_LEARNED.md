@@ -40,6 +40,10 @@ Tool result:
 - R193 batch-tested R174-R178. The 15% gate rescued AA/KMB thin-collar failures
   but left already-good A70W/GE024 simple rings unchanged, so v3 is not
   over-eager.
+- R194 batch-tested R170-R173. v3 fixed KMB1203E and SD90 sleeve, but SD90 ring
+  stayed `-7%` because the fixed `0.5 mm` chamfer is too aggressive for small
+  rings. Next tool improvement: scale chamfer by part size or disable it when
+  edge treatment dominates mass error.
 
 ---
 

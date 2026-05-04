@@ -17,6 +17,8 @@
   all improved to sub-1% volume error.
 - R193 batch-tested R174-R178: AA/KMB failures improved to sub-1%, while
   already-good A70W/GE024 cases were left unchanged.
+- R194 batch-tested R170-R173: KMB1203E/SD90 sleeve improved to sub-1%, but
+  small SD90 ring stayed at `-7%`, pointing to over-large generic chamfers.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
