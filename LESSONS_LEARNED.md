@@ -34,6 +34,9 @@ Tool result:
   `24.4116 mm` improved it to `-0.4906%`.
 - R191 batch-tested R183-R188. All six recent KE-SL sleeve failures improved
   from `-57%..+33%` to sub-1% error with the same v3 effective-bore rule.
+- R192 batch-tested R179-R182. A150/ESA200 thin-collar failures from
+  `-45%..-38%` also improved to sub-1%, confirming v3 should be the default
+  KE-SL sleeve template.
 
 ---
 

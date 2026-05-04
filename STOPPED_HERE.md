@@ -19,6 +19,8 @@
   large. Bidirectional v3 back-calc improved `-34.38%` to `-0.4906%`.
 - R191 batch-tested v3 against R183-R188. Six failures from `-57%..+33%` all
   moved to sub-1% volume error.
+- R192 batch-tested v3 against R179-R182. Four A150/ESA200 failures from
+  `-45%..-38%` also moved to sub-1%.
 
 ## New Failure Pattern
 
