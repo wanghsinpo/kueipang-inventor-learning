@@ -54,6 +54,8 @@
   stayed stable.
 - R209 checked R119-R125. KE-SL-045/047 and HC60 series landed within about
   0.5%.
+- R210 checked R114-R118. EV spacer/simple sleeve stayed stable; A150 and
+  KMB1201 failures moved to sub-0.6%.
 
 ## New Failure Pattern
 

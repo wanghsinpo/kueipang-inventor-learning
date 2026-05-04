@@ -82,6 +82,8 @@ Tool result:
   KE-SL-056 remains a stable no-back-calc case.
 - R209 checked R119-R125. Simple KE-SL-045/047 stay near-perfect and HC60 B/C/D/E
   plus motor sleeve all converge within about 0.5%.
+- R210 checked R114-R118. The first decoded/downloaded sleeve batch is now
+  covered: simple spacers stay stable, A150 and KMB1201 bore failures converge.
 
 ---
 

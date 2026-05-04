@@ -48,6 +48,8 @@
   stayed stable.
 - R209 checked R119-R125: KE-SL-045/047 and HC60 series all landed within about
   0.5% volume error.
+- R210 checked R114-R118: EV spacer and simple sleeve stayed within 1%, A150 and
+  KMB1201 bore failures moved to sub-0.6%.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
