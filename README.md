@@ -35,6 +35,7 @@
   `-4.09%`, acceptable but still a washer-template candidate.
 - R202 checked KE-SP/EV-M502: ring-like spacers improved to `-1.6%..-2.9%`,
   EV-M502 moved from `-43%` to `-0.69%`; tiny pin remains low priority.
+- R203 checked KMB oil seals: +18~27% overfills moved to sub-1% mass error.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

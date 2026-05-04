@@ -65,6 +65,8 @@ Tool result:
   visual template.
 - R202 checked KE-SP/EV-M502. v3 helps ring-like spacers and EV-M502 mass/bbox,
   but tiny pins should still be skipped unless specifically needed.
+- R203 checked KMB oil seals. Effective-bore v3 moves +18~27% overfilled oil
+  seal washers to sub-1% mass error, though visual lip details are still absent.
 
 ---
 
