@@ -78,6 +78,8 @@ Tool result:
   fidelity matters.
 - R207 checked R130-R133. IGX spacer, originally a -73% bore failure, now lands
   at `-0.42%`; simple sleeve remains near-perfect.
+- R208 checked R126-R129. Oilseal/MSB3600/KMB1202 also converge under v3, while
+  KE-SL-056 remains a stable no-back-calc case.
 
 ---
 

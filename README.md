@@ -44,6 +44,8 @@
   stayed stable, ESR remains about `+6%`.
 - R207 checked R130-R133: IGX spacer moved from `-73%` to `-0.42%`, simple
   sleeve stayed near-perfect, KE-SP/EV spacers improved.
+- R208 checked R126-R129: oilseal/MSB3600/KMB1202 moved to sub-1%, KE-SL-056
+  stayed stable.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 
