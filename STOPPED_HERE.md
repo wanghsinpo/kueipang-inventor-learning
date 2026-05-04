@@ -42,6 +42,8 @@
 - R202 checked KE-SP/EV-M502. Ring-like spacers improved to roughly `-1.6%..-2.9%`;
   EV-M502 moved to `-0.69%`; tiny pin remains low priority.
 - R203 checked KMB oil seals. +18~27% overfills moved to sub-1% mass error.
+- R204 added zero-ID fallback and thickness/wall-scaled chamfer. R141/R144
+  ultra-thin rings moved from catastrophic `+2599%/+1355%` to about `-0.98%`.
 
 ## New Failure Pattern
 

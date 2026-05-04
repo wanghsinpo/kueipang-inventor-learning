@@ -36,6 +36,8 @@
 - R202 checked KE-SP/EV-M502: ring-like spacers improved to `-1.6%..-2.9%`,
   EV-M502 moved from `-43%` to `-0.69%`; tiny pin remains low priority.
 - R203 checked KMB oil seals: +18~27% overfills moved to sub-1% mass error.
+- R204 added zero-ID fallback and thickness/wall-scaled chamfer; ultra-thin
+  tube rings R141/R144 moved from `+2599%/+1355%` to about `-0.98%`.
 - New rule: thin-wall KE-SL sleeves need a volume sanity gate and effective bore
   back-calculation before trusting detected cylinder radii.
 

@@ -101,7 +101,7 @@ if ($thick -gt 0) {
 }
 
 $shouldBackCalc = $false
-if ($detectedRIn -gt 0 -and [Math]::Abs($simpleDiff) -gt 8 -and $backCalcRIn -gt 0 -and $backCalcRIn -lt $rOut) {
+if ([Math]::Abs($simpleDiff) -gt 8 -and $backCalcRIn -gt 0 -and $backCalcRIn -lt $rOut) {
     if ([Math]::Abs($backCalcRIn - $detectedRIn) -gt 0.05) { $shouldBackCalc = $true }
 }
 
@@ -133,7 +133,10 @@ foreach ($e in $body.Edges) {
     if ($e.GeometryType -eq 5124) { $null = $ec.Add($e) }
 }
 if ($ec.Count -gt 0) {
-    $chamferMm = [Math]::Min(0.5, [Math]::Max(0.1, $diam * 0.01))
+    $wallMm = $rOut
+    if ($chosenRIn -gt 0) { $wallMm = $rOut - $chosenRIn }
+    $sizeChamfer = [Math]::Min($diam * 0.01, [Math]::Min($thick * 0.10, $wallMm * 0.10))
+    $chamferMm = [Math]::Min(0.5, [Math]::Max(0.05, $sizeChamfer))
     try { $null = $cd.Features.ChamferFeatures.AddUsingDistance($ec, (MM $chamferMm), $false) } catch { }
 }
 

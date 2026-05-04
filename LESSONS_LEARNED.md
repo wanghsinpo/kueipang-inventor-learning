@@ -67,6 +67,9 @@ Tool result:
   but tiny pins should still be skipped unless specifically needed.
 - R203 checked KMB oil seals. Effective-bore v3 moves +18~27% overfilled oil
   seal washers to sub-1% mass error, though visual lip details are still absent.
+- R204 added zero-ID fallback and thickness/wall-scaled chamfer. Ultra-thin
+  tube rings with no detected bore (R141/R144) now move from catastrophic
+  `+2599%/+1355%` to about `-0.98%`.
 
 ---
 
