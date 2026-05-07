@@ -1,0 +1,10 @@
+# Round 845: Rotor OD=63.725 T=3.0 2021新型磁心轉子-白鐵蓋 — PASS
+
+- File: `real.ipt` (203264 bytes)
+- Real: BBox 63.725×63.725×3.000mm, Vol 7255.833mm³
+- OD R=31.863, T=3.000, detected ID R=15.1 → direct (simple diff within threshold)
+
+## Result
+- auto_ring_v3: **+1.8856%** ✓ — direct result (no back-calc needed)
+- 2021新型磁心轉子-白鐵蓋.ipt T=3.0mm, OD=63.725mm (2021 new magnetic core rotor white-iron cover)
+- v3: direct: +1.89%
