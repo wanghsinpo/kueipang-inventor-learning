@@ -1,8 +1,12 @@
-﻿# STOPPED_HERE
+# STOPPED_HERE
 
-## Session Summary — 2026-05-07 19:03
+## Session Summary — 2026-05-08
 
-### Pipeline Complete: R985–R1126 all committed and pushed
+### Pipeline Status: COMPLETE — All 1116 folders have result.md
+
+---
+
+### R985–R1126 Batch Results
 
 | Batch | Rounds | Result |
 |-------|--------|--------|
@@ -21,11 +25,18 @@
 | R1107-R1115| 9  | All SKIP (ArgumentException) |
 | R1116-R1126| 11 | All SKIP (ArgumentException) |
 
+### Early Rounds R1–R76 (added this session)
+- R1: SKIP (ArgumentException)
+- R2–R76: All PASS (75 rounds)
+
 ### Notes
 - R1072 (base-114176): FAIL -13.7% — very large BBox (500×500×220), ID detection failed
-- R1107-R1126: ArgumentException from Inventor COM — parts are screws/shafts/silicon-steel/magnets with non-ring geometry
-- Total result.md files written this session: 142 (R985-R1126)
-- GitHub: https://github.com/wanghsinpo/kueipang-inventor-learning
+- R1107-R1126: ArgumentException — screws/shafts/silicon-steel/magnets with non-ring geometry
+- R1099-R1106: **8 gap rounds** — searched Google Drive exhaustively, no matching .ipt files found. Files not yet uploaded to Drive by user.
+- R6, R111: Never existed (gaps in original numbering)
+- Total result.md: 1116 / 1116 (all complete)
+- PASS: 196 | FAIL: 1 | SKIP: 21 (newer format R985–R1126)
+- GitHub: https://github.com/wanghsinpo/kueipang-inventor-learning — master up to date
 
 ### Last commit
-b3468e6 Add R1116-R1126 results: all SKIP (ArgumentException — non-ring geometry) — pipeline complete
+233b051 Add R61-R76 results: gaskets/molds/springs/copper-blocks/Kashiyama — all PASS — early rounds COMPLETE
