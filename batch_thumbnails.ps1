@@ -95,12 +95,17 @@ foreach ($f in $folders) {
         continue
     }
 
-    # Prefer my_attempt_v3.ipt; fallback to real.ipt
-    $iptPath = Join-Path $f.FullName 'my_attempt_v3.ipt'
+    # Prefer my_attempt_v4 > v3 > real.ipt > any *.ipt (excl my_attempt*)
+    $iptPath = Join-Path $f.FullName 'my_attempt_v4.ipt'
+    if (-not (Test-Path $iptPath)) { $iptPath = Join-Path $f.FullName 'my_attempt_v3.ipt' }
+    if (-not (Test-Path $iptPath)) { $iptPath = Join-Path $f.FullName 'real.ipt' }
     if (-not (Test-Path $iptPath)) {
-        $iptPath = Join-Path $f.FullName 'real.ipt'
+        $any = Get-ChildItem $f.FullName -Filter '*.ipt' |
+               Where-Object { $_.Name -notmatch '^my_attempt' } |
+               Sort-Object LastWriteTime -Descending | Select-Object -First 1
+        if ($any) { $iptPath = $any.FullName } else { $iptPath = $null }
     }
-    if (-not (Test-Path $iptPath)) {
+    if (-not $iptPath) {
         Write-Host "  SKIP $($f.Name) — no .ipt found" -ForegroundColor DarkYellow
         $skipped++
         continue
