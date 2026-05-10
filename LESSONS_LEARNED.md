@@ -601,3 +601,31 @@ $inv.ActiveView.SaveAsBitmap($thumbPath, 400, 300)
 `auto_ring_v3.ps1` 找不到 `real.ipt` → 拋出 `ArgumentException`（COM file open error）。
 **不是幾何問題，是檔名問題。** `auto_v4.ps1` 已修正。
 
+### 批量縮圖：「读取链接」對話框阻塞問題
+
+**問題**：`batch_thumbnails.ps1` 在開啟含外部參照的 .ipt 時（如 teflon-backup 系列），
+Inventor 彈出「读取链接 (Resolve Links)」對話框等待「全部跳过」按鈕。
+對話框出現時整個批次卡住，無法 SaveAsBitmap。
+
+**解法**：
+1. 使用 `Start-Process powershell.exe -WindowStyle Hidden` 啟動持久背景程序（不是 `Start-Job`）
+2. 背景程序每 250ms 用 `EnumWindows` 掃描含「读取链接」標題的視窗
+3. 用 `EnumChildWindows` 找「全部跳|Skip All」按鈕 → `PostMessage(BM_CLICK)` 自動點擊
+4. 這個方法在 PowerShell 工作階段結束後仍持續運行（`Start-Job` 不行）
+
+**腳本**: `_link_watcher.ps1`
+
+```powershell
+# 啟動持久 watcher（在批次開始前執行）
+Start-Process powershell.exe -WindowStyle Hidden `
+  -ArgumentList "-ExecutionPolicy Bypass -File `"$desk\_link_watcher.ps1`""
+```
+
+**教訓**: `Start-Job` 的生命週期綁定到父 PowerShell 程序。要跨工作階段持續執行必須用 `Start-Process`。
+
+### batch_thumbnails.ps1 優先順序修正
+
+**.ipt 搜尋優先序**: `my_attempt_v4.ipt` > `my_attempt_v3.ipt` > `real.ipt` > 任意 `*.ipt`（排除 `my_attempt*`）
+
+這樣 R1107-R1126（只有 `foldername.ipt`）也能正確生成縮圖。
+
