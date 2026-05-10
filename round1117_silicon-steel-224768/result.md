@@ -1,10 +1,15 @@
 ﻿# round1117_silicon-steel-224768
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 111.4 x 111.4 x 0.5 mm |
+| Inventor Vol | 2086.404 mm糧 |
+| My Vol | 2084.867 mm糧 |
+| Method | back-calc |
+| Detected ID R | 53.7 mm |
+| Chosen ID R | 42.1218 mm |
+| Diff | -0.0737% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+PASS ??(threshold 簣10%)

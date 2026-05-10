@@ -1,10 +1,13 @@
 ﻿# round1114_mag-a14-ev-m-bp-0001-205824
 
-## Result: SKIP
+## Result: FAIL
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 104.9 x 104.9 x 119.7 mm |
+| Inventor Vol | 73560.96 mm糧 |
+| My Vol | 1317179.997 mm糧 |
+| Method | box (BBox extrude) |
+| Diff | 1690.5965% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+FAIL ??(diff exceeds 簣10%)

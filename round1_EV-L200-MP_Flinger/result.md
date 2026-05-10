@@ -1,9 +1,15 @@
 ﻿# round1_EV-L200-MP_Flinger
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
+| BBox | 49 x 49 x 15.5 mm |
+| Inventor Vol | 6548.815 mm糧 |
+| My Vol | 6693.854 mm糧 |
+| Method | direct |
+| Detected ID R | 21.5 mm |
+| Chosen ID R | 21.5 mm |
+| Diff | 2.2147% |
 
-SKIP — non-ring geometry
+PASS ??(threshold 簣10%)

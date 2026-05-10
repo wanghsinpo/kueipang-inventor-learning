@@ -1,10 +1,15 @@
 ﻿# round1110_stainless-screw-0001-148992
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 15 x 15 x 25.1 mm |
+| Inventor Vol | 1494.77 mm糧 |
+| My Vol | 1547.493 mm糧 |
+| Method | direct |
+| Detected ID R | 6.05 mm |
+| Chosen ID R | 6.05 mm |
+| Diff | 3.5272% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+PASS ??(threshold 簣10%)

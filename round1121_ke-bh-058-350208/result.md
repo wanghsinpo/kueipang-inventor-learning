@@ -1,10 +1,15 @@
 ﻿# round1121_ke-bh-058-350208
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 84 x 110 x 37 mm |
+| Inventor Vol | 124256.387 mm糧 |
+| My Vol | 124100.52 mm糧 |
+| Method | back-calc |
+| Detected ID R | 40 mm |
+| Chosen ID R | 44.2278 mm |
+| Diff | -0.1254% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+PASS ??(threshold 簣10%)

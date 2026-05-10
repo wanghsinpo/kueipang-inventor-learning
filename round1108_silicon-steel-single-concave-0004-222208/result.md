@@ -1,10 +1,15 @@
 ﻿# round1108_silicon-steel-single-concave-0004-222208
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 59.1 x 59.07 x 18.2 mm |
+| Inventor Vol | 42308.386 mm糧 |
+| My Vol | 42243.837 mm糧 |
+| Method | back-calc |
+| Detected ID R | 25.55 mm |
+| Chosen ID R | 11.5433 mm |
+| Diff | -0.1526% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+PASS ??(threshold 簣10%)

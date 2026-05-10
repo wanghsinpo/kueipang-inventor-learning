@@ -1,10 +1,13 @@
 ﻿# round1116_m6x55-0002-185856
 
-## Result: SKIP
+## Result: FAIL
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 61 x 10 x 10 mm |
+| Inventor Vol | 1941.604 mm糧 |
+| My Vol | 6100 mm糧 |
+| Method | box (BBox extrude) |
+| Diff | 214.1732% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+FAIL ??(diff exceeds 簣10%)

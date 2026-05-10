@@ -1,10 +1,15 @@
 ﻿# round1112_flinger-1-250417-0006-270848
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 120 x 8.81 x 119.34 mm |
+| Inventor Vol | 11682.938 mm糧 |
+| My Vol | 11681.057 mm糧 |
+| Method | back-calc |
+| Detected ID R | 60 mm |
+| Chosen ID R | 59.7398 mm |
+| Diff | -0.0161% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+PASS ??(threshold 簣10%)

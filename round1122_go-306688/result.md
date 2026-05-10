@@ -1,10 +1,13 @@
 ﻿# round1122_go-306688
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 50 x 50 x 10 mm |
+| Inventor Vol | 23194.261 mm糧 |
+| My Vol | 25000 mm糧 |
+| Method | box (BBox extrude) |
+| Diff | 7.7853% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+PASS ??(threshold 簣10%)

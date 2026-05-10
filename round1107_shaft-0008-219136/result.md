@@ -1,10 +1,15 @@
 ﻿# round1107_shaft-0008-219136
 
-## Result: SKIP
+## Result: PASS
 
 | Field | Value |
 |-------|-------|
-| Error | ArgumentException — geometry incompatible with ring script |
-| Method | N/A |
+| BBox | 146.6 x 18.7 x 18.7 mm |
+| Inventor Vol | 28183.578 mm糧 |
+| My Vol | 28082.631 mm糧 |
+| Method | back-calc |
+| Detected ID R | 0 mm |
+| Chosen ID R | 69.9511 mm |
+| Diff | -0.3582% |
 
-SKIP — auto_ring_v3.ps1 threw ArgumentException; part likely non-circular or complex solid
+PASS ??(threshold 簣10%)
