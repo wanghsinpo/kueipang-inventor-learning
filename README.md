@@ -32,6 +32,58 @@
 
 ## 工具說明
 
+### `auto_v4.ps1` ⭐ 新版通用腳本
+
+通用幾何偵測腳本（ring + box 自動判斷）。用法：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File auto_v4.ps1 -folder "絕對路徑\round_xxx"
+```
+
+**特點：**
+- 同時支援 `real.ipt` 和 `<foldername>.ipt`（解決 R1107+ SKIP 問題）
+- 以圓柱面比率判斷幾何型態：>15% 圓柱面 → ring；否則 → box
+- Ring 路徑 = auto_ring_v3 邏輯（含 back-calc）
+- Box 路徑 = auto_box_v1 邏輯（BBox 矩形擠出）
+- 輸出 `my_attempt_v4.ipt`
+
+### `create_ring.ps1` ⭐ 新版直接建模
+
+從明確尺寸建立環形零件（無需 real.ipt）：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File create_ring.ps1 -OD 70 -ID 50 -Thick 10 -Name "spacer"
+```
+
+### `create_box.ps1` ⭐ 新版直接建模
+
+從明確尺寸建立矩形零件：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File create_box.ps1 -W 50 -D 50 -H 5.5 -Name "al_spacer"
+```
+
+### `lookup_part.ps1` ⭐ 零件尺寸查詢
+
+從 parts_index.csv 查詢符合尺寸的零件：
+
+```powershell
+powershell -File lookup_part.ps1 -OD 220 -Thick 25      # 找外徑 220、厚 25
+powershell -File lookup_part.ps1 -OD 70 -ID 50 -Thick 10  # 找 OD70/ID50/T10
+powershell -File lookup_part.ps1 -Vol 500000 -Tol 5       # 按體積找
+```
+
+### `batch_thumbnails.ps1` ⭐ 批量縮圖
+
+為所有 round 資料夾生成 400×300 BMP 縮圖：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File batch_thumbnails.ps1        # 全部
+powershell -ExecutionPolicy Bypass -File batch_thumbnails.ps1 -Force  # 強制重新生成
+```
+
+---
+
 ### `auto_ring_v3.ps1`
 
 圓環零件自動體積比對腳本。用法：
