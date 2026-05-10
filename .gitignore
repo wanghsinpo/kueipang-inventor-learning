@@ -15,6 +15,7 @@
 
 # But keep the photos in test/ root which were the original input
 !微信圖片*.jpg
+!微信图片*.jpg
 
 # PDF drawings (kept for reference)
 # (PDFs are not ignored)
@@ -39,3 +40,7 @@ test_thumb.bmp
 # OS
 Thumbs.db
 .DS_Store
+
+# Claude Code local settings (per-session, not for sharing)
+.claude/
+AGENTS.md
