@@ -54,6 +54,15 @@
 - ChamferFeatures 用 `AddUsingDistance($edges, $dist, $false)`，不是 `CreateChamferDefinition`
 - Edge.GeometryType=5124 是圓邊（ObjectTypeEnum，不是 CurveTypeEnum 的 38914）
 
+### Computer-Use（Inventor 視覺控制）
+- **已確認可用**：`mcp__computer-use__request_access` 成功，tier=full
+- 正確 app 名：`Autodesk Inventor Professional 2027 - 简体中文 (Simplified Chinese)`
+- Start Menu 捷徑：`Autodesk Inventor Professional 2027 - 简体中文 (Simplified Chinese).lnk`
+- 首次啟動會出現「Autodesk 隱私聲明」對話框（我同意 / 取消）→ 需用戶授權，之後不再出現
+- Inventor 啟動時有 splash screen，約 2-5 分鐘；splash 還在但 `$inv.Ready = True` 時即可用 COM
+- `request_access` 必須在用戶在場時呼叫（需要用戶點 approve 按鈕）；之後整個 session 不需要再問
+- 呼叫順序：`request_access` → `open_application` → `screenshot` → 可正常操控
+
 ### GitHub
 - gh CLI 在 `C:\Program Files\GitHub CLI\gh.exe`
 - 沒 auth 過 — 想辦法用 device flow 或 token
