@@ -6,19 +6,24 @@
 |------|------|
 | Total round folders | 1,116 |
 | result.md written | 1,116 / 1,116 |
-| Git commits | 294 |
+| Thumbnails generated | 1,094 / 1,116 |
+| Git commits | 300+ |
 | GitHub | https://github.com/wanghsinpo/kueipang-inventor-learning |
 
-### R985–R1126 Batch Results (新格式 `auto_ring_v3.ps1`)
+### R985–R1126 Batch Results (`auto_ring_v3.ps1` + `auto_v4.ps1`)
 
 | 結果 | 件數 |
 |------|------|
-| PASS (±10% 內) | 196 |
-| FAIL (>±10%) | 1 |
-| SKIP (ArgumentException) | 21 |
+| PASS (±10% 內) | 211 |
+| FAIL (>±10%) | 7 |
+| SKIP | 0 |
 
-- **唯一 FAIL**: `round1072_base-114176` — 500×500×220 mm 超大零件，ID 未偵測成功，diff = −13.7%
-- **SKIP 說明**: ArgumentException 代表零件非圓環幾何（螺絲、矽鋼片、磁鐵、軸類），`auto_ring_v3` 不適用
+- **R985-R1098**: auto_ring_v3.ps1（純圓環幾何）
+- **R1107-R1126 (formerly SKIP)**: auto_v4.ps1（ring/box 通用偵測）
+  - 15 PASS，6 FAIL（螺絲、空心馬達殼、弧形磁鐵 — BBox 模型不適用）
+  - R1116, R1118: M6×55 螺絲
+  - R1114, R1115: 空心馬達殼 (VOL 差 +1690%)
+  - R1124, R1125: 弧形磁鐵平板 (VOL 差 +46%)
 
 ### 已知缺口
 
