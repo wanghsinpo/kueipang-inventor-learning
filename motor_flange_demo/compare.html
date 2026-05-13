@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>Motor Flange — Photo vs Model</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #1a1a2e; color: #eee; margin: 0; padding: 16px; }
+  h1 { color: #f0c040; margin: 0 0 8px 0; }
+  h2 { color: #58a6ff; margin: 24px 0 8px 0; font-size: 18px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .panel { background: #16213e; padding: 8px; border-radius: 6px; }
+  .panel img { max-width: 100%; max-height: 400px; display: block; }
+  .panel .caption { color: #aaa; font-size: 12px; margin-top: 4px; text-align: center; }
+  a { color: #58a6ff; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+</style>
+</head>
+<body>
+<h1>🔧 Motor Flange — Photo vs Model Comparison</h1>
+<p>用戶照片 vs Claude 從照片建的 Inventor model (motor_flange_v14.ipt, 15 features)</p>
+
+<h2>📸 用戶照片（4 張）</h2>
+<div class='row'>
+  <div class='panel'><img src='../微信圖片_20260428120600_2_3.jpg'><div class='caption'>背面 view (showing 4 corner holes + U-notch)</div></div>
+  <div class='panel'><img src='../微信圖片_20260428120601_3_3.jpg'><div class='caption'>正面 view (hub + pocket)</div></div>
+  <div class='panel'><img src='../微信圖片_20260428120602_4_3.jpg'><div class='caption'>iso 視角</div></div>
+  <div class='panel'><img src='../微信圖片_20260428120603_5_3.jpg'><div class='caption'>另一角度</div></div>
+</div>
+
+<h2>🎨 Claude 建的 Model (v14)</h2>
+<div class='grid2'>
+  <div class='panel'><img src='v14_iso_hires.bmp'><div class='caption'>ISO view</div></div>
+  <div class='panel'><img src='v14_top_hires.bmp'><div class='caption'>TOP view (正面)</div></div>
+</div>
+<div class='row'>
+  <div class='panel'><img src='v14_bottom_hires.bmp'><div class='caption'>BOTTOM view (背面)</div></div>
+</div>
+
+<h2>📋 Feature List (15 個獨立可編輯)</h2>
+<pre style="background: #0d1117; padding: 12px; border-radius: 6px; color: #c9d1d9">
+01_BasePlate_88x88x12        八邊形基板
+02_Hub_D52xH10                中央突起圓柱
+03_Pocket_Ring_D70_d4         Hub 周圍環形凹陷
+04_HubBaseFillet_R1.5         Hub-Pocket 圓角過渡
+05_CounterBore_D44_d4         軸承座階梯
+06_CenterBore_D32             中央通孔
+6b_InnerKeyway_W8xD4          Bore 內壁軸鍵槽
+07_MountingHoles_4xD8.5       4 個 M8 角孔
+08_Keyway_U_W8xD4             下緣 U 形對位缺口
+09_PocketThreaded_4xM4        Pocket 內 4 個 M4 (0/90/180/270°)
+10_TopThreaded_2xM4           上邊 2 個 M4
+11_DowelPins_2xD3             2 個定位銷孔
+12_PlateEdgeChamfer_C1        Plate 外緣 C1 倒角
+13_ChamferCircles_C0.5        所有圓孔 C0.5 入口倒角
+14_CornerCountersink_4xD14    4 個角孔 Ø14×3 沉頭
+</pre>
+
+<h2>📂 檔案下載</h2>
+<ul>
+  <li><a href='motor_flange_v14.ipt'>motor_flange_v14.ipt</a> — Inventor 原檔 (open in Inventor 2027)</li>
+  <li><a href='motor_flange_v14.step'>motor_flange_v14.step</a> — STEP 格式 (SolidWorks/Fusion/Onshape)</li>
+  <li><a href='motor_flange_v14.stl'>motor_flange_v14.stl</a> — STL 格式 (3D printing)</li>
+  <li><a href='README.md'>README.md</a> — v1-v14 進化反省記錄</li>
+</ul>
+
+<p style="color: #888; font-size: 11px; margin-top: 24px">
+  <a href='../index.html'>← Back to parts browser</a> •
+  <a href='../stats.html'>📊 Stats Dashboard</a>
+</p>
+</body>
+</html>
