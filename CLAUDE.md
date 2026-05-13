@@ -77,6 +77,31 @@
 - `,@()` 內含複雜表達式 parse 爆，拆開算
 - 內聯 `if(){}else{}` 在參數位置不能用，先賦值再傳
 
+### 照片→CAD 建模工作流（從 motor_flange_demo 學到）
+**鐵律**：用戶傳照片給我建模時 — **不要套八邊形模板就開始畫**！
+
+**正確流程**：
+1. **逐張描述照片**：每張寫下「我看到什麼特徵」（包含孔的數量、位置、大小）
+2. **列出所有 feature**：標號每個特徵，編號跟 feature tree 一致
+3. **驗證對稱性**：照片裡的孔分佈是 0/90/180/270 還是 45° 對角？不要假設
+4. **看正反兩面**：通常一張正面 + 一張背面 = 完整 feature 清單
+5. **找 pocket / counter-bore / fillet**：這些「凹陷」最容易漏，要主動找
+
+**Feature 順序原則**（避免 chamfer/fillet 衝突）：
+1. 主體 extrude（rough volume）
+2. 圓角 fillet（在 chamfer 之前！否則 chamfer 會吃到 fillet 邊）
+3. Cut / hole 特徵
+4. 倒角 chamfer（最後）
+5. Cosmetic（countersink、紋路）
+
+**Inventor COM 建模坑（從 v1-v9 學到）**：
+- `Face.Geometry.Normal` 方向不可靠 → 用 Z 位置 + Area 判斷 face
+- `Profile.AddForSolid` 需要 **closed loops + shared SketchPoints**，arc 用 `AddByThreePoints` 比 `AddByCenterStartEndPoint` 不易錯方向
+- 圓邊 chamfer batch 失敗 → 先 filter 排除 fillet-adjacent edges，再 fallback 到 per-edge
+- 用 **offset work planes 不是 face lookup** 來定位 sketch 平面（more predictable）
+- `Documents.Add` 偶爾在 chamfer 後 RPC fail → kill Inventor + 重啟，nag-watcher 必開
+- HubBaseFillet 要在 ChamferCircles 之前（fillet edge 變 spline 後不能 chamfer）
+
 ## 🔵 用戶溝通原則
 
 ### 怎麼跟用戶報告
