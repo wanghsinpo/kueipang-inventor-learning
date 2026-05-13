@@ -36,6 +36,8 @@ $rows = foreach ($f in $folders) {
         'PASS' { 'pass' }
         'FAIL' { 'fail' }
         'SKIP' { 'skip' }
+        'DEFER' { 'defer' }
+        'DOC'  { 'doc' }
         default { 'unknown' }
     }
 
@@ -61,9 +63,11 @@ $rows = foreach ($f in $folders) {
 "@
 }
 
-$passCount = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'PASS' }).Count
-$failCount = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'FAIL' }).Count
-$skipCount = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'SKIP' }).Count
+$passCount  = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'PASS' }).Count
+$failCount  = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'FAIL' }).Count
+$skipCount  = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'SKIP' }).Count
+$deferCount = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'DEFER' }).Count
+$docCount   = ($folders | Where-Object { $indexData[$_.Name] -and $indexData[$_.Name].Result -eq 'DOC' }).Count
 $thumbCount = ($folders | Where-Object { Test-Path (Join-Path $_.FullName 'thumbnail.bmp') }).Count
 
 $html = @"
@@ -77,7 +81,7 @@ $html = @"
   h1 { color: #f0c040; margin: 0 0 8px 0; }
   .stats { color: #aaa; margin-bottom: 16px; font-size: 14px; }
   .stats span { margin-right: 16px; }
-  .pass-c { color: #4caf50; } .fail-c { color: #f44336; } .skip-c { color: #ff9800; }
+  .pass-c { color: #4caf50; } .fail-c { color: #f44336; } .skip-c { color: #ff9800; } .defer-c { color: #a371f7; } .doc-c { color: #888; }
   .filter-bar { margin-bottom: 12px; }
   .filter-bar input { background: #2a2a4a; border: 1px solid #555; color: #eee; padding: 6px 12px; border-radius: 4px; width: 300px; font-size: 14px; }
   .filter-bar button { background: #2a2a5a; border: 1px solid #777; color: #eee; padding: 6px 12px; border-radius: 4px; cursor: pointer; margin-left: 8px; }
@@ -88,6 +92,8 @@ $html = @"
   .card.pass { border-left: 4px solid #4caf50; }
   .card.fail { border-left: 4px solid #f44336; }
   .card.skip { border-left: 4px solid #ff9800; }
+  .card.defer { border-left: 4px solid #a371f7; }
+  .card.doc { border-left: 4px solid #888; }
   .card img { display: block; width: 160px; height: 120px; object-fit: contain; background: #0f3460; margin: 10px auto 0; }
   .no-thumb { width: 160px; height: 120px; background: #0f3460; display: flex; align-items: center; justify-content: center; color: #555; font-size: 12px; margin: 10px auto 0; }
   .label { padding: 6px 8px; font-size: 11px; }
@@ -98,6 +104,8 @@ $html = @"
   .result-pass { background: #1b5e20; color: #a5d6a7; }
   .result-fail { background: #b71c1c; color: #ef9a9a; }
   .result-skip { background: #e65100; color: #ffcc80; }
+  .result-defer { background: #4a148c; color: #ce93d8; }
+  .result-doc { background: #424242; color: #bbbbbb; }
   .result- { background: #333; color: #999; }
   a { text-decoration: none; }
 </style>
@@ -109,6 +117,8 @@ $html = @"
   <span class='pass-c'>✔ PASS: <b>$passCount</b></span>
   <span class='fail-c'>✘ FAIL: <b>$failCount</b></span>
   <span class='skip-c'>⚡ SKIP: <b>$skipCount</b></span>
+  <span class='defer-c'>◇ DEFER: <b>$deferCount</b></span>
+  <span class='doc-c'>📄 DOC: <b>$docCount</b></span>
   <span>📷 Thumbnails: <b>$thumbCount</b></span>
 </div>
 <div class='filter-bar'>
@@ -117,6 +127,8 @@ $html = @"
   <button onclick="showOnly('pass')">PASS</button>
   <button onclick="showOnly('fail')">FAIL</button>
   <button onclick="showOnly('skip')">SKIP</button>
+  <button onclick="showOnly('defer')">DEFER</button>
+  <button onclick="showOnly('doc')">DOC</button>
 </div>
 <div class='grid' id='grid'>
 $($rows -join "`n")
