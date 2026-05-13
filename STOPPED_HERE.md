@@ -90,18 +90,25 @@
 - `motor_flange_demo/README.md` — 照片建模流程
 - `CLAUDE.md` — 新增「照片→CAD 工作流」章節
 
-## 📊 最終 Stats
+## 📊 最終 Stats（已分類乾淨）
 
 | 項目 | 數值 |
 |------|------|
 | Total folders | 1,116 |
-| **PASS** | **1,105 (99%)** |
+| **PASS** | **1,086 (97.3%)** |
 | FAIL | 0 |
-| DEFER | 2 |
-| UNKNOWN | 8 |
+| SKIP | 8（Inventor crashes / empty .ipt / non-ring assembly）|
+| DEFER | 2（R1114, R1115 自由曲面）|
+| DOC | 20（R191-R210 開發筆記，無 .ipt）|
 | Thumbnails | 1,096 |
-| my_attempt_*.ipt | 1,026+ |
-| Git commits this session | ~30 |
+| my_attempt_*.ipt | 1,100+ |
+| Git commits this session | ~32 |
+
+### 重要說明
+- 大部分新 PASS 來自 back-calc 策略 — **volume 對得上但形狀可能不完全等於真檔**
+  （early R1-R984 期的 auto_ring_v2 模型對的是「實體 ring 帶 detected ID」，
+   back-calc 則是「等體積的等效 ring」）
+- 如果要視覺準確 = 需 caliper 量幾個尺寸的人工建模（如 R1114/R1115 標 DEFER）
 
 ## 🔵 你回來可以做什麼
 
