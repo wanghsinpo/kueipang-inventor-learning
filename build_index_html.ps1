@@ -103,7 +103,7 @@ $html = @"
 </style>
 </head>
 <body>
-<h1>🔧 Inventor Parts Browser</h1>
+<h1>🔧 Inventor Parts Browser  <a href='stats.html' style='font-size: 13px; color: #888; margin-left: 12px'>📊 Stats Dashboard →</a></h1>
 <div class='stats'>
   <span>Total: <b>$($folders.Count)</b></span>
   <span class='pass-c'>✔ PASS: <b>$passCount</b></span>
