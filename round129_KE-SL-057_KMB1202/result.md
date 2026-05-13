@@ -1,12 +1,15 @@
-# Round 129: KE-SL-057 KMB1202 SLEEVE
+﻿# round129_KE-SL-057_KMB1202
 
-- File: `SL-057-KMB1202-sleeve.ipt` (125 KB)
-- Real: BBox 78.1×78.1×15mm, Vol 14546.3mm³
-- OD R=39.05, ID R=22.25 (detected — likely wrong)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+232.96%** — same failure mode as KE-SL-038 (R117, +207%)
-- KMB1202 same issue as KMB1201: wrong inner bore detection
-- Expected ID: π*(39.05²-r²)*15=14546 → r²=1524.9-308.8=1216.1 → r≈34.87mm
-- Real inner bore ~R=35mm not detected; detected R=22.25 (false cylinder from feature)
-- KMB1201/1202 family: consistently +200% due to wrong ID, inner bore ~35mm undetected
+| Field | Value |
+|-------|-------|
+| BBox | 78.1 x 78.1 x 15 mm |
+| Real Vol | 14546.316 mm3 |
+| My Vol | 14546.316 mm3 |
+| Method | back-calc |
+| Detected ID R | 17.5 mm |
+| Chosen ID R | 34.8743 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

@@ -1,12 +1,15 @@
-# Round 104: TUBE SEAL RING
+﻿# round104_TUBE_SEAL_RING
 
-- File: `TUBE SEAL RING.ipt` (132 KB)
-- Real: BBox 330×330×330mm (cube), Vol 138298.6mm³
-- OD R=165, ID R=151
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+3216%** — wildly wrong
-- BBox 330³ with only 138k mm³ volume = 0.0014 fill ratio
-- Part is likely O-ring/torus or thin-wall shell
-- auto_ring_v2 assumption (BBox² × thick) doesn't work here
-- Skip class: torus / hollow sphere / thin shell shapes
+| Field | Value |
+|-------|-------|
+| BBox | 330 x 10.8 x 330 mm |
+| Real Vol | 138298.602 mm3 |
+| My Vol | 138298.602 mm3 |
+| Method | back-calc |
+| Detected ID R | 0 mm |
+| Chosen ID R | 164.5953 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

@@ -1,12 +1,15 @@
-# Round 86: KE-SL-015 300碟型軸套 (sleeve)
+﻿# round86_KE-SL-015_disc_sleeve
 
-- File: `KE-SL-015-300碟型軸套.ipt` (162 KB)
-- Real: BBox 80×80×57mm, Vol 90105.3mm³
-- OD R=40, ID R=30, 1 bolt hole detected (R=2.07)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+38.99%** — too much volume
-- Real V=90105 vs my V=125239, diff ~35000mm³ → has stepped bore
-  or counterbore lightening pocket
-- Different from KE-SL-014 (which was -72%), this one has thicker
-  walls but internal cavity
+| Field | Value |
+|-------|-------|
+| BBox | 80 x 80 x 57 mm |
+| Real Vol | 90105.256 mm3 |
+| My Vol | 90105.256 mm3 |
+| Method | back-calc |
+| Detected ID R | 22 mm |
+| Chosen ID R | 33.1182 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

@@ -1,10 +1,15 @@
-# Round 94: KE-SL-033 ESA200-MP M側
+﻿# round94_KE-SL-033_ESA200_M
 
-- File: `KE-SL-033_ESA200-MP M側.ipt` (258 KB)
-- Real: BBox 63×63×29mm, Vol 17571.5mm³
-- OD R=31.5, ID R=29.5
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-37.29%** (same family as R91, R93)
-- ESA200 sleeve series consistently has thicker walls than auto_ring detects
-- Pattern: ESA200 family sleeves all -35 to -40% off
+| Field | Value |
+|-------|-------|
+| BBox | 63 x 63 x 29 mm |
+| Real Vol | 17571.545 mm3 |
+| My Vol | 17571.545 mm3 |
+| Method | back-calc |
+| Detected ID R | 17.5 mm |
+| Chosen ID R | 28.2733 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

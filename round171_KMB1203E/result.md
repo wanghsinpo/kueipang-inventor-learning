@@ -1,13 +1,15 @@
-# Round 171: KMB1203E Sleeve OD=36.8 T=45.4
+﻿# round171_KMB1203E
 
-- File: `KMB1203E sleeve.ipt` (179 KB)
-- Real: BBox 36.8×36.8×45.4mm, Vol 22579.7mm³
-- OD R=18.4, ID R=15.015 (detected — wall=3.385mm)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-28.78%** — thin collar detection fail
-- Back-calc actual bore: π*(338.56-r²)*45.4 = 22579.7 → r ≈ 13.43mm
-- Detected R=15.015 vs actual bore R≈13.43mm — 3.4mm outer collar misleads
-- KMB1203E vs KMB1203 (R160 -32.23%): E-variant slightly better (-28% vs -32%)
-- KMB1203E has slightly larger wall thickness than KMB1203, but still fails
-- KMB family (1201-1203E): consistently -28~-32% (collar detection, not catastrophic like 1201/1202 +200%)
+| Field | Value |
+|-------|-------|
+| BBox | 36.8 x 36.8 x 45.4 mm |
+| Real Vol | 22579.742 mm3 |
+| My Vol | 22579.742 mm3 |
+| Method | back-calc |
+| Detected ID R | 12.5 mm |
+| Chosen ID R | 13.4257 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

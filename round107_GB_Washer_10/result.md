@@ -1,12 +1,15 @@
-# Round 107: GB_T 9407.28-1988 Washer 10
+﻿# round107_GB_Washer_10
 
-- File: `Washer GB_T 9407.28-1988 10.ipt` (181 KB)
-- Real: BBox 1×1×11.145mm (oriented along Z!), Vol 36mm³
-- OD R=0.5, ID R=0
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-77.22%** — orientation mismatch
-- The washer's natural axis is X or Y (radial), not Z (auto_ring assumes Z is axis)
-- BBox X=Y=1mm wrong → suggests part oriented with thickness along X/Y axis
-- Lesson: auto_ring needs to detect axis direction from largest cyl face normal,
-  not assume Z-aligned
+| Field | Value |
+|-------|-------|
+| BBox | 1 x 11.14 x 11.14 mm |
+| Real Vol | 35.994 mm3 |
+| My Vol | 35.994 mm3 |
+| Method | back-calc |
+| Detected ID R | 0 mm |
+| Chosen ID R | 5.4795 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

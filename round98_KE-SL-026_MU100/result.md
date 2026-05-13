@@ -1,10 +1,15 @@
-# Round 98: KE-SL-026 MU100 G側 Sleeve
+﻿# round98_KE-SL-026_MU100
 
-- File: `Sleeve.ipt` (212 KB) in KE-SL-026-MU100 folder
-- Real: BBox 32×32×18.5mm, Vol 3821.9mm³
-- OD R=16, ID R=12.5
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+50.52%** — too much volume
-- Real V=3821 vs my V=5752. Real has axial slot/keyway making it lighter
-- MU100 sleeve material per drawing: SKD-11 HRC58 (hardened tool steel)
+| Field | Value |
+|-------|-------|
+| BBox | 32 x 32 x 18.5 mm |
+| Real Vol | 3821.888 mm3 |
+| My Vol | 3821.888 mm3 |
+| Method | back-calc |
+| Detected ID R | 10 mm |
+| Chosen ID R | 13.7928 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

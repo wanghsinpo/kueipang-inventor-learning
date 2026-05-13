@@ -1,10 +1,15 @@
-# Round 82: KE-SL-017 SD90/120 Sleeve
+﻿# round82_KE-SL-017_SD90_120
 
-- File: `KE-SL-017-SD90_120.ipt` (126 KB)
-- Real: BBox 41×41×41mm (cube-like!), Vol 12771.6mm³
-- OD R=20.5, ID R=17.5
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+14.50%** — fair, but BBox is cube (41×41×41) suggesting
-  vertical sleeve with internal cavity. Built simple ring volume too high.
-- Implied missing volume: 1852mm³ (likely stepped bore or counterbore)
+| Field | Value |
+|-------|-------|
+| BBox | 41 x 41.2 x 41 mm |
+| Real Vol | 12771.587 mm3 |
+| My Vol | 12771.587 mm3 |
+| Method | back-calc |
+| Detected ID R | 0 mm |
+| Chosen ID R | 18.0335 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

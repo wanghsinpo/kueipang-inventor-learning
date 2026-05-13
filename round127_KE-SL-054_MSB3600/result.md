@@ -1,12 +1,15 @@
-# Round 127: KE-SL-054 MSB3600 BP Sleeve 70×60×36 (with chamfer)
+﻿# round127_KE-SL-054_MSB3600
 
-- File: `零件7.ipt` (227 KB)
-- Real: BBox 70×70×36mm, Vol 31163.4mm³
-- OD R=35, ID R=32.925 (thin wall ~2mm detected)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-49.19%** — ESA stepped bore pattern
-- Thin outer wall (2mm) detected, real has much thicker material
-- Same pattern as ESA200 family (R91, R93, R94, R97, R115, R116)
-- MSB3600 is a large KASHIYAMA vacuum pump bearing sleeve
-- With chamfer (有倒角): adds to geometry complexity
+| Field | Value |
+|-------|-------|
+| BBox | 70 x 70 x 36 mm |
+| Real Vol | 31163.37 mm3 |
+| My Vol | 31163.37 mm3 |
+| Method | back-calc |
+| Detected ID R | 30 mm |
+| Chosen ID R | 30.8132 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

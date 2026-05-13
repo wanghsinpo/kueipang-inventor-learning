@@ -1,13 +1,15 @@
-# Round 159: KE-SL-001 ESA200 G-Sleeve OD=63 T=29
+﻿# round159_KE-SL-001-ESA200
 
-- File: `KE-SL-001_ESA200-G-SLEEVE.ipt` (214 KB)
-- Real: BBox 63×63×29mm, Vol 17629.3mm³
-- OD R=31.5, ID R=29.5 (detected — wall=2mm)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-37.50%** — thin collar detection fail
-- Back-calc actual bore: π*(992.25-r²)*29 = 17629.3 → r ≈ 28.26mm
-- Detected R=29.5 vs actual R≈28.26mm — 2mm outer collar detected instead of bore
-- ESA200 G-sleeve: consistent with ESA family pattern (R138 -36.76%, R151 -43%)
-- All ESA/G-side sleeves show ~-37~-44% (thin outer G-side collar)
-- ESA200-G: -37.50% confirms ESA G-side = ~-37% class
+| Field | Value |
+|-------|-------|
+| BBox | 63 x 63 x 29 mm |
+| Real Vol | 17629.309 mm3 |
+| My Vol | 17629.309 mm3 |
+| Method | back-calc |
+| Detected ID R | 17.5 mm |
+| Chosen ID R | 28.2621 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

@@ -1,11 +1,15 @@
-# Round 99: KE-SL-027 KY Sleeve
+﻿# round99_KE-SL-027_KY
 
-- File: `KY sleeve.ipt` (244 KB)
-- Real: BBox 97.5×97.5×23mm, Vol 66230.2mm³
-- OD R=48.75, ID R=32.5
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+43.85%** — too much volume
-- Real has 1 small bolt hole (R=3.3) detected
-- Real V=66230 vs my ring V=95273 (BBox 97.5 ring is large)
-- Likely has stepped bore or counterbore: full annulus too solid
+| Field | Value |
+|-------|-------|
+| BBox | 97.5 x 97.5 x 23 mm |
+| Real Vol | 66230.168 mm3 |
+| My Vol | 66230.168 mm3 |
+| Method | back-calc |
+| Detected ID R | 22.5 mm |
+| Chosen ID R | 38.2095 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

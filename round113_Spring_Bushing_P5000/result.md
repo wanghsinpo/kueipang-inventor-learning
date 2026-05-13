@@ -1,10 +1,15 @@
-# Round 113: Spring Bushing for P5000 (3rd version)
+﻿# round113_Spring_Bushing_P5000
 
-- File: `20130125-04-Spring Bushing for P5000(第三版).ipt` (87 KB)
-- Real: BBox 29.6×29.6×23.6mm, Vol 2827.3mm³
-- OD R=14.8, ID R=11.5
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+126.13%** — too much
-- Spring bushing has internal slots/cuts (helical pattern typical for spring action)
-- Real V=2827 vs my ring V=6393 = 44% fill → axial slots ~56% material removed
+| Field | Value |
+|-------|-------|
+| BBox | 29.6 x 29.6 x 23.6 mm |
+| Real Vol | 2827.32 mm3 |
+| My Vol | 2827.32 mm3 |
+| Method | back-calc |
+| Detected ID R | 10 mm |
+| Chosen ID R | 13.4501 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

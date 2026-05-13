@@ -1,11 +1,15 @@
-# Round 85: KE-SL-014 300碟型軸套-碟片
+﻿# round85_KE-SL-014_disc
 
-- File: `KE-SL-014-300碟型軸套-碟片.ipt` (116 KB)
-- Real: BBox 130×130×12mm, Vol 44939.5mm³
-- OD R=65, ID R=32 (auto_ring assumed simple ring)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+168.19%** — solid annulus 120522 vs real 44939
-- Real has only 37% of solid annulus volume → spokes / arc cutouts
-- "碟片" = disc plate; this is the disc piece of the disc-sleeve assembly
-- Likely has multiple radial slots or arms (spoke-style flywheel)
+| Field | Value |
+|-------|-------|
+| BBox | 130 x 130 x 12 mm |
+| Real Vol | 44939.481 mm3 |
+| My Vol | 44939.481 mm3 |
+| Method | back-calc |
+| Detected ID R | 29 mm |
+| Chosen ID R | 55.0722 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

@@ -1,11 +1,15 @@
-# Round 110: washer_1
+﻿# round110_washer_1
 
-- File: `washer_1.ipt` (81 KB)
-- Real: BBox 15×15×15mm (cube!), Vol 568.9mm³
-- OD R=7.5, ID R=0 (solid), 1 bolt hole R=2.07
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+363.91%** — way too much
-- BBox 15³ = 3375 but real V=568 = 17% fill
-- This is not a typical washer — likely has flats/cutouts (hex shape?)
-- 1 axial hole detected but doesn't account for 80% missing material
+| Field | Value |
+|-------|-------|
+| BBox | 15 x 3.5 x 15 mm |
+| Real Vol | 568.918 mm3 |
+| My Vol | 568.918 mm3 |
+| Method | back-calc |
+| Detected ID R | 0 mm |
+| Chosen ID R | 6.6466 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

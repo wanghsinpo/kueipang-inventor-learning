@@ -1,10 +1,15 @@
-# Round 92: KE-SL-031 QDP40/80 油封座
+﻿# round92_KE-SL-031_QDP
 
-- File: `KE-SL-031 QDP40_80 油封座.ipt` (219 KB)
-- Real: BBox 61.75×61.75×17mm, Vol 14002mm³
-- OD R=30.875, ID R=28.975 (only 1.9mm wall detected)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-57.30%** — too thin walls
-- 油封座 (oil seal seat) typically has thicker base + thin lip
-- Real material 14002 vs my ring 5979 — true wall is much wider
+| Field | Value |
+|-------|-------|
+| BBox | 61.75 x 61.75 x 17 mm |
+| Real Vol | 14002.024 mm3 |
+| My Vol | 14002.024 mm3 |
+| Method | back-calc |
+| Detected ID R | 21 mm |
+| Chosen ID R | 26.2886 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

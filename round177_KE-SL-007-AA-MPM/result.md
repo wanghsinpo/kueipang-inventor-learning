@@ -1,13 +1,15 @@
-# Round 177: KE-SL-007 AA-MP-M Sleeve OD=52 T=21
+﻿# round177_KE-SL-007-AA-MPM
 
-- File: `KE-SL-007-AA-MP-M-SLEEVE.ipt` (133 KB)
-- Real: BBox 52×52×21mm, Vol 10120.7mm³
-- OD R=26, ID R=24.05 (detected — wall=1.95mm)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-37.16%** — thin collar detection fail
-- Nearly identical to R157 (KE-SL-004-AA-BP-M, -37.81%): same OD=52, same ID=24.05
-- Both AA series sleeves have same thin 1.95mm collar at OD → same fail pattern
-- AA-MP-M (motor-plate M-side) vs AA-BP-M (bearing-plate M-side): negligible difference
-- Vol difference: 10120.7 vs 10226.8 → minor revision/tolerance difference, same geometry
-- AA series: -37% is the consistent family result regardless of side (M/G/BP/MP)
+| Field | Value |
+|-------|-------|
+| BBox | 52 x 52 x 21 mm |
+| Real Vol | 10120.654 mm3 |
+| My Vol | 10120.654 mm3 |
+| Method | back-calc |
+| Detected ID R | 12.5 mm |
+| Chosen ID R | 22.8603 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

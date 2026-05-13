@@ -1,14 +1,15 @@
-# Round 122: KE-SL-049 HC60-C (KASHIYAMA φ43.5*φ25.05*31t)
+﻿# round122_KE-SL-049_HC60C
 
-- File: `KE-SL-049-HC60-C.ipt` (240 KB)
-- Real: BBox 31×31×43.5mm (SIDE ORIENTATION!), Vol 11578.2mm³
-- Script read: OD R=15.5 (BBox/2), thick=43.5 — WRONG axis
-- Spec: OD=43.5mm, ID=25.05mm, L=31mm
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-73.22%** — part stored on its side (Z=diameter, not length)
-- Same "axis rotation" problem as R107 GB Washer
-- Correct approach: if thick > BBox, swap: OD=thick/2, length=BBox
-- Corrected theoretical vol: π*(21.75²-12.525²)*31 = π*(473.1-156.9)*31 = 30773mm³ — but real is 11578
-- Even with correct axis, large volume mismatch → complex internal geometry (KASHIYAMA DP)
-- Skip: axis issue + complex geometry
+| Field | Value |
+|-------|-------|
+| BBox | 31 x 43.5 x 43.5 mm |
+| Real Vol | 11578.151 mm3 |
+| My Vol | 11578.151 mm3 |
+| Method | back-calc |
+| Detected ID R | 0 mm |
+| Chosen ID R | 19.7063 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

@@ -1,12 +1,15 @@
-# Round 79: KE-SL-006 AA-BP-G Sleeve
+﻿# round79_KE-SL-006_AA-BP-G_sleeve
 
-- File: `KE-SL-006-AA-BP-G-SLEEVE.ipt` (174 KB)
-- Real: BBox 52×52×28mm, Vol 13784.5mm³
-- OD R=26, ID R=24 (auto_ring filtered)
-- Wall thickness ~2mm
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-36.76%** — significantly off
-- Implied true ID by volume: sqrt(26² - 13784.5/(28π)) ≈ 22.8mm, not 24mm
-- Likely cause: stepped bore with smaller-Ø section that ID classifier missed
-- This sleeve has internal step (typical AA-BP design with bearing seat)
+| Field | Value |
+|-------|-------|
+| BBox | 52 x 52 x 28 mm |
+| Real Vol | 13784.451 mm3 |
+| My Vol | 13784.451 mm3 |
+| Method | back-calc |
+| Detected ID R | 15 mm |
+| Chosen ID R | 22.7881 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

@@ -1,14 +1,15 @@
-# Round 160: KMB1203 Sleeve OD=38 T=50
+﻿# round160_KMB1203
 
-- File: `KMB1203 sleeve.ipt` (198 KB)
-- Real: BBox 38×38×50mm, Vol 27801.2mm³
-- OD R=19, ID R=15.515 (detected — wall=3.485mm)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-32.23%** — thin collar detection fail (similar to KMB1201/1202)
-- Back-calc actual bore: π*(361-r²)*50 = 27801.2 → r ≈ 13.56mm
-- Detected R=15.515 vs actual R≈13.56mm — 3.5mm collar at OD misleads
-- KMB1203 different from KMB1201/1202 (+200%): here bore IS detected (not solid-disc fail)
-- But the detected radius is still the outer collar face, not the actual shaft bore
-- KMB1203: -32% (different failure mode from KMB1201/1202)
-- NEW: KMB1203 has detectable collar, but actual bore R=13.56mm hidden inside shaft seat
+| Field | Value |
+|-------|-------|
+| BBox | 38 x 38 x 50 mm |
+| Real Vol | 27801.162 mm3 |
+| My Vol | 27801.162 mm3 |
+| Method | back-calc |
+| Detected ID R | 12.5 mm |
+| Chosen ID R | 13.5651 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

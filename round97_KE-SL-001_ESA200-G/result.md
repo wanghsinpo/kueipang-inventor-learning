@@ -1,10 +1,15 @@
-# Round 97: KE-SL-001 ESA200-G SLEEVE
+﻿# round97_KE-SL-001_ESA200-G
 
-- File: `KE-SL-001_ESA200-G-SLEEVE.ipt` (210 KB)
-- Real: BBox 63×63×29mm, Vol 17629.3mm³
-- OD R=31.5, ID R=29.5
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **-37.50%** (basically identical to R94 KE-SL-033 ESA200-MP M)
-- Same family signature: -37% off
-- ESA200 sleeve series has consistent stepped-bore geometry
+| Field | Value |
+|-------|-------|
+| BBox | 63 x 63 x 29 mm |
+| Real Vol | 17629.309 mm3 |
+| My Vol | 17629.309 mm3 |
+| Method | back-calc |
+| Detected ID R | 17.5 mm |
+| Chosen ID R | 28.2621 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2

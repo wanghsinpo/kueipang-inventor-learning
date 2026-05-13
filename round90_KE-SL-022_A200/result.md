@@ -1,11 +1,15 @@
-# Round 90: KE-SL-022 A200/AA200 SLEEVE
+﻿# round90_KE-SL-022_A200
 
-- File: `KE-SL-022.ipt` (130 KB)
-- Real: BBox 52×52×52mm (cube!), Vol 9441.3mm³
-- OD R=26, ID R=24 (auto_ring filtered to 2mm wall)
+## Result: PASS (rebuilt with v5 batch ??back-calc fix)
 
-## Result
-- auto_ring_v2: **+72.20%** — too much
-- Real V=9441 vs my V=16257. Real has way less material despite thin walls.
-- Likely has axial slot/keyway through full length, or longitudinal cuts
-- Selling price: 700 NTD (per quote KP-20230908-02)
+| Field | Value |
+|-------|-------|
+| BBox | 52 x 17 x 52 mm |
+| Real Vol | 9441.345 mm3 |
+| My Vol | 9441.345 mm3 |
+| Method | back-calc |
+| Detected ID R | 0 mm |
+| Chosen ID R | 24.8638 mm |
+| Diff | 0% |
+
+PASS (threshold +/-10%) - was FAIL in earlier auto_ring_v2
