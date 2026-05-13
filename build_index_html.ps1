@@ -111,7 +111,11 @@ $html = @"
 </style>
 </head>
 <body>
-<h1>🔧 Inventor Parts Browser  <a href='stats.html' style='font-size: 13px; color: #888; margin-left: 12px'>📊 Stats Dashboard →</a></h1>
+<h1>🔧 Inventor Parts Browser
+  <a href='stats.html' style='font-size: 13px; color: #888; margin-left: 12px'>📊 Stats Dashboard</a>
+  <a href='motor_flange_demo/evolution.html' style='font-size: 13px; color: #888; margin-left: 12px'>🎨 Motor Flange v1-v16</a>
+  <a href='motor_flange_demo/compare.html' style='font-size: 13px; color: #888; margin-left: 12px'>📸 Photo vs Model</a>
+</h1>
 <div class='stats'>
   <span>Total: <b>$($folders.Count)</b></span>
   <span class='pass-c'>✔ PASS: <b>$passCount</b></span>
