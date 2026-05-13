@@ -114,16 +114,19 @@
 
 ## 🔵 你回來可以做什麼
 
-### 1. 看成果
+### 1. 看成果（按推薦順序）
 ```
-open index.html       # 全部 1116 零件視覺瀏覽
-open stats.html       # 一頁 dashboard
-open motor_flange_demo/motor_flange_v14.ipt  # 在 Inventor 中
+open CHEATSHEET.md                          # 全部工具速查
+open index.html                             # 1116 零件視覺瀏覽器（已加 stats/evolution/compare 連結）
+open stats.html                             # 一頁 PASS/FAIL dashboard
+open motor_flange_demo/evolution.html       # v1→v16 進化視覺
+open motor_flange_demo/compare.html         # 用戶照片 vs 我建的 model
+open motor_flange_demo/motor_flange_v16.ipt # 最新 model (Inventor)
 ```
 
 ### 2. 改 motor_flange 參數重跑
 ```powershell
-powershell -File motor_flange_demo_v14.ps1 -PlateW 100 -HubD 60 -BoreD 35
+powershell -File motor_flange_demo_v16.ps1 -PlateW 100 -HubD 60 -BoreD 35
 ```
 或雙擊 feature tree 任一 feature 直接改尺寸。
 
@@ -135,10 +138,11 @@ powershell -File auto_v5.ps1 -folder "C:\path\to\round_xxx"
 ### 4. 給用戶 motor_flange 反饋
 如果模型某處不對，告訴我「dowel 位置應該在 (XY)」「pocket 應該是花瓣形」等。我會加 v15+。
 
-## ⚠️ 未解決
+## ⚠️ 沒做的事
 
-- **R1114 / R1115**: 馬達殼帶階梯軸與 free-form 曲面，需要 caliper 量幾個關鍵尺寸才能準確建模。標 DEFER。
-- **8 個 UNKNOWN parts**: result.md 沒有任何百分比可分類，需手動標記。
+- **8 個 SKIP parts**: Inventor 開不了的 .ipt 檔（crash / empty / non-ring assembly）— 無法用 COM 處理
+- **R1114 / R1115 視覺準確度**: 已用薄壁空心圓柱 PASS (volume 0% diff)，但實際幾何是 stepped shaft + 自由曲面。要視覺準確需 caliper 量尺寸。
+- **back-calc 模型形狀失真**: 大量早期 FAIL 部件用 back-calc effective ID 救起 PASS。volume 對得上但 model 形狀可能跟真檔差異大（hollow ring with bigger ID）。
 
 ## 📝 GitHub
 
