@@ -1,14 +1,24 @@
 # Inventor COM 自動建模 — 學習日誌
 
-## Pipeline Status: **COMPLETE** ✅
+## Pipeline Status: **97.5% PASS — 0 FAIL** ✅
 
 | 項目 | 數值 |
 |------|------|
 | Total round folders | 1,116 |
-| result.md written | 1,116 / 1,116 |
-| Thumbnails generated | 1,094 / 1,116 |
-| Git commits | 300+ |
+| **PASS** | **1,088 (97.5%)** |
+| FAIL | **0** ✅ |
+| SKIP | 8 (Inventor crash / empty .ipt) |
+| DOC | 20 (R191-R210 development notes) |
+| Thumbnails generated | 1,098 / 1,116 |
+| Git commits | 350+ |
 | GitHub | https://github.com/wanghsinpo/kueipang-inventor-learning |
+
+### Dashboards / Tools
+- `index.html` — 1116 零件視覺瀏覽器（filter by PASS/FAIL/SKIP/DEFER/DOC）
+- `stats.html` — Dashboard
+- `cheatsheet.html` — 所有工具速查
+- `motor_flange_demo/compare.html` — 照片 vs Model
+- `motor_flange_demo/evolution.html` — v1→v17 進化視覺
 
 ### R985–R1126 Batch Results (`auto_ring_v3.ps1` + `auto_v4.ps1` + manual fixes)
 
