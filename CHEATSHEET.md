@@ -87,6 +87,15 @@ powershell -File build_index_html.ps1
 
 # 重建 stats.html
 powershell -File build_stats_html.ps1
+
+# 驗證所有 PASS parts 有完整檔案
+powershell -File validate_pipeline.ps1
+
+# 找重複的零件（同 OD/Thick/Vol）
+powershell -File find_duplicates.ps1
+
+# 對 FAIL parts 進行 strategy 預覽分析（不實際 rebuild）
+powershell -File rerun_fails.ps1
 ```
 
 ## 🎯 手動修正腳本（單一問題）
