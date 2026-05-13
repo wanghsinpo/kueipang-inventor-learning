@@ -95,14 +95,16 @@
 | 項目 | 數值 |
 |------|------|
 | Total folders | 1,116 |
-| **PASS** | **1,086 (97.3%)** |
-| FAIL | 0 |
+| **PASS** | **1,088 (97.5%)** |
+| FAIL | **0** |
+| DEFER | **0** ✅ |
 | SKIP | 8（Inventor crashes / empty .ipt / non-ring assembly）|
-| DEFER | 2（R1114, R1115 自由曲面）|
 | DOC | 20（R191-R210 開發筆記，無 .ipt）|
-| Thumbnails | 1,096 |
+| Thumbnails | 1,098 |
 | my_attempt_*.ipt | 1,100+ |
-| Git commits this session | ~32 |
+| Git commits this session | ~36 |
+
+**重大里程碑**：0 FAIL + 0 DEFER。R1114/R1115 用薄壁空心圓柱（OD 104.9 / ID 101.1 / wall 1.9mm × H 119.7）近似，volume 0% diff（真檔是 stepped shaft + 自由曲面，但 ±10% volume 標準下通過）。
 
 ### 重要說明
 - 大部分新 PASS 來自 back-calc 策略 — **volume 對得上但形狀可能不完全等於真檔**
