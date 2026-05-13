@@ -116,12 +116,13 @@
 
 ### 1. 看成果（按推薦順序）
 ```
-open CHEATSHEET.md                          # 全部工具速查
-open index.html                             # 1116 零件視覺瀏覽器（已加 stats/evolution/compare 連結）
+open SESSION_REPORT.md                      # 全部 50 commits 的總結（從這開始）
+open CHEATSHEET.md / cheatsheet.html        # 全部工具速查
+open index.html                             # 1116 零件視覺瀏覽器（含全部連結）
 open stats.html                             # 一頁 PASS/FAIL dashboard
-open motor_flange_demo/evolution.html       # v1→v16 進化視覺
+open motor_flange_demo/evolution.html       # v1→v17 進化視覺
 open motor_flange_demo/compare.html         # 用戶照片 vs 我建的 model
-open motor_flange_demo/motor_flange_v16.ipt # 最新 model (Inventor)
+open motor_flange_demo/motor_flange_v17.ipt # 最新 model (Inventor)
 ```
 
 ### 2. 改 motor_flange 參數重跑
