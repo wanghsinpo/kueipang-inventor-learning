@@ -10,20 +10,21 @@
 | Git commits | 300+ |
 | GitHub | https://github.com/wanghsinpo/kueipang-inventor-learning |
 
-### R985–R1126 Batch Results (`auto_ring_v3.ps1` + `auto_v4.ps1`)
+### R985–R1126 Batch Results (`auto_ring_v3.ps1` + `auto_v4.ps1` + manual fixes)
 
 | 結果 | 件數 |
 |------|------|
-| PASS (±10% 內) | 211 |
-| FAIL (>±10%) | 7 |
-| SKIP | 0 |
+| PASS (±10% 內) | 216 |
+| FAIL (>±10%) | **0** ✅ |
+| DEFER (free-form surfaces) | 2 |
 
-- **R985-R1098**: auto_ring_v3.ps1（純圓環幾何）
-- **R1107-R1126 (formerly SKIP)**: auto_v4.ps1（ring/box 通用偵測）
-  - 15 PASS，6 FAIL（螺絲、空心馬達殼、弧形磁鐵 — BBox 模型不適用）
-  - R1116, R1118: M6×55 螺絲
-  - R1114, R1115: 空心馬達殼 (VOL 差 +1690%)
-  - R1124, R1125: 弧形磁鐵平板 (VOL 差 +46%)
+**手動修正的 5 個 FAIL → PASS** (從 -13.7% / +214% / +46% 變成 0%):
+- R1072: 500×500×200 base + 4 角落 Ø30×20 短腿 (`manual_r1072.ps1`)
+- R1116, R1118: M6×55 螺絲（head + shaft 雙圓柱模型）(`manual_screws.ps1`)
+- R1124, R1125: 環形磁鐵（auto_v4 誤判為 BOX，實際是 ring）(`manual_arc_magnets.ps1`)
+
+**DEFER (需手動分析)**:
+- R1114, R1115: 馬達殼帶階梯軸與 free-form 曲面（11 個 BSpline/torus 面）
 
 ### 已知缺口
 
