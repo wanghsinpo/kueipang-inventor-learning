@@ -32,6 +32,16 @@ $rows = foreach ($f in $folders) {
     $thick   = if ($csvRow) { $csvRow.Thick_mm} else { '' }
     $vol     = if ($csvRow) { $csvRow.Vol_mm3 } else { '' }
 
+    # Try extract diff% from result.md
+    $diffStr = ''
+    $rmPath = Join-Path $f.FullName 'result.md'
+    if (Test-Path $rmPath) {
+        $rmContent = Get-Content $rmPath -Raw -ErrorAction SilentlyContinue
+        if ($rmContent -match 'Diff[^|]*\|\s*(-?\d+\.?\d*)\s*%') {
+            $diffStr = "$([Math]::Round([double]$matches[1], 1))%"
+        }
+    }
+
     $colorClass = switch ($result) {
         'PASS' { 'pass' }
         'FAIL' { 'fail' }
@@ -57,7 +67,7 @@ $rows = foreach ($f in $folders) {
     <span class='name'>$($f.Name -replace '^round\d+_','')</span>
     <span class='dims'>$($dimStr -join ' | ')</span>
     <span class='vol'>$(if ($vol) { "Vol=$vol mm³" })</span>
-    <span class='result result-$($result.ToLower())'>$result</span>
+    <span class='result result-$($result.ToLower())'>$result$(if ($diffStr) { " ($diffStr)" })</span>
   </div>
 </div>
 "@
