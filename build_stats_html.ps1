@@ -37,11 +37,20 @@ $myAttemptCount = ($folders | Where-Object {
     (Test-Path (Join-Path $_.FullName 'my_attempt_v5_manual.ipt'))
 }).Count
 
-# CSV stats
+# CSV stats (more comprehensive — covers all 1116 parts after classify_unknowns.ps1)
 $csvData = if (Test-Path $csv) { Import-Csv $csv } else { @() }
 $csvPass = ($csvData | Where-Object { $_.Result -eq 'PASS' }).Count
 $csvFail = ($csvData | Where-Object { $_.Result -eq 'FAIL' }).Count
+$csvSkip = ($csvData | Where-Object { $_.Result -eq 'SKIP' }).Count
 $csvDefer = ($csvData | Where-Object { $_.Result -eq 'DEFER' }).Count
+$csvUnk  = ($csvData | Where-Object { $_.Result -eq 'UNKNOWN' }).Count
+
+# Replace the result.md counts with CSV-based ones for the stat cards (more accurate)
+$resultCounts['PASS']  = $csvPass
+$resultCounts['FAIL']  = $csvFail
+$resultCounts['SKIP']  = $csvSkip
+$resultCounts['DEFER'] = $csvDefer
+$resultCounts['UNKNOWN'] = $csvUnk
 
 # Diff histogram (within ±10%)
 $diffHistogram = @{}
