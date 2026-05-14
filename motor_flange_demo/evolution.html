@@ -1,182 +1,74 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<title>Motor Flange Evolution v1 → v16</title>
+<title>Motor Flange Evolution v1 to v42</title>
 <style>
   body { font-family: Arial, sans-serif; background: #1a1a2e; color: #eee; margin: 0; padding: 16px; }
   h1 { color: #f0c040; margin: 0 0 8px 0; }
   p { color: #aaa; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
   .ver { background: #16213e; border-radius: 6px; padding: 10px; border: 2px solid #333; }
   .ver h3 { color: #58a6ff; margin: 0 0 4px 0; font-size: 14px; }
-  .ver .desc { color: #aaa; font-size: 11px; margin-bottom: 8px; min-height: 30px; }
+  .ver .desc { color: #aaa; font-size: 11px; margin-bottom: 8px; min-height: 26px; }
   .ver img { display: block; width: 100%; max-width: 240px; border-radius: 4px; background: #0f3460; }
   .ver .links { font-size: 10px; color: #888; margin-top: 6px; }
   .ver .links a { color: #58a6ff; margin-right: 8px; text-decoration: none; }
 </style>
 </head>
 <body>
-<h1>🔧 Motor Flange — v1 → v16 Evolution</h1>
-<p>每個版本只加 1-2 個 feature，看演化過程。最終 v16 有 15 個獨立可編輯 features。</p>
+<h1>Motor Flange Evolution v1 -> v42 (42 versions)</h1>
+<p>Each version changes 1-2 parameters or features from previous.</p>
 
 <div class='grid'>
-<div class='ver'>
-  <h3>v1 — 5 features</h3>
-  <div class='desc'>初版：octagon + hub + bore + 4 holes + keyway</div>
-  <img src='evolution_v1.bmp'>
-  <div class='links'><a href='motor_flange_v1.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v2 — 10 features</h3>
-  <div class='desc'>+ Pocket / Counter-bore / 4 M4 / 2 top M4 / dowel pins / 修 keyway</div>
-  <img src='evolution_v2.bmp'>
-  <div class='links'><a href='motor_flange_v2.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v3 — 11 features</h3>
-  <div class='desc'>+ 圓孔倒角 24 條</div>
-  <img src='evolution_v3.bmp'>
-  <div class='links'><a href='motor_flange_v3.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v4 — 12 features</h3>
-  <div class='desc'>+ Plate 上下緣 chamfer</div>
-  <img src='evolution_v4.bmp'>
-  <div class='links'><a href='motor_flange_v4.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v5 — 13 features</h3>
-  <div class='desc'>+ Corner countersink Ø14×3</div>
-  <img src='evolution_v5.bmp'>
-  <div class='links'><a href='motor_flange_v5.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v6 — 14 features</h3>
-  <div class='desc'>+ HubBase Fillet R1.5</div>
-  <img src='evolution_v6.bmp'>
-  <div class='links'><a href='motor_flange_v6.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v7 — 14 features</h3>
-  <div class='desc'>修 chamfer 順序衝突</div>
-  <img src='evolution_v7.bmp'>
-  <div class='links'><a href='motor_flange_v7.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v8 — 15 features</h3>
-  <div class='desc'>+ Inner keyway (軸鍵槽) + 修 M4 角度</div>
-  <img src='evolution_v8.bmp'>
-  <div class='links'><a href='motor_flange_v8.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v9 — 15 features</h3>
-  <div class='desc'>Outer keyway 改 U 形（半圓底）</div>
-  <img src='evolution_v9.bmp'>
-  <div class='links'><a href='motor_flange_v9.ipt'>.ipt</a></div>
-</div>
-<div class='ver'>
-  <h3>v10 — 15 features</h3>
-  <div class='desc'>+ STEP / STL 匯出</div>
-  <img src='evolution_v10.bmp'>
-  <div class='links'><a href='motor_flange_v10.ipt'>.ipt</a> <a href='motor_flange_v10.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v11 — 15 features</h3>
-  <div class='desc'>微調 dowel pin 位置</div>
-  <img src='evolution_v11.bmp'>
-  <div class='links'><a href='motor_flange_v11.ipt'>.ipt</a> <a href='motor_flange_v11.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v12 — 15 features</h3>
-  <div class='desc'>Plate 改 88×88 對稱 + Hub D52</div>
-  <img src='evolution_v12.bmp'>
-  <div class='links'><a href='motor_flange_v12.ipt'>.ipt</a> <a href='motor_flange_v12.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v13 — 15 features</h3>
-  <div class='desc'>Hub H 8→10mm</div>
-  <img src='evolution_v13.bmp'>
-  <div class='links'><a href='motor_flange_v13.ipt'>.ipt</a> <a href='motor_flange_v13.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v14 — 15 features</h3>
-  <div class='desc'>Pocket 深 3→4mm</div>
-  <img src='evolution_v14.bmp'>
-  <div class='links'><a href='motor_flange_v14.ipt'>.ipt</a> <a href='motor_flange_v14.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v15 — 16 features</h3>
-  <div class='desc'>+ HubTop edge fillet R0.3</div>
-  <img src='evolution_v15.bmp'>
-  <div class='links'><a href='motor_flange_v15.ipt'>.ipt</a> <a href='motor_flange_v15.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v16 — 16 features</h3>
-  <div class='desc'>Cleaner chamfer feature tree（9 chamfers vs 19）</div>
-  <img src='evolution_v16.bmp'>
-  <div class='links'><a href='motor_flange_v16.ipt'>.ipt</a> <a href='motor_flange_v16.step'>.step</a> <a href='motor_flange_v16.stl'>.stl</a></div>
-</div>
-<div class='ver'>
-  <h3>v17 — checkpoint</h3>
-  <div class='desc'>Validated stable build</div>
-  <img src='evolution_v17.bmp'>
-  <div class='links'><a href='motor_flange_v17.ipt'>.ipt</a> <a href='motor_flange_v17.step'>.step</a> <a href='motor_flange_v17.stl'>.stl</a></div>
-</div>
-<div class='ver'>
-  <h3>v18 — bigger plate chamfer</h3>
-  <div class='desc'>Plate edge chamfer 1.0 → 1.5mm for visibility</div>
-  <img src='evolution_v18.bmp'>
-  <div class='links'><a href='motor_flange_v18.ipt'>.ipt</a> <a href='motor_flange_v18.step'>.step</a> <a href='motor_flange_v18.stl'>.stl</a></div>
-</div>
-<div class='ver'>
-  <h3>v19 — parameter polish</h3>
-  <div class='desc'>Minor params, validated stable</div>
-  <img src='evolution_v19.bmp'>
-  <div class='links'><a href='motor_flange_v19.ipt'>.ipt</a> <a href='motor_flange_v19.step'>.step</a> <a href='motor_flange_v19.stl'>.stl</a></div>
-</div>
-<div class='ver'>
-  <h3>v20 — milestone</h3>
-  <div class='desc'>20 iterations, all features stable</div>
-  <img src='evolution_v20.bmp'>
-  <div class='links'><a href='motor_flange_v20.ipt'>.ipt</a> <a href='motor_flange_v20.step'>.step</a> <a href='motor_flange_v20.stl'>.stl</a></div>
-</div>
-<div class='ver'>
-  <h3>v21 — checkpoint</h3>
-  <div class='desc'>Stable iteration</div>
-  <img src='evolution_v21.bmp'>
-  <div class='links'><a href='motor_flange_v21.ipt'>.ipt</a> <a href='motor_flange_v21.step'>.step</a> <a href='motor_flange_v21.stl'>.stl</a></div>
-</div>
-<div class='ver'>
-  <h3>v22 — bore Ø30</h3>
-  <div class='desc'>Tried smaller bore (32→30mm)</div>
-  <img src='evolution_v22.bmp'>
-  <div class='links'><a href='motor_flange_v22.ipt'>.ipt</a> <a href='motor_flange_v22.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v23 — hub fillet R2</h3>
-  <div class='desc'>Bigger fillet (R1.5→R2)</div>
-  <img src='evolution_v23.bmp'>
-  <div class='links'><a href='motor_flange_v23.ipt'>.ipt</a> <a href='motor_flange_v23.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v24 — hub fillet R1</h3>
-  <div class='desc'>Smaller fillet (R2→R1)</div>
-  <img src='evolution_v24.bmp'>
-  <div class='links'><a href='motor_flange_v24.ipt'>.ipt</a> <a href='motor_flange_v24.step'>.step</a></div>
-</div>
-<div class='ver'>
-  <h3>v25 — milestone (latest)</h3>
-  <div class='desc'>Back to known-good R1.5 fillet, stable</div>
-  <img src='evolution_v25.bmp'>
-  <div class='links'><a href='motor_flange_v25.ipt'>.ipt</a> <a href='motor_flange_v25.step'>.step</a> <a href='motor_flange_v25.stl'>.stl</a></div>
-</div>
+<div class='ver'><h3>v1</h3><div class='desc'>v1: initial 5 features</div><img src='evolution_v1.bmp' alt='v1'><div class='links'><a href='motor_flange_v1.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v2</h3><div class='desc'>v2: added 5 missing (Pocket/CB/M4s/dowels/key)</div><img src='evolution_v2.bmp' alt='v2'><div class='links'><a href='motor_flange_v2.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v3</h3><div class='desc'>v3: circle chamfers</div><img src='evolution_v3.bmp' alt='v3'><div class='links'><a href='motor_flange_v3.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v4</h3><div class='desc'>v4: plate edge chamfer</div><img src='evolution_v4.bmp' alt='v4'><div class='links'><a href='motor_flange_v4.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v5</h3><div class='desc'>v5: corner countersink</div><img src='evolution_v5.bmp' alt='v5'><div class='links'><a href='motor_flange_v5.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v6</h3><div class='desc'>v6: hub base fillet</div><img src='evolution_v6.bmp' alt='v6'><div class='links'><a href='motor_flange_v6.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v7</h3><div class='desc'>v7: fix fillet/chamfer order</div><img src='evolution_v7.bmp' alt='v7'><div class='links'><a href='motor_flange_v7.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v8</h3><div class='desc'>v8: inner keyway + fix M4 angle</div><img src='evolution_v8.bmp' alt='v8'><div class='links'><a href='motor_flange_v8.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v9</h3><div class='desc'>v9: outer keyway U-shape</div><img src='evolution_v9.bmp' alt='v9'><div class='links'><a href='motor_flange_v9.ipt'>.ipt</a>  </div></div>
+<div class='ver'><h3>v10</h3><div class='desc'>v10: STEP+STL export</div><img src='evolution_v10.bmp' alt='v10'><div class='links'><a href='motor_flange_v10.ipt'>.ipt</a> <a href='motor_flange_v10.step'>.step</a> <a href='motor_flange_v10.stl'>.stl</a></div></div>
+<div class='ver'><h3>v11</h3><div class='desc'>v11: dowel position tweak</div><img src='evolution_v11.bmp' alt='v11'><div class='links'><a href='motor_flange_v11.ipt'>.ipt</a> <a href='motor_flange_v11.step'>.step</a> <a href='motor_flange_v11.stl'>.stl</a></div></div>
+<div class='ver'><h3>v12</h3><div class='desc'>v12: Plate 88x88 + Hub D52</div><img src='evolution_v12.bmp' alt='v12'><div class='links'><a href='motor_flange_v12.ipt'>.ipt</a> <a href='motor_flange_v12.step'>.step</a> <a href='motor_flange_v12.stl'>.stl</a></div></div>
+<div class='ver'><h3>v13</h3><div class='desc'>v13: Hub H 8->10</div><img src='evolution_v13.bmp' alt='v13'><div class='links'><a href='motor_flange_v13.ipt'>.ipt</a> <a href='motor_flange_v13.step'>.step</a> <a href='motor_flange_v13.stl'>.stl</a></div></div>
+<div class='ver'><h3>v14</h3><div class='desc'>v14: Pocket depth 3->4</div><img src='evolution_v14.bmp' alt='v14'><div class='links'><a href='motor_flange_v14.ipt'>.ipt</a> <a href='motor_flange_v14.step'>.step</a> <a href='motor_flange_v14.stl'>.stl</a></div></div>
+<div class='ver'><h3>v15</h3><div class='desc'>v15: Hub top edge fillet R0.3</div><img src='evolution_v15.bmp' alt='v15'><div class='links'><a href='motor_flange_v15.ipt'>.ipt</a> <a href='motor_flange_v15.step'>.step</a> <a href='motor_flange_v15.stl'>.stl</a></div></div>
+<div class='ver'><h3>v16</h3><div class='desc'>v16: cleaner chamfer tree</div><img src='evolution_v16.bmp' alt='v16'><div class='links'><a href='motor_flange_v16.ipt'>.ipt</a> <a href='motor_flange_v16.step'>.step</a> <a href='motor_flange_v16.stl'>.stl</a></div></div>
+<div class='ver'><h3>v17</h3><div class='desc'>v17: checkpoint</div><img src='evolution_v17.bmp' alt='v17'><div class='links'><a href='motor_flange_v17.ipt'>.ipt</a> <a href='motor_flange_v17.step'>.step</a> <a href='motor_flange_v17.stl'>.stl</a></div></div>
+<div class='ver'><h3>v18</h3><div class='desc'>v18: Plate chamfer 1.0->1.5</div><img src='evolution_v18.bmp' alt='v18'><div class='links'><a href='motor_flange_v18.ipt'>.ipt</a> <a href='motor_flange_v18.step'>.step</a> <a href='motor_flange_v18.stl'>.stl</a></div></div>
+<div class='ver'><h3>v19</h3><div class='desc'>v19: param polish</div><img src='evolution_v19.bmp' alt='v19'><div class='links'><a href='motor_flange_v19.ipt'>.ipt</a> <a href='motor_flange_v19.step'>.step</a> <a href='motor_flange_v19.stl'>.stl</a></div></div>
+<div class='ver'><h3>v20</h3><div class='desc'>v20: milestone</div><img src='evolution_v20.bmp' alt='v20'><div class='links'><a href='motor_flange_v20.ipt'>.ipt</a> <a href='motor_flange_v20.step'>.step</a> <a href='motor_flange_v20.stl'>.stl</a></div></div>
+<div class='ver'><h3>v21</h3><div class='desc'>v21: checkpoint</div><img src='evolution_v21.bmp' alt='v21'><div class='links'><a href='motor_flange_v21.ipt'>.ipt</a> <a href='motor_flange_v21.step'>.step</a> <a href='motor_flange_v21.stl'>.stl</a></div></div>
+<div class='ver'><h3>v22</h3><div class='desc'>v22: bore 32->30 variant</div><img src='evolution_v22.bmp' alt='v22'><div class='links'><a href='motor_flange_v22.ipt'>.ipt</a> <a href='motor_flange_v22.step'>.step</a> <a href='motor_flange_v22.stl'>.stl</a></div></div>
+<div class='ver'><h3>v23</h3><div class='desc'>v23: hub fillet R2</div><img src='evolution_v23.bmp' alt='v23'><div class='links'><a href='motor_flange_v23.ipt'>.ipt</a> <a href='motor_flange_v23.step'>.step</a> <a href='motor_flange_v23.stl'>.stl</a></div></div>
+<div class='ver'><h3>v24</h3><div class='desc'>v24: hub fillet R1</div><img src='evolution_v24.bmp' alt='v24'><div class='links'><a href='motor_flange_v24.ipt'>.ipt</a> <a href='motor_flange_v24.step'>.step</a> <a href='motor_flange_v24.stl'>.stl</a></div></div>
+<div class='ver'><h3>v25</h3><div class='desc'>v25: back to R1.5 (recommended)</div><img src='evolution_v25.bmp' alt='v25'><div class='links'><a href='motor_flange_v25.ipt'>.ipt</a> <a href='motor_flange_v25.step'>.step</a> <a href='motor_flange_v25.stl'>.stl</a></div></div>
+<div class='ver'><h3>v26</h3><div class='desc'>v26: checkpoint</div><img src='evolution_v26.bmp' alt='v26'><div class='links'><a href='motor_flange_v26.ipt'>.ipt</a> <a href='motor_flange_v26.step'>.step</a> <a href='motor_flange_v26.stl'>.stl</a></div></div>
+<div class='ver'><h3>v27</h3><div class='desc'>v27: PlateT 14</div><img src='evolution_v27.bmp' alt='v27'><div class='links'><a href='motor_flange_v27.ipt'>.ipt</a> <a href='motor_flange_v27.step'>.step</a> <a href='motor_flange_v27.stl'>.stl</a></div></div>
+<div class='ver'><h3>v28</h3><div class='desc'>v28: HubD 55</div><img src='evolution_v28.bmp' alt='v28'><div class='links'><a href='motor_flange_v28.ipt'>.ipt</a> <a href='motor_flange_v28.step'>.step</a> </div></div>
+<div class='ver'><h3>v29</h3><div class='desc'>v29: reset hub</div><img src='evolution_v29.bmp' alt='v29'><div class='links'><a href='motor_flange_v29.ipt'>.ipt</a> <a href='motor_flange_v29.step'>.step</a> </div></div>
+<div class='ver'><h3>v30</h3><div class='desc'>v30: chamfer 14->10</div><img src='evolution_v30.bmp' alt='v30'><div class='links'><a href='motor_flange_v30.ipt'>.ipt</a> <a href='motor_flange_v30.step'>.step</a> </div></div>
+<div class='ver'><h3>v31</h3><div class='desc'>v31: dowel D4</div><img src='evolution_v31.bmp' alt='v31'><div class='links'><a href='motor_flange_v31.ipt'>.ipt</a> <a href='motor_flange_v31.step'>.step</a> <a href='motor_flange_v31.stl'>.stl</a></div></div>
+<div class='ver'><h3>v32</h3><div class='desc'>v32: PlateT back to 12</div><img src='evolution_v32.bmp' alt='v32'><div class='links'><a href='motor_flange_v32.ipt'>.ipt</a> <a href='motor_flange_v32.step'>.step</a> </div></div>
+<div class='ver'><h3>v33</h3><div class='desc'>v33: PlateT 15</div><img src='evolution_v33.bmp' alt='v33'><div class='links'><a href='motor_flange_v33.ipt'>.ipt</a> <a href='motor_flange_v33.step'>.step</a> </div></div>
+<div class='ver'><h3>v34</h3><div class='desc'>v34: HubH 12</div><img src='evolution_v34.bmp' alt='v34'><div class='links'><a href='motor_flange_v34.ipt'>.ipt</a> <a href='motor_flange_v34.step'>.step</a> </div></div>
+<div class='ver'><h3>v35</h3><div class='desc'>v35: CBDepth 6</div><img src='evolution_v35.bmp' alt='v35'><div class='links'><a href='motor_flange_v35.ipt'>.ipt</a> <a href='motor_flange_v35.step'>.step</a> </div></div>
+<div class='ver'><h3>v36</h3><div class='desc'>v36: PocketDepth 5</div><img src='evolution_v36.bmp' alt='v36'><div class='links'><a href='motor_flange_v36.ipt'>.ipt</a> <a href='motor_flange_v36.step'>.step</a> </div></div>
+<div class='ver'><h3>v37</h3><div class='desc'>v37: InnerKey D5</div><img src='evolution_v37.bmp' alt='v37'><div class='links'><a href='motor_flange_v37.ipt'>.ipt</a> <a href='motor_flange_v37.step'>.step</a> </div></div>
+<div class='ver'><h3>v38</h3><div class='desc'>v38: InnerKey W10</div><img src='evolution_v38.bmp' alt='v38'><div class='links'><a href='motor_flange_v38.ipt'>.ipt</a> <a href='motor_flange_v38.step'>.step</a> </div></div>
+<div class='ver'><h3>v39</h3><div class='desc'>v39: M6 mount holes</div><img src='evolution_v39.bmp' alt='v39'><div class='links'><a href='motor_flange_v39.ipt'>.ipt</a> <a href='motor_flange_v39.step'>.step</a> </div></div>
+<div class='ver'><h3>v40</h3><div class='desc'>v40: CSink D16</div><img src='evolution_v40.bmp' alt='v40'><div class='links'><a href='motor_flange_v40.ipt'>.ipt</a> <a href='motor_flange_v40.step'>.step</a> </div></div>
+<div class='ver'><h3>v41</h3><div class='desc'>v41: compact 75mm</div><img src='evolution_v41.bmp' alt='v41'><div class='links'><a href='motor_flange_v41.ipt'>.ipt</a> <a href='motor_flange_v41.step'>.step</a> </div></div>
+<div class='ver'><h3>v42</h3><div class='desc'>v42: large 100mm</div><img src='evolution_v42.bmp' alt='v42'><div class='links'><a href='motor_flange_v42.ipt'>.ipt</a> <a href='motor_flange_v42.step'>.step</a> </div></div>
+
 </div>
 
 <p style='color: #888; font-size: 11px; margin-top: 24px'>
-  <a href='compare.html'>← Photo vs Model comparison</a> •
-  <a href='../index.html'>← Parts browser</a> •
-  <a href='../stats.html'>📊 Stats</a>
+  <a href='compare.html'>Photo vs Model</a> |
+  <a href='../index.html'>Parts browser</a>
 </p>
 </body>
 </html>
