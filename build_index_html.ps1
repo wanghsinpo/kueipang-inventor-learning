@@ -57,6 +57,11 @@ $rows = foreach ($f in $folders) {
         "<div class='no-thumb'>No thumbnail</div>"
     }
 
+    # Link to view.html if it exists, else folder
+    $viewRel = "$($f.Name)/view.html"
+    $viewAbs = Join-Path $f.FullName 'view.html'
+    $linkTarget = if (Test-Path $viewAbs) { $viewRel } else { "$($f.Name)/" }
+
     # Compact dimension display: OD x T (ID R inline)
     $dimParts = New-Object 'System.Collections.ArrayList'
     if ($od -and $od -ne '0') { [void]$dimParts.Add("OD$od") }
@@ -66,7 +71,7 @@ $rows = foreach ($f in $folders) {
 
     @"
 <div class='card $colorClass' title='$($f.Name)'>
-  <a href='$($f.Name)/' target='_blank'>$imgTag</a>
+  <a href='$linkTarget' target='_blank'>$imgTag</a>
   <div class='label'>
     <span class='name'>$($f.Name -replace '^round\d+_','')</span>
     <span class='dims'>$dimStr</span>
