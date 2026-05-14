@@ -123,7 +123,7 @@ $html = @"
 <body>
 <h1>🔧 Inventor Parts Browser
   <a href='stats.html' style='font-size: 13px; color: #888; margin-left: 12px'>📊 Stats</a>
-  <a href='motor_flange_demo/evolution.html' style='font-size: 13px; color: #888; margin-left: 12px'>🎨 Motor Flange v1-v17</a>
+  <a href='motor_flange_demo/evolution.html' style='font-size: 13px; color: #888; margin-left: 12px'>🎨 Motor Flange v1-v19</a>
   <a href='motor_flange_demo/compare.html' style='font-size: 13px; color: #888; margin-left: 12px'>📸 Photo vs Model</a>
   <a href='cheatsheet.html' style='font-size: 13px; color: #888; margin-left: 12px'>📖 Cheatsheet</a>
 </h1>
