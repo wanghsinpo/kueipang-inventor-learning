@@ -96,6 +96,15 @@ powershell -File find_duplicates.ps1
 
 # 對 FAIL parts 進行 strategy 預覽分析（不實際 rebuild）
 powershell -File rerun_fails.ps1
+
+# 找最佳擬合 model（按 diff% 排序）
+powershell -File find_best_models.ps1
+
+# 品質檢查：找 borderline (7-10%) + 大型 back-calc parts
+powershell -File quality_check.ps1
+
+# 生成 Categories dashboard
+powershell -File build_categories_html.ps1
 ```
 
 ## 🎯 手動修正腳本（單一問題）
