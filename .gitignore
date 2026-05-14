@@ -44,3 +44,6 @@ Thumbs.db
 # Claude Code local settings (per-session, not for sharing)
 .claude/
 AGENTS.md
+
+# Auto-generated per-part view.html (regenerable via build_part_pages.ps1)
+round*/view.html
