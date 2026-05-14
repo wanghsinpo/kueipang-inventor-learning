@@ -1,0 +1,1321 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>Parts by Category (Expandable)</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0d1117; color: #c9d1d9; padding: 24px; max-width: 1200px; margin: 0 auto; }
+  h1 { color: #f0c040; }
+  details.cat { background: #161b22; border-radius: 6px; margin-bottom: 8px; padding: 0; }
+  summary { padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; }
+  summary:hover { background: #1c2128; }
+  .cat-name { color: #58a6ff; font-weight: bold; font-size: 16px; }
+  .cat-stats { color: #8b949e; font-size: 13px; }
+  .part-list { list-style: none; padding: 0 16px 12px 16px; margin: 0; columns: 3; column-gap: 16px; }
+  .part-list li { padding: 4px 0; font-size: 12px; }
+  .part-list a { color: #c9d1d9; text-decoration: none; }
+  .part-list a:hover { color: #58a6ff; text-decoration: underline; }
+  .part-list .dim { color: #8b949e; font-size: 11px; }
+  li.pass a::before { content: '??'; color: #3fb950; }
+  li.fail a::before { content: '??'; color: #f85149; }
+  li.skip a::before { content: '??'; color: #d29922; }
+  li.doc a::before { content: '?? '; }
+  li.defer a::before { content: '??'; color: #a371f7; }
+  @media (max-width: 800px) { .part-list { columns: 1; } }
+</style>
+</head>
+<body>
+<h1>? Parts by Category ??Expandable</h1>
+<p style='color: #8b949e'>Click each category to expand/collapse part list.</p>
+
+<details class='cat' id='other'>
+  <summary>
+    <span class='cat-name'>Other</span>
+    <span class='cat-stats'>330 parts ??310 PASS (93.9%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round10_KE-SP-019_EVM/'>KE-SP-019_EVM</a> <span class='dim'></span></li>
+<li class='pass'><a href='round100_KE-SL-028_KMB603/'>KE-SL-028_KMB603</a> <span class='dim'>OD64 T30.3</span></li>
+<li class='pass'><a href='round1001_6mm-screen-v2-1000448/'>6mm-screen-v2-1000448</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1002_press-strip-128512/'>press-strip-128512</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1005_agv-gate-139264/'>agv-gate-139264</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1006_agv-gate-0001-122880/'>agv-gate-0001-122880</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1007_agv-gate-v2-122368/'>agv-gate-v2-122368</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1011_threaded-rod-100352/'>threaded-rod-100352</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1014_1mm-screen-v2-2102784/'>1mm-screen-v2-2102784</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1016_pulley-0004-233472/'>pulley-0004-233472</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1019_6mm-screen-horn-1147904/'>6mm-screen-horn-1147904</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1020_6mm-screen-halfhorn-v2-987136/'>6mm-screen-halfhorn-v2-987136</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1021_pulley-0003-168448/'>pulley-0003-168448</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1022_belt-guide-165888/'>belt-guide-165888</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1024_belt-guide-0001-168960/'>belt-guide-0001-168960</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1026_belt-guide-clip-0001-112640/'>belt-guide-clip-0001-112640</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1028_belt-guide-axle-111104/'>belt-guide-axle-111104</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1031_end-plate-243712/'>end-plate-243712</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1032_coupling-protector-320512/'>coupling-protector-320512</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1033_coupling-182272/'>coupling-182272</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1034_side-plate-0001-149504/'>side-plate-0001-149504</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1036_main-unit-0002-210944/'>main-unit-0002-210944</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1039_chassis-141312/'>chassis-141312</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1041_1mm-sieve-halfhorn-0003-2357760/'>1mm-sieve-halfhorn-0003-2357760</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1042_10hole-lower-mold-0001-103424/'>10hole-lower-mold-0001-103424</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1043_10hole-lower-mold-103936/'>10hole-lower-mold-103936</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1050_56x35-chamfer-jig-0002-164864/'>56x35-chamfer-jig-0002-164864</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1051_56x35-chamfer-jig-188416/'>56x35-chamfer-jig-188416</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1052_4p0-pin-0001-102400/'>4p0-pin-0001-102400</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1054_70pr47000a-0004-578048/'>70pr47000a-0004-578048</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1055_70pr47000a-651264/'>70pr47000a-651264</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1056_50nr7008-268800/'>50nr7008-268800</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1057_50nr7008-0002-270336/'>50nr7008-0002-270336</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1058_50n733-136704/'>50n733-136704</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1061_anti-vib-foot-upper-226816/'>anti-vib-foot-upper-226816</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1062_anti-vib-foot-upper-0003-232448/'>anti-vib-foot-upper-0003-232448</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1063_anti-vib-foot-lower-190464/'>anti-vib-foot-lower-190464</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1064_ke-sp-019-161792/'>ke-sp-019-161792</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1065_ke-sp-018-158208/'>ke-sp-018-158208</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1066_main-unit-0004-148480/'>main-unit-0004-148480</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1067_face-0001-93184/'>face-0001-93184</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1068_main-unit-146432/'>main-unit-146432</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1069_fixed-post-116224/'>fixed-post-116224</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1071_sieve-105472/'>sieve-105472</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1074_grinder-hinge-4-0001-175104/'>grinder-hinge-4-0001-175104</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1075_grinder-hinge-3-265216/'>grinder-hinge-3-265216</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1076_grinder-hinge-1-220160/'>grinder-hinge-1-220160</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1077_vibration-motor-108544/'>vibration-motor-108544</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1079_sde300-body-228864/'>sde300-body-228864</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1080_bh068-kmb301-217088/'>bh068-kmb301-217088</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1083_scmarf-al07-v2-165376/'>scmarf-al07-v2-165376</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1084_ev-m502-mp-finger-209408/'>ev-m502-mp-finger-209408</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1085_stainless-angle-130560/'>stainless-angle-130560</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1087_fixed-plate-111616/'>fixed-plate-111616</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1089_anti-vib-stand-217600/'>anti-vib-stand-217600</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1090_silicon-steel-jig-0004-172544/'>silicon-steel-jig-0004-172544</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1092_part2-0001-109568/'>part2-0001-109568</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1093_part2-131584/'>part2-131584</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1094_e500-arc-slit-626688/'>e500-arc-slit-626688</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1095_ev-x100-mp-g-427520/'>ev-x100-mp-g-427520</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1096_ev-x100-mp-g-0004-433664/'>ev-x100-mp-g-0004-433664</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1097_bh061-ev-s200bp-m-r-235520/'>bh061-ev-s200bp-m-r-235520</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1098_bh060-ev-l200-bp-m-l-262656/'>bh060-ev-l200-bp-m-l-262656</a> <span class='dim'></span></li>
+<li class='pass'><a href='round11_KE-BH-062_X100G/'>KE-BH-062_X100G</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1108_silicon-steel-single-concave-0004-222208/'>silicon-steel-single-concave-0004-222208</a> <span class='dim'>OD59.1 T18.2</span></li>
+<li class='pass'><a href='round1109_silicon-steel-single-concave-0003-218624/'>silicon-steel-single-concave-0003-218624</a> <span class='dim'>OD58.9 T18.2</span></li>
+<li class='pass'><a href='round1114_mag-a14-ev-m-bp-0001-205824/'>mag-a14-ev-m-bp-0001-205824</a> <span class='dim'>OD104.9 T119.7</span></li>
+<li class='pass'><a href='round1115_mag-a14-ev-m-bp-206848/'>mag-a14-ev-m-bp-206848</a> <span class='dim'>OD104.9 T119.7</span></li>
+<li class='pass'><a href='round1117_silicon-steel-224768/'>silicon-steel-224768</a> <span class='dim'>OD111.4 T0.5</span></li>
+<li class='pass'><a href='round1121_ke-bh-058-350208/'>ke-bh-058-350208</a> <span class='dim'>OD110 T37</span></li>
+<li class='pass'><a href='round1122_go-306688/'>go-306688</a> <span class='dim'>OD50 T10</span></li>
+<li class='pass'><a href='round1123_go-test-307200/'>go-test-307200</a> <span class='dim'>OD50 T10</span></li>
+<li class='pass'><a href='round114_EV-L200-BP-小間隔環/'>EV-L200-BP-小間隔環</a> <span class='dim'>OD44.7 T4</span></li>
+<li class='pass'><a href='round119_KE-SL-045_25x20x40/'>KE-SL-045_25x20x40</a> <span class='dim'>OD25 T40</span></li>
+<li class='pass'><a href='round120_KE-SL-047_KMB301_25x21x50/'>KE-SL-047_KMB301_25x21x50</a> <span class='dim'>OD25 T50</span></li>
+<li class='pass'><a href='round121_KE-SL-048_HC60B/'>KE-SL-048_HC60B</a> <span class='dim'>OD35 T10</span></li>
+<li class='pass'><a href='round122_KE-SL-049_HC60C/'>KE-SL-049_HC60C</a> <span class='dim'>OD43.5 T43.5</span></li>
+<li class='pass'><a href='round123_KE-SL-050_HC60D/'>KE-SL-050_HC60D</a> <span class='dim'>OD32 T32</span></li>
+<li class='pass'><a href='round124_KE-SL-051_HC60E/'>KE-SL-051_HC60E</a> <span class='dim'>OD31.98 T12</span></li>
+<li class='pass'><a href='round125_KE-SL-052_HC60_motor/'>KE-SL-052_HC60_motor</a> <span class='dim'>OD33 T23.5</span></li>
+<li class='pass'><a href='round127_KE-SL-054_MSB3600/'>KE-SL-054_MSB3600</a> <span class='dim'>OD70 T36</span></li>
+<li class='pass'><a href='round128_KE-SL-056/'>KE-SL-056</a> <span class='dim'>OD81.45 T43.9</span></li>
+<li class='pass'><a href='round129_KE-SL-057_KMB1202/'>KE-SL-057_KMB1202</a> <span class='dim'>OD78.1 T15</span></li>
+<li class='pass'><a href='round13_KE-SP-003_ESR100/'>KE-SP-003_ESR100</a> <span class='dim'></span></li>
+<li class='pass'><a href='round130_KE-SP-018/'>KE-SP-018</a> <span class='dim'>OD61.7 T4</span></li>
+<li class='pass'><a href='round133_EV-S200P/'>EV-S200P</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round134_KE-SL-010-ESR/'>KE-SL-010-ESR</a> <span class='dim'>OD60 T15</span></li>
+<li class='pass'><a href='round138_KE-SL-006-AA-BP/'>KE-SL-006-AA-BP</a> <span class='dim'>OD52 T28</span></li>
+<li class='pass'><a href='round139_KE-SP-019-EVM/'>KE-SP-019-EVM</a> <span class='dim'>OD61.8 T5.5</span></li>
+<li class='pass'><a href='round14_KE-SP-004_ESR100_big/'>KE-SP-004_ESR100_big</a> <span class='dim'></span></li>
+<li class='pass'><a href='round147_KE-SP-016-P1/'>KE-SP-016-P1</a> <span class='dim'>OD79.8 T6</span></li>
+<li class='pass'><a href='round148_KE-SP-004-P1/'>KE-SP-004-P1</a> <span class='dim'>OD61.7 T4</span></li>
+<li class='pass'><a href='round149_KE-SP-004-P2/'>KE-SP-004-P2</a> <span class='dim'>OD5 T2.39</span></li>
+<li class='pass'><a href='round15_KE-SP-007_ESR100_MP/'>KE-SP-007_ESR100_MP</a> <span class='dim'></span></li>
+<li class='pass'><a href='round150_KE-SP-016-P1b/'>KE-SP-016-P1b</a> <span class='dim'>OD79.8 T6</span></li>
+<li class='pass'><a href='round151_EV-M502-MP-finger/'>EV-M502-MP-finger</a> <span class='dim'>OD81 T20.5</span></li>
+<li class='pass'><a href='round152_EV-S200P-BP-v3/'>EV-S200P-BP-v3</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round154_KE-SL-013/'>KE-SL-013</a> <span class='dim'>OD74.2 T74.2</span></li>
+<li class='pass'><a href='round155_KE-SL-009/'>KE-SL-009</a> <span class='dim'>OD55 T11</span></li>
+<li class='pass'><a href='round156_KE-SL-011/'>KE-SL-011</a> <span class='dim'>OD48 T15</span></li>
+<li class='pass'><a href='round157_KE-SL-004/'>KE-SL-004</a> <span class='dim'>OD52 T21</span></li>
+<li class='pass'><a href='round158_KE-SL-052/'>KE-SL-052</a> <span class='dim'>OD33 T23.5</span></li>
+<li class='pass'><a href='round159_KE-SL-001-ESA200/'>KE-SL-001-ESA200</a> <span class='dim'>OD63 T29</span></li>
+<li class='pass'><a href='round160_KMB1203/'>KMB1203</a> <span class='dim'>OD38 T50</span></li>
+<li class='pass'><a href='round161_KE-SL-056/'>KE-SL-056</a> <span class='dim'>OD81.45 T43.9</span></li>
+<li class='pass'><a href='round162_KE-SL-056v2/'>KE-SL-056v2</a> <span class='dim'>OD81.45 T43.9</span></li>
+<li class='pass'><a href='round163_KE-SL-003-ESA300M/'>KE-SL-003-ESA300M</a> <span class='dim'>OD86.4 T86.4</span></li>
+<li class='pass'><a href='round164_KE-SL-050-HC60D/'>KE-SL-050-HC60D</a> <span class='dim'>OD32 T32</span></li>
+<li class='pass'><a href='round165_KE-SL-049-HC60C/'>KE-SL-049-HC60C</a> <span class='dim'>OD43.5 T43.5</span></li>
+<li class='pass'><a href='round166_KE-SL-051-HC60E/'>KE-SL-051-HC60E</a> <span class='dim'>OD31.98 T12</span></li>
+<li class='pass'><a href='round167_KE-SL-002-ESA300G/'>KE-SL-002-ESA300G</a> <span class='dim'>OD86.4 T86.4</span></li>
+<li class='pass'><a href='round169_EV-X200N-MP-M/'>EV-X200N-MP-M</a> <span class='dim'>OD70 T21.5</span></li>
+<li class='pass'><a href='round17_KE-SP-008_ESR_MP_big/'>KE-SP-008_ESR_MP_big</a> <span class='dim'></span></li>
+<li class='pass'><a href='round170_MU100-v2/'>MU100-v2</a> <span class='dim'>OD25 T8.5</span></li>
+<li class='pass'><a href='round171_KMB1203E/'>KMB1203E</a> <span class='dim'>OD36.8 T45.4</span></li>
+<li class='pass'><a href='round172_KE-SL-017-SD90/'>KE-SL-017-SD90</a> <span class='dim'>OD41.2 T41</span></li>
+<li class='pass'><a href='round174_KE-SL-005-AA-MPG/'>KE-SL-005-AA-MPG</a> <span class='dim'>OD52 T27</span></li>
+<li class='pass'><a href='round175_KE-SL-008-A70W/'>KE-SL-008-A70W</a> <span class='dim'>OD81.5 T44</span></li>
+<li class='pass'><a href='round176_GE024-MU100/'>GE024-MU100</a> <span class='dim'>OD63.9 T15</span></li>
+<li class='pass'><a href='round177_KE-SL-007-AA-MPM/'>KE-SL-007-AA-MPM</a> <span class='dim'>OD52 T21</span></li>
+<li class='pass'><a href='round178_KE-SL-020-KMB2003/'>KE-SL-020-KMB2003</a> <span class='dim'>OD95 T43.2</span></li>
+<li class='pass'><a href='round179_KE-SL-037-A150-BPG/'>KE-SL-037-A150-BPG</a> <span class='dim'>OD73 T25</span></li>
+<li class='pass'><a href='round180_KE-SL-036-A150-BPM/'>KE-SL-036-A150-BPM</a> <span class='dim'>OD73 T32</span></li>
+<li class='pass'><a href='round181_KE-SL-032-ESA200-BPG/'>KE-SL-032-ESA200-BPG</a> <span class='dim'>OD54.9 T28</span></li>
+<li class='pass'><a href='round182_KE-SL-034-A150-MPM/'>KE-SL-034-A150-MPM</a> <span class='dim'>OD67 T37</span></li>
+<li class='pass'><a href='round183_KE-SL-024-ESA200-MPG/'>KE-SL-024-ESA200-MPG</a> <span class='dim'>OD54.9 T33</span></li>
+<li class='pass'><a href='round184_KE-SL-012-SDE300C/'>KE-SL-012-SDE300C</a> <span class='dim'>OD84 T47.5</span></li>
+<li class='pass'><a href='round185_KE-SL-035-A150-MPG/'>KE-SL-035-A150-MPG</a> <span class='dim'>OD67 T30</span></li>
+<li class='pass'><a href='round186_KE-SL-033-ESA200-MPM/'>KE-SL-033-ESA200-MPM</a> <span class='dim'>OD63 T29</span></li>
+<li class='pass'><a href='round187_KE-SL-031-QDP/'>KE-SL-031-QDP</a> <span class='dim'>OD61.75 T17</span></li>
+<li class='pass'><a href='round188_KE-SL-034-ESA200-BPM/'>KE-SL-034-ESA200-BPM</a> <span class='dim'>OD63 T29</span></li>
+<li class='pass'><a href='round189_KE-SL-022/'>KE-SL-022</a> <span class='dim'>OD52 T52</span></li>
+<li class='pass'><a href='round190_KE-SL-024-old/'>KE-SL-024-old</a> <span class='dim'>OD55 T33</span></li>
+<li class='doc'><a href='round191_v3_rescue_batch/'>v3_rescue_batch</a> <span class='dim'></span></li>
+<li class='doc'><a href='round192_v3_rescue_batch_A150_ESA200/'>v3_rescue_batch_A150_ESA200</a> <span class='dim'></span></li>
+<li class='doc'><a href='round193_v3_rescue_batch_AA_KMB/'>v3_rescue_batch_AA_KMB</a> <span class='dim'></span></li>
+<li class='doc'><a href='round194_v3_boundary_batch_MU_SD90/'>v3_boundary_batch_MU_SD90</a> <span class='dim'></span></li>
+<li class='doc'><a href='round195_scaled_chamfer/'>scaled_chamfer</a> <span class='dim'></span></li>
+<li class='doc'><a href='round196_v3_rescue_batch_HC60_ESA300/'>v3_rescue_batch_HC60_ESA300</a> <span class='dim'></span></li>
+<li class='doc'><a href='round197_v3_rescue_batch_ESA300_HC60/'>v3_rescue_batch_ESA300_HC60</a> <span class='dim'></span></li>
+<li class='doc'><a href='round198_v3_rescue_batch_HC60_ESA200_KMB/'>v3_rescue_batch_HC60_ESA200_KMB</a> <span class='dim'></span></li>
+<li class='doc'><a href='round199_v3_threshold_8pct/'>v3_threshold_8pct</a> <span class='dim'></span></li>
+<li class='pass'><a href='round2_EV-L200-MP_M-Right/'>EV-L200-MP_M-Right</a> <span class='dim'></span></li>
+<li class='pass'><a href='round20_SDE300_baffle/'>SDE300_baffle</a> <span class='dim'></span></li>
+<li class='doc'><a href='round200_v3_rescue_batch_early_KESL/'>v3_rescue_batch_early_KESL</a> <span class='dim'></span></li>
+<li class='doc'><a href='round201_v3_EV_S200P_check/'>v3_EV_S200P_check</a> <span class='dim'></span></li>
+<li class='doc'><a href='round202_v3_check_KESP_EVM/'>v3_check_KESP_EVM</a> <span class='dim'></span></li>
+<li class='doc'><a href='round204_v3_zero_id_and_thin_chamfer/'>v3_zero_id_and_thin_chamfer</a> <span class='dim'></span></li>
+<li class='doc'><a href='round206_v3_check_ESR_EV_AA/'>v3_check_ESR_EV_AA</a> <span class='dim'></span></li>
+<li class='doc'><a href='round207_v3_check_KESP_IGX_EV/'>v3_check_KESP_IGX_EV</a> <span class='dim'></span></li>
+<li class='doc'><a href='round209_v3_check_KESL045_HC60_series/'>v3_check_KESL045_HC60_series</a> <span class='dim'></span></li>
+<li class='pass'><a href='round211_KE-SL-016/'>KE-SL-016</a> <span class='dim'>OD38 T16.3</span></li>
+<li class='pass'><a href='round212_KE-SL-055/'>KE-SL-055</a> <span class='dim'>OD59 T28</span></li>
+<li class='pass'><a href='round213_KE-SL-060/'>KE-SL-060</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='pass'><a href='round214_KE-SL-061/'>KE-SL-061</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round215_KE-SL-041/'>KE-SL-041</a> <span class='dim'>OD72.9 T22</span></li>
+<li class='pass'><a href='round216_KE-SL-042/'>KE-SL-042</a> <span class='dim'>OD47.5 T47.5</span></li>
+<li class='pass'><a href='round217_KE-SL-046/'>KE-SL-046</a> <span class='dim'>OD84 T47.5</span></li>
+<li class='pass'><a href='round218_SL-057-KMB1201/'>SL-057-KMB1201</a> <span class='dim'>OD78.1 T15</span></li>
+<li class='pass'><a href='round219_SL-057-KMB1202/'>SL-057-KMB1202</a> <span class='dim'>OD78.1 T15</span></li>
+<li class='pass'><a href='round220_KE-SL-056v3/'>KE-SL-056v3</a> <span class='dim'>OD81.45 T43.9</span></li>
+<li class='pass'><a href='round221_KE-SL-010-v2024/'>KE-SL-010-v2024</a> <span class='dim'>OD60 T15</span></li>
+<li class='pass'><a href='round222_EV-X200N-MP-M-v2026/'>EV-X200N-MP-M-v2026</a> <span class='dim'>OD70 T21.5</span></li>
+<li class='pass'><a href='round225_EV-X100-MP-M/'>EV-X100-MP-M</a> <span class='dim'>OD70 T21.5</span></li>
+<li class='pass'><a href='round226_EV-A10-3-M/'>EV-A10-3-M</a> <span class='dim'>OD70 T20</span></li>
+<li class='pass'><a href='round227_EV-M502-MP-finger-v2025/'>EV-M502-MP-finger-v2025</a> <span class='dim'>OD81 T20.5</span></li>
+<li class='pass'><a href='round228_MAG-A14-EV-M-BP/'>MAG-A14-EV-M-BP</a> <span class='dim'>OD104.9 T119.7</span></li>
+<li class='pass'><a href='round229_EV-S200P-BP-v2025/'>EV-S200P-BP-v2025</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round23_KE-BH-026_AA_BP-M/'>KE-BH-026_AA_BP-M</a> <span class='dim'></span></li>
+<li class='pass'><a href='round230_EV-S200P-BP-v0003/'>EV-S200P-BP-v0003</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round233_EV-M502-MP-finger-v0002/'>EV-M502-MP-finger-v0002</a> <span class='dim'>OD81 T20.5</span></li>
+<li class='pass'><a href='round234_MAG-A14-EV-M-BP-v0001/'>MAG-A14-EV-M-BP-v0001</a> <span class='dim'>OD104.9 T119.7</span></li>
+<li class='pass'><a href='round235_EV-X100-MP-M-2/'>EV-X100-MP-M-2</a> <span class='dim'>OD70 T21.5</span></li>
+<li class='pass'><a href='round236_EV-M20-G-side/'>EV-M20-G-side</a> <span class='dim'>OD100 T35</span></li>
+<li class='pass'><a href='round237_EV-M20-G-side-v0003/'>EV-M20-G-side-v0003</a> <span class='dim'>OD100 T35</span></li>
+<li class='pass'><a href='round238_EV-M20-M-side/'>EV-M20-M-side</a> <span class='dim'>OD104 T22.5</span></li>
+<li class='pass'><a href='round239_EV-M20-M-side-v0002/'>EV-M20-M-side-v0002</a> <span class='dim'>OD104 T22.5</span></li>
+<li class='pass'><a href='round240_EV-M202N-MAG-A11/'>EV-M202N-MAG-A11</a> <span class='dim'>OD76.9 T151.65</span></li>
+<li class='pass'><a href='round241_EV-X100-MP-G/'>EV-X100-MP-G</a> <span class='dim'>OD87.21 T31</span></li>
+<li class='pass'><a href='round242_KE-SL-049-HC60-C/'>KE-SL-049-HC60-C</a> <span class='dim'>OD43.5 T43.5</span></li>
+<li class='pass'><a href='round247_EV-L200-MP-M-side-R/'>EV-L200-MP-M-side-R</a> <span class='dim'>OD75 T21.5</span></li>
+<li class='pass'><a href='round248_KE-SL-056-v0002/'>KE-SL-056-v0002</a> <span class='dim'>OD81.45 T43.9</span></li>
+<li class='pass'><a href='round250_KE-SL-011-ESR-MP-G/'>KE-SL-011-ESR-MP-G</a> <span class='dim'>OD48 T15</span></li>
+<li class='pass'><a href='round251_KE-SL-009-ESR-MP-M/'>KE-SL-009-ESR-MP-M</a> <span class='dim'>OD55 T11</span></li>
+<li class='pass'><a href='round252_KE-SL-050-HC60-D/'>KE-SL-050-HC60-D</a> <span class='dim'>OD32 T32</span></li>
+<li class='pass'><a href='round253_KE-SL-051-HC60-E/'>KE-SL-051-HC60-E</a> <span class='dim'>OD31.98 T12</span></li>
+<li class='pass'><a href='round254_KE-SL-048-HC60-B/'>KE-SL-048-HC60-B</a> <span class='dim'>OD31.98 T10</span></li>
+<li class='pass'><a href='round255_KE-SL-013/'>KE-SL-013</a> <span class='dim'>OD74.2 T74.2</span></li>
+<li class='pass'><a href='round256_KE-SL-006-AA-BP-G/'>KE-SL-006-AA-BP-G</a> <span class='dim'>OD52 T28</span></li>
+<li class='pass'><a href='round257_KE-SL-055-200N-BPG-finger/'>KE-SL-055-200N-BPG-finger</a> <span class='dim'>OD59 T28</span></li>
+<li class='pass'><a href='round265_KE-SL-001-ESA200-G/'>KE-SL-001-ESA200-G</a> <span class='dim'>OD63 T29</span></li>
+<li class='pass'><a href='round266_KE-SL-002-ESA300MP-G/'>KE-SL-002-ESA300MP-G</a> <span class='dim'>OD86.4 T86.4</span></li>
+<li class='pass'><a href='round267_KE-SL-003-ESA300MP-M/'>KE-SL-003-ESA300MP-M</a> <span class='dim'>OD86.4 T86.4</span></li>
+<li class='pass'><a href='round268_KE-SL-004-AA-BP-M/'>KE-SL-004-AA-BP-M</a> <span class='dim'>OD52 T21</span></li>
+<li class='pass'><a href='round269_KE-SL-005-AA-MP-G/'>KE-SL-005-AA-MP-G</a> <span class='dim'>OD52 T27</span></li>
+<li class='pass'><a href='round27_KE-BH-007_ESR80/'>KE-BH-007_ESR80</a> <span class='dim'></span></li>
+<li class='pass'><a href='round270_KE-SL-007-AA-MP-M/'>KE-SL-007-AA-MP-M</a> <span class='dim'>OD52 T21</span></li>
+<li class='pass'><a href='round271_KE-SL-020-KMB2003/'>KE-SL-020-KMB2003</a> <span class='dim'>OD95 T43.2</span></li>
+<li class='pass'><a href='round272_KE-SL-021-MU100/'>KE-SL-021-MU100</a> <span class='dim'>OD25 T8.5</span></li>
+<li class='pass'><a href='round273_KE-SL-024-ESA200-MP-G/'>KE-SL-024-ESA200-MP-G</a> <span class='dim'>OD54.9 T33</span></li>
+<li class='pass'><a href='round274_KE-SL-037-A150-BP-G/'>KE-SL-037-A150-BP-G</a> <span class='dim'>OD73 T25</span></li>
+<li class='pass'><a href='round275_KE-SL-012-SDE300C/'>KE-SL-012-SDE300C</a> <span class='dim'>OD84 T47.5</span></li>
+<li class='pass'><a href='round277_KE-SL-032-ESA200-BP-G/'>KE-SL-032-ESA200-BP-G</a> <span class='dim'>OD54.9 T28</span></li>
+<li class='pass'><a href='round278_KE-SL-034-A150-MP-M/'>KE-SL-034-A150-MP-M</a> <span class='dim'>OD67 T37</span></li>
+<li class='pass'><a href='round279_KE-SL-035-A150-MP-G/'>KE-SL-035-A150-MP-G</a> <span class='dim'>OD67 T30</span></li>
+<li class='pass'><a href='round280_KE-SL-036-A150-BP-M/'>KE-SL-036-A150-BP-M</a> <span class='dim'>OD73 T32</span></li>
+<li class='pass'><a href='round281_KE-SL-042-MU600-BP/'>KE-SL-042-MU600-BP</a> <span class='dim'>OD47.5 T47.5</span></li>
+<li class='pass'><a href='round282_KE-SL-046-SDE300C/'>KE-SL-046-SDE300C</a> <span class='dim'>OD84 T47.5</span></li>
+<li class='pass'><a href='round289_KE-SL-058-EV-S200P-BP/'>KE-SL-058-EV-S200P-BP</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round290_KE-SL-059-EV-M502-MP-finger/'>KE-SL-059-EV-M502-MP-finger</a> <span class='dim'>OD81 T20.5</span></li>
+<li class='pass'><a href='round293_KE-SL-044-IXL500Q-part4/'>KE-SL-044-IXL500Q-part4</a> <span class='dim'>OD96 T96</span></li>
+<li class='pass'><a href='round294_KE-SL-044-IXL500Q-part3/'>KE-SL-044-IXL500Q-part3</a> <span class='dim'>OD75 T75</span></li>
+<li class='pass'><a href='round306_belt-guide-wheel/'>belt-guide-wheel</a> <span class='dim'>OD72 T49.5</span></li>
+<li class='pass'><a href='round312_belt-guide-wheel-old/'>belt-guide-wheel-old</a> <span class='dim'>OD72 T49.5</span></li>
+<li class='pass'><a href='round332_drill-jig-retainer/'>drill-jig-retainer</a> <span class='dim'>OD60 T13</span></li>
+<li class='pass'><a href='round333_inner-drill-locator/'>inner-drill-locator</a> <span class='dim'>OD150 T12</span></li>
+<li class='pass'><a href='round334_piston-press-87040/'>piston-press-87040</a> <span class='dim'>OD56 T35</span></li>
+<li class='pass'><a href='round335_piston-press-88576/'>piston-press-88576</a> <span class='dim'>OD67 T35</span></li>
+<li class='pass'><a href='round336_piston-press-93696/'>piston-press-93696</a> <span class='dim'>OD77 T35</span></li>
+<li class='pass'><a href='round341_outer-drill-locator/'>outer-drill-locator</a> <span class='dim'>OD150 T6</span></li>
+<li class='pass'><a href='round36_KE-SP-016_ESR200_big/'>KE-SP-016_ESR200_big</a> <span class='dim'></span></li>
+<li class='pass'><a href='round37_KE-SP-017_ESR200_small/'>KE-SP-017_ESR200_small</a> <span class='dim'></span></li>
+<li class='skip'><a href='round370_teflon-backup-MIR-100352/'>teflon-backup-MIR-100352</a> <span class='dim'></span></li>
+<li class='skip'><a href='round371_teflon-backup-MIR1-99840/'>teflon-backup-MIR1-99840</a> <span class='dim'></span></li>
+<li class='skip'><a href='round372_teflon-backup-MIR2-122368/'>teflon-backup-MIR2-122368</a> <span class='dim'></span></li>
+<li class='pass'><a href='round38_KE-SP-004-P1_ESR100/'>KE-SP-004-P1_ESR100</a> <span class='dim'></span></li>
+<li class='pass'><a href='round39_KE-SP-008-P1_ESR_MP_big/'>KE-SP-008-P1_ESR_MP_big</a> <span class='dim'></span></li>
+<li class='pass'><a href='round40_KE-SP-005_ESR100_BP_small/'>KE-SP-005_ESR100_BP_small</a> <span class='dim'></span></li>
+<li class='pass'><a href='round404_tilt-retainer-255488/'>tilt-retainer-255488</a> <span class='dim'>OD84.84 T84.84</span></li>
+<li class='pass'><a href='round41_KE-SP-006-P1/'>KE-SP-006-P1</a> <span class='dim'></span></li>
+<li class='pass'><a href='round42_KE-SP-006-P2/'>KE-SP-006-P2</a> <span class='dim'></span></li>
+<li class='pass'><a href='round426_exhaust-inner-5-001-141824/'>exhaust-inner-5-001-141824</a> <span class='dim'>OD21.7 T21.7</span></li>
+<li class='pass'><a href='round43_KE-SP-011_31x25x3/'>KE-SP-011_31x25x3</a> <span class='dim'></span></li>
+<li class='pass'><a href='round44_KE-SP-012_36x30x3.7/'>KE-SP-012_36x30x3.7</a> <span class='dim'></span></li>
+<li class='pass'><a href='round45_KE-SP-013_37x25x7/'>KE-SP-013_37x25x7</a> <span class='dim'></span></li>
+<li class='pass'><a href='round46_KE-SP-014_35x30x3/'>KE-SP-014_35x30x3</a> <span class='dim'></span></li>
+<li class='skip'><a href='round460_square-joint-524288/'>square-joint-524288</a> <span class='dim'></span></li>
+<li class='pass'><a href='round47_KE-SP-015_42x30x3/'>KE-SP-015_42x30x3</a> <span class='dim'></span></li>
+<li class='pass'><a href='round476_adapter-head-280064/'>adapter-head-280064</a> <span class='dim'>OD35 T35</span></li>
+<li class='pass'><a href='round48_KE-SP-001/'>KE-SP-001</a> <span class='dim'></span></li>
+<li class='pass'><a href='round481_di-water-nozzle-part3-69120/'>di-water-nozzle-part3-69120</a> <span class='dim'>OD20 T10</span></li>
+<li class='pass'><a href='round482_vacuum-nozzle-144384/'>vacuum-nozzle-144384</a> <span class='dim'>OD36.4 T36.4</span></li>
+<li class='pass'><a href='round483_di-water-nozzle-adjustable-part1-145408/'>di-water-nozzle-adjustable-part1-145408</a> <span class='dim'>OD49 T12.4</span></li>
+<li class='pass'><a href='round484_di-water-nozzle-adjustable-part2-187904/'>di-water-nozzle-adjustable-part2-187904</a> <span class='dim'>OD26 T30</span></li>
+<li class='pass'><a href='round485_di-water-nozzle-part2-230912/'>di-water-nozzle-part2-230912</a> <span class='dim'>OD26 T40</span></li>
+<li class='pass'><a href='round486_gas-valve-seat-351744/'>gas-valve-seat-351744</a> <span class='dim'>OD78.74 T53.34</span></li>
+<li class='pass'><a href='round487_gas-valve-seat-modified-409088/'>gas-valve-seat-modified-409088</a> <span class='dim'>OD78.74 T53.34</span></li>
+<li class='pass'><a href='round49_KE-SP-002-P1/'>KE-SP-002-P1</a> <span class='dim'></span></li>
+<li class='pass'><a href='round491_cylinder-65536/'>cylinder-65536</a> <span class='dim'>OD30 T70</span></li>
+<li class='pass'><a href='round492_air-gun-nozzle-193024/'>air-gun-nozzle-193024</a> <span class='dim'>OD13.86 T39.5</span></li>
+<li class='pass'><a href='round493_air-gun-nozzle-194560/'>air-gun-nozzle-194560</a> <span class='dim'>OD13.86 T39.5</span></li>
+<li class='pass'><a href='round494_nut-removal-jig-247296/'>nut-removal-jig-247296</a> <span class='dim'>OD40 T25</span></li>
+<li class='pass'><a href='round495_nut-removal-jig-236032/'>nut-removal-jig-236032</a> <span class='dim'>OD40 T25</span></li>
+<li class='pass'><a href='round496_nut-wrench-327680/'>nut-wrench-327680</a> <span class='dim'>OD77 T49.8</span></li>
+<li class='pass'><a href='round497_nut-wrench-326144/'>nut-wrench-326144</a> <span class='dim'>OD77 T49.8</span></li>
+<li class='pass'><a href='round498_nut-wrench-367104/'>nut-wrench-367104</a> <span class='dim'>OD64 T49.8</span></li>
+<li class='pass'><a href='round499_nut-wrench-347136/'>nut-wrench-347136</a> <span class='dim'>OD65 T49.8</span></li>
+<li class='pass'><a href='round50_KE-SP-002-P2/'>KE-SP-002-P2</a> <span class='dim'></span></li>
+<li class='pass'><a href='round517_silicon-steel-single-concave-218624/'>silicon-steel-single-concave-218624</a> <span class='dim'>OD58.9 T18.2</span></li>
+<li class='pass'><a href='round518_silicon-steel-double-concave-219136/'>silicon-steel-double-concave-219136</a> <span class='dim'>OD58.9 T18.2</span></li>
+<li class='pass'><a href='round519_silicon-steel-block-236544/'>silicon-steel-block-236544</a> <span class='dim'>OD59 T19</span></li>
+<li class='pass'><a href='round52_KE-SL-023_KMB601PT/'>KE-SL-023_KMB601PT</a> <span class='dim'></span></li>
+<li class='pass'><a href='round520_silicon-steel-block-256000/'>silicon-steel-block-256000</a> <span class='dim'>OD59 T18.7</span></li>
+<li class='pass'><a href='round53_AA200_NW50_adapter/'>AA200_NW50_adapter</a> <span class='dim'></span></li>
+<li class='pass'><a href='round54_AA200_NW50_part7/'>AA200_NW50_part7</a> <span class='dim'></span></li>
+<li class='pass'><a href='round56_M20_nut/'>M20_nut</a> <span class='dim'></span></li>
+<li class='pass'><a href='round587_steel-stamping-303616/'>steel-stamping-303616</a> <span class='dim'>OD20 T1.75</span></li>
+<li class='pass'><a href='round588_sigangpian-224768/'>sigangpian-224768</a> <span class='dim'>OD111.4 T0.5</span></li>
+<li class='pass'><a href='round589_sigangpian-concave-218112/'>sigangpian-concave-218112</a> <span class='dim'>OD58.9 T18.2</span></li>
+<li class='pass'><a href='round62_aluminum_half_circle_plate/'>aluminum_half_circle_plate</a> <span class='dim'></span></li>
+<li class='pass'><a href='round63_irregular_rubber_half/'>irregular_rubber_half</a> <span class='dim'></span></li>
+<li class='pass'><a href='round64_mother_mold_half/'>mother_mold_half</a> <span class='dim'></span></li>
+<li class='pass'><a href='round65_aluminum_quarter_circle/'>aluminum_quarter_circle</a> <span class='dim'></span></li>
+<li class='pass'><a href='round67_irregular_rubber_quarter/'>irregular_rubber_quarter</a> <span class='dim'></span></li>
+<li class='pass'><a href='round7_KE-BH-069_left/'>KE-BH-069_left</a> <span class='dim'></span></li>
+<li class='pass'><a href='round70_copper_block_50T/'>copper_block_50T</a> <span class='dim'></span></li>
+<li class='pass'><a href='round71_copper_block_20T/'>copper_block_20T</a> <span class='dim'></span></li>
+<li class='pass'><a href='round72_copper_block_4.5T/'>copper_block_4.5T</a> <span class='dim'></span></li>
+<li class='pass'><a href='round73_OLG-004_Ebara_oil_window/'>OLG-004_Ebara_oil_window</a> <span class='dim'></span></li>
+<li class='pass'><a href='round76_Kashiyama_movable_wheel_axle/'>Kashiyama_movable_wheel_axle</a> <span class='dim'></span></li>
+<li class='pass'><a href='round77_KE-BC-002_ESA300BP/'>KE-BC-002_ESA300BP</a> <span class='dim'>OD102 T11.2</span></li>
+<li class='pass'><a href='round774_135x73-728576/'>135x73-728576</a> <span class='dim'>OD309.57 T0.5</span></li>
+<li class='pass'><a href='round8_KE-BH-071_X200N/'>KE-BH-071_X200N</a> <span class='dim'></span></li>
+<li class='pass'><a href='round806_jig-140x90-s36-106496/'>jig-140x90-s36-106496</a> <span class='dim'>OD136.75 T75</span></li>
+<li class='pass'><a href='round82_KE-SL-017_SD90_120/'>KE-SL-017_SD90_120</a> <span class='dim'>OD41.2 T41</span></li>
+<li class='pass'><a href='round83_KE-SL-020_KMB2003/'>KE-SL-020_KMB2003</a> <span class='dim'>OD95 T43.2</span></li>
+<li class='pass'><a href='round851_jig-sisuteel-od-172544/'>jig-sisuteel-od-172544</a> <span class='dim'>OD130 T28</span></li>
+<li class='pass'><a href='round852_sisuteel-singledip-218112/'>sisuteel-singledip-218112</a> <span class='dim'>OD58.9 T18.2</span></li>
+<li class='pass'><a href='round853_sisuteel-singledip0004-222208/'>sisuteel-singledip0004-222208</a> <span class='dim'>OD59.1 T18.2</span></li>
+<li class='pass'><a href='round854_sisuteel-singledip0003-218624/'>sisuteel-singledip0003-218624</a> <span class='dim'>OD58.9 T18.2</span></li>
+<li class='pass'><a href='round855_sisuteel-224768/'>sisuteel-224768</a> <span class='dim'>OD111.4 T0.5</span></li>
+<li class='pass'><a href='round856_sisuteel-doubledip0001-219136/'>sisuteel-doubledip0001-219136</a> <span class='dim'>OD58.9 T18.2</span></li>
+<li class='pass'><a href='round857_sisuteel-singleblock0001-236544/'>sisuteel-singleblock0001-236544</a> <span class='dim'>OD59 T19</span></li>
+<li class='pass'><a href='round858_sisuteel-singleblock-256000/'>sisuteel-singleblock-256000</a> <span class='dim'>OD59 T18.7</span></li>
+<li class='pass'><a href='round88_KE-SL-019/'>KE-SL-019</a> <span class='dim'>OD52 T20</span></li>
+<li class='pass'><a href='round89_KE-SL-021_MU100/'>KE-SL-021_MU100</a> <span class='dim'>OD25 T8.5</span></li>
+<li class='pass'><a href='round90_KE-SL-022_A200/'>KE-SL-022_A200</a> <span class='dim'>OD52 T52</span></li>
+<li class='pass'><a href='round91_KE-SL-024_ESA200/'>KE-SL-024_ESA200</a> <span class='dim'>OD54.9 T33</span></li>
+<li class='pass'><a href='round92_KE-SL-031_QDP/'>KE-SL-031_QDP</a> <span class='dim'>OD61.75 T17</span></li>
+<li class='pass'><a href='round93_KE-SL-032_ESA200_BP/'>KE-SL-032_ESA200_BP</a> <span class='dim'>OD54.9 T28</span></li>
+<li class='pass'><a href='round94_KE-SL-033_ESA200_M/'>KE-SL-033_ESA200_M</a> <span class='dim'>OD63 T29</span></li>
+<li class='pass'><a href='round949_4mm-screen-horn-1229312/'>4mm-screen-horn-1229312</a> <span class='dim'>OD260 T50</span></li>
+<li class='pass'><a href='round95_KE-BC-003_ESA300MP-G/'>KE-BC-003_ESA300MP-G</a> <span class='dim'>OD129.7 T15</span></li>
+<li class='pass'><a href='round950_mold-halfcircle-0002-160256/'>mold-halfcircle-0002-160256</a> <span class='dim'>OD634 T50</span></li>
+<li class='pass'><a href='round957_round-key-5x5x18-95232/'>round-key-5x5x18-95232</a> <span class='dim'>OD18.4 T5</span></li>
+<li class='pass'><a href='round958_1mm-screen-horn-2167296/'>1mm-screen-horn-2167296</a> <span class='dim'>OD260 T50</span></li>
+<li class='pass'><a href='round959_6mm-screen-horn-1001984/'>6mm-screen-horn-1001984</a> <span class='dim'>OD260 T50</span></li>
+<li class='pass'><a href='round96_KE-BC-004_ESA300MP-M/'>KE-BC-004_ESA300MP-M</a> <span class='dim'>OD150.8 T10.1</span></li>
+<li class='pass'><a href='round961_rubber-jig-120832/'>rubber-jig-120832</a> <span class='dim'>OD450 T9.5</span></li>
+<li class='pass'><a href='round963_rubber-jig-0001-120320/'>rubber-jig-0001-120320</a> <span class='dim'>OD450 T9.5</span></li>
+<li class='pass'><a href='round964_ev-l200-mp-m-left-204800/'>ev-l200-mp-m-left-204800</a> <span class='dim'>OD70 T19</span></li>
+<li class='pass'><a href='round965_6inch-1mm-screen-1254912/'>6inch-1mm-screen-1254912</a> <span class='dim'>OD150 T48</span></li>
+<li class='pass'><a href='round966_6inch-1mm-screen-0005-1243136/'>6inch-1mm-screen-0005-1243136</a> <span class='dim'>OD150 T48</span></li>
+<li class='pass'><a href='round967_top-press-2-199680/'>top-press-2-199680</a> <span class='dim'>OD250 T10</span></li>
+<li class='pass'><a href='round968_top-press-2-0002-173056/'>top-press-2-0002-173056</a> <span class='dim'>OD250 T10</span></li>
+<li class='pass'><a href='round97_KE-SL-001_ESA200-G/'>KE-SL-001_ESA200-G</a> <span class='dim'>OD63 T29</span></li>
+<li class='pass'><a href='round970_top-press-0001-151040/'>top-press-0001-151040</a> <span class='dim'>OD250 T10</span></li>
+<li class='pass'><a href='round971_m10-pp-nut-0001-115200/'>m10-pp-nut-0001-115200</a> <span class='dim'>OD18 T10</span></li>
+<li class='pass'><a href='round972_m10-pp-nut-114688/'>m10-pp-nut-114688</a> <span class='dim'>OD20 T10</span></li>
+<li class='pass'><a href='round973_bottom-limit-101376/'>bottom-limit-101376</a> <span class='dim'>OD200 T10</span></li>
+<li class='pass'><a href='round974_6inch-1mm-screen-v2-1273344/'>6inch-1mm-screen-v2-1273344</a> <span class='dim'>OD260 T50</span></li>
+<li class='pass'><a href='round978_belt-guide-clip-113152/'>belt-guide-clip-113152</a> <span class='dim'>OD18 T10</span></li>
+<li class='pass'><a href='round979_side-plate-174592/'>side-plate-174592</a> <span class='dim'>OD143 T100</span></li>
+<li class='pass'><a href='round98_KE-SL-026_MU100/'>KE-SL-026_MU100</a> <span class='dim'>OD32 T18.5</span></li>
+<li class='pass'><a href='round983_coupling-box-274432/'>coupling-box-274432</a> <span class='dim'>OD60 T55</span></li>
+<li class='pass'><a href='round984_coupling-box-0002-289792/'>coupling-box-0002-289792</a> <span class='dim'>OD60 T55</span></li>
+<li class='pass'><a href='round985_pulley-288256/'>pulley-288256</a> <span class='dim'>OD70.5 T30.66</span></li>
+<li class='pass'><a href='round99_KE-SL-027_KY/'>KE-SL-027_KY</a> <span class='dim'>OD97.5 T23</span></li>
+<li class='pass'><a href='round990_pulley-key-97280/'>pulley-key-97280</a> <span class='dim'>OD50 T5</span></li>
+<li class='pass'><a href='round997_ev-x200n-mp-m-254464/'>ev-x200n-mp-m-254464</a> <span class='dim'></span></li>
+
+  </ul>
+</details><details class='cat' id='stator'>
+  <summary>
+    <span class='cat-name'>Stator</span>
+    <span class='cat-stats'>200 parts ??199 PASS (99.5%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1009_stator-single-normal-386048/'>stator-single-normal-386048</a> <span class='dim'></span></li>
+<li class='pass'><a href='round528_stator-140x90-s36-471552/'>stator-140x90-s36-471552</a> <span class='dim'>OD138 T0.35</span></li>
+<li class='pass'><a href='round529_stator-121x60-s24-549376/'>stator-121x60-s24-549376</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round554_stator-94x53-s24-round-652800/'>stator-94x53-s24-round-652800</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round555_stator-117x60-s24-670208/'>stator-117x60-s24-670208</a> <span class='dim'>OD114 T1.3</span></li>
+<li class='pass'><a href='round556_stator-94x53-s24-corner-504832/'>stator-94x53-s24-corner-504832</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round557_stator-94x53-serial-300544/'>stator-94x53-serial-300544</a> <span class='dim'>OD91 T0.5</span></li>
+<li class='pass'><a href='round558_stator-92x52-s18-402432/'>stator-92x52-s18-402432</a> <span class='dim'>OD90 T0.5</span></li>
+<li class='pass'><a href='round559_stator-90x51-s18-299520/'>stator-90x51-s18-299520</a> <span class='dim'>OD90 T0.5</span></li>
+<li class='pass'><a href='round560_stator-90x50-s18-496128/'>stator-90x50-s18-496128</a> <span class='dim'>OD89.64 T0.5</span></li>
+<li class='pass'><a href='round561_stator-140x85-s32-464896/'>stator-140x85-s32-464896</a> <span class='dim'>OD132 T0.5</span></li>
+<li class='pass'><a href='round562_stator-140x90-s24-370176/'>stator-140x90-s24-370176</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round563_stator-135x73-304128/'>stator-135x73-304128</a> <span class='dim'>OD132 T0.5</span></li>
+<li class='pass'><a href='round564_stator-136x80-s36-495616/'>stator-136x80-s36-495616</a> <span class='dim'>OD136.3 T0.5</span></li>
+<li class='pass'><a href='round565_stator-123x57-s24-502272/'>stator-123x57-s24-502272</a> <span class='dim'>OD111 T0.5</span></li>
+<li class='pass'><a href='round566_stator-121x67-shaded-404992/'>stator-121x67-shaded-404992</a> <span class='dim'>OD121.7 T0.5</span></li>
+<li class='pass'><a href='round567_stator-111x53-s24-603136/'>stator-111x53-s24-603136</a> <span class='dim'>OD99 T1.3</span></li>
+<li class='pass'><a href='round568_stator-120x68-s24-580096/'>stator-120x68-s24-580096</a> <span class='dim'>OD118 T1.3</span></li>
+<li class='pass'><a href='round569_stator-111x57-s24-515584/'>stator-111x57-s24-515584</a> <span class='dim'>OD108 T0.5</span></li>
+<li class='pass'><a href='round570_stator-110x55-s24-666624/'>stator-110x55-s24-666624</a> <span class='dim'>OD107 T0.5</span></li>
+<li class='pass'><a href='round571_stator-94x53-s24-610304/'>stator-94x53-s24-610304</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round572_stator-94x53-s24b-615424/'>stator-94x53-s24b-615424</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round573_stator-121x60-s24-557056/'>stator-121x60-s24-557056</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round574_stator-121x60-s24b-546816/'>stator-121x60-s24b-546816</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round577_stator-140x90-s36-419840/'>stator-140x90-s36-419840</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round578_stator-121x60-inner-550400/'>stator-121x60-inner-550400</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round579_stator-120x68-s24-576512/'>stator-120x68-s24-576512</a> <span class='dim'>OD118 T1.3</span></li>
+<li class='pass'><a href='round584_stator-117x60-s24-669696/'>stator-117x60-s24-669696</a> <span class='dim'>OD114 T1.3</span></li>
+<li class='pass'><a href='round585_stator-94x53-s24c-622592/'>stator-94x53-s24c-622592</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round586_stator-english-448512/'>stator-english-448512</a> <span class='dim'>OD140 T125</span></li>
+<li class='pass'><a href='round591_stator-121x72-s36-rotation-641024/'>stator-121x72-s36-rotation-641024</a> <span class='dim'>OD121.8 T1.3</span></li>
+<li class='pass'><a href='round592_stator-121x72-s36-rotation-v3-791552/'>stator-121x72-s36-rotation-v3-791552</a> <span class='dim'>OD121.8 T1.3</span></li>
+<li class='pass'><a href='round593_stator-90x60-s36-1306112/'>stator-90x60-s36-1306112</a> <span class='dim'>OD89.66 T0.35</span></li>
+<li class='pass'><a href='round594_stator-90x60-s36-v2-808448/'>stator-90x60-s36-v2-808448</a> <span class='dim'>OD89.66 T0.35</span></li>
+<li class='pass'><a href='round595_stator-121x71-s36-outer2-633856/'>stator-121x71-s36-outer2-633856</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round597_stator-121x71-s36-combo-638976/'>stator-121x71-s36-combo-638976</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round598_stator-121x71-s36-std-604672/'>stator-121x71-s36-std-604672</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round599_stator-121x71-s36-inner4-627200/'>stator-121x71-s36-inner4-627200</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round600_stator-121x72-s36-bottom-698880/'>stator-121x72-s36-bottom-698880</a> <span class='dim'>OD121.8 T0.5</span></li>
+<li class='pass'><a href='round602_stator-70x35-s12-433664/'>stator-70x35-s12-433664</a> <span class='dim'>OD69 T1.3</span></li>
+<li class='pass'><a href='round603_stator-70x35-s12old-433152/'>stator-70x35-s12old-433152</a> <span class='dim'>OD69 T1.3</span></li>
+<li class='pass'><a href='round604_stator-70x35-s12-bottom-374272/'>stator-70x35-s12-bottom-374272</a> <span class='dim'>OD69 T0.5</span></li>
+<li class='pass'><a href='round605_stator-70x35-s12-bottomold-374784/'>stator-70x35-s12-bottomold-374784</a> <span class='dim'>OD69 T0.5</span></li>
+<li class='pass'><a href='round606_stator-70x35-s12-guide-475136/'>stator-70x35-s12-guide-475136</a> <span class='dim'>OD69 T1.3</span></li>
+<li class='pass'><a href='round607_stator-90x48-s24-normal-453120/'>stator-90x48-s24-normal-453120</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round608_stator-90x48-s24-outer4-485376/'>stator-90x48-s24-outer4-485376</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round609_stator-117x60-s24-661504/'>stator-117x60-s24-661504</a> <span class='dim'>OD114 T1.3</span></li>
+<li class='pass'><a href='round610_stator-160x80-s24-470016/'>stator-160x80-s24-470016</a> <span class='dim'>OD158 T0.5</span></li>
+<li class='pass'><a href='round616_stator-90x48-s24-normal-old-522752/'>stator-90x48-s24-normal-old-522752</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round618_stator-90x48-s24-outer4-old-596992/'>stator-90x48-s24-outer4-old-596992</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round620_stator-94x53-s24-inner2-540160/'>stator-94x53-s24-inner2-540160</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round621_stator-94x53-s24-bottom-569856/'>stator-94x53-s24-bottom-569856</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round622_stator-94x53-s24-bottom-609792/'>stator-94x53-s24-bottom-609792</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round623_stator-94x53-s24-bottom-623616/'>stator-94x53-s24-bottom-623616</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round624_stator-94x53-s24-bottom-inner4-608768/'>stator-94x53-s24-bottom-inner4-608768</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round626_stator-94x53-s24-inner2-545280/'>stator-94x53-s24-inner2-545280</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round630_stator-94x53-s24-bottom-inner2-605696/'>stator-94x53-s24-bottom-inner2-605696</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round631_stator-94x53-s24-inner2-665088/'>stator-94x53-s24-inner2-665088</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round632_stator-94x53-s24-inner2-old-562688/'>stator-94x53-s24-inner2-old-562688</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round633_stator-92x53-s48-400384/'>stator-92x53-s48-400384</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round634_stator-94x53-s24-bottom-548352/'>stator-94x53-s24-bottom-548352</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round635_stator-140x90-s24-463872/'>stator-140x90-s24-463872</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round639_stator-90x48-s24-outer4-657408/'>stator-90x48-s24-outer4-657408</a> <span class='dim'>OD89 T1.3</span></li>
+<li class='pass'><a href='round640_stator-140x90-s36-507392/'>stator-140x90-s36-507392</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round645_stator-90x47-s24-576000/'>stator-90x47-s24-576000</a> <span class='dim'>OD88 T1.3</span></li>
+<li class='pass'><a href='round646_stator-90x47-s24-bottom-481792/'>stator-90x47-s24-bottom-481792</a> <span class='dim'>OD88 T0.5</span></li>
+<li class='pass'><a href='round647_stator-90x47-single-756736/'>stator-90x47-single-756736</a> <span class='dim'>OD88 T1.2</span></li>
+<li class='pass'><a href='round648_stator-90x47-755712/'>stator-90x47-755712</a> <span class='dim'>OD88 T1.2</span></li>
+<li class='pass'><a href='round649_stator-121x60-s24-inner4-824832/'>stator-121x60-s24-inner4-824832</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round650_stator-121x60-s24-inner4-gnd-770560/'>stator-121x60-s24-inner4-gnd-770560</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round651_stator-121x60-s24-bottom-gnd-666112/'>stator-121x60-s24-bottom-gnd-666112</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round652_stator-121x60-s24-bottom-670720/'>stator-121x60-s24-bottom-670720</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round655_stator-90x47-2013-733184/'>stator-90x47-2013-733184</a> <span class='dim'>OD88 T1.2</span></li>
+<li class='pass'><a href='round656_stator-90x47-u1-493056/'>stator-90x47-u1-493056</a> <span class='dim'>OD88 T0.5</span></li>
+<li class='pass'><a href='round660_stator-121x60-s24-bottom-gnd2-705024/'>stator-121x60-s24-bottom-gnd2-705024</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round661_stator-121x60-s24-inner4-gnd2-764928/'>stator-121x60-s24-inner4-gnd2-764928</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round663_stator-90x47-u-588800/'>stator-90x47-u-588800</a> <span class='dim'>OD88 T1.2</span></li>
+<li class='pass'><a href='round666_stator-121x60-s24-bottom-0009-667136/'>stator-121x60-s24-bottom-0009-667136</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round667_stator-121x60-s24-bottom-2018-710656/'>stator-121x60-s24-bottom-2018-710656</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round668_stator-121x60-s24-bottom-0007-760320/'>stator-121x60-s24-bottom-0007-760320</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round672_stator-90x47-60s-663040/'>stator-90x47-60s-663040</a> <span class='dim'>OD88 T60</span></li>
+<li class='pass'><a href='round673_stator-117x60-s24-inner4-bottom-672768/'>stator-117x60-s24-inner4-bottom-672768</a> <span class='dim'>OD114 T0.5</span></li>
+<li class='pass'><a href='round674_stator-117x60-s24-inner4-730112/'>stator-117x60-s24-inner4-730112</a> <span class='dim'>OD114 T1.3</span></li>
+<li class='pass'><a href='round675_stator-117x60-s24-bottom-0003-614400/'>stator-117x60-s24-bottom-0003-614400</a> <span class='dim'>OD114 T0.5</span></li>
+<li class='pass'><a href='round676_stator-117x60-s24-0004-664576/'>stator-117x60-s24-0004-664576</a> <span class='dim'>OD114 T1.3</span></li>
+<li class='pass'><a href='round678_stator-117x60-1317376/'>stator-117x60-1317376</a> <span class='dim'>OD461.09 T0.5</span></li>
+<li class='pass'><a href='round684_stator-90x47-50s-664064/'>stator-90x47-50s-664064</a> <span class='dim'>OD88 T50</span></li>
+<li class='pass'><a href='round685_stator-90x47-45s-outer2-491008/'>stator-90x47-45s-outer2-491008</a> <span class='dim'>OD88 T45</span></li>
+<li class='pass'><a href='round686_stator-90x48-2073600/'>stator-90x48-2073600</a> <span class='dim'>OD191.55 T0.5</span></li>
+<li class='pass'><a href='round687_stator-140x90-s36-419840/'>stator-140x90-s36-419840</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round688_stator-140x90-s24b-370176/'>stator-140x90-s24b-370176</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round689_stator-140x90-s24-463872/'>stator-140x90-s24-463872</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round691_stator-90x48-s24-453120/'>stator-90x48-s24-453120</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round692_stator-90x48-s24-outer4-485376/'>stator-90x48-s24-outer4-485376</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round697_stator-140x90-s36-471552/'>stator-140x90-s36-471552</a> <span class='dim'>OD138 T0.35</span></li>
+<li class='pass'><a href='round698_stator-90x48-s24-522752/'>stator-90x48-s24-522752</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round699_stator-90x48-s24-outer4-596992/'>stator-90x48-s24-outer4-596992</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round701_stator-90x48-s30-3390464/'>stator-90x48-s30-3390464</a> <span class='dim'>OD89 T30</span></li>
+<li class='pass'><a href='round703_stator-164x80-753664/'>stator-164x80-753664</a> <span class='dim'>OD558.73 T0.5</span></li>
+<li class='pass'><a href='round705_stator-90x47-3182592/'>stator-90x47-3182592</a> <span class='dim'>OD488.14 T1</span></li>
+<li class='pass'><a href='round706_stator-90x48-s24-outer4-592896/'>stator-90x48-s24-outer4-592896</a> <span class='dim'>OD89 T1.3</span></li>
+<li class='pass'><a href='round707_stator-90x48-s18-2157056/'>stator-90x48-s18-2157056</a> <span class='dim'>OD327.27 T0.5</span></li>
+<li class='pass'><a href='round708_stator-90x53-2836480/'>stator-90x53-2836480</a> <span class='dim'>OD402.64 T0.5</span></li>
+<li class='pass'><a href='round710_stator-185x90-778752/'>stator-185x90-778752</a> <span class='dim'>OD515.17 T0.5</span></li>
+<li class='pass'><a href='round714_stator-123x57-s24-584704/'>stator-123x57-s24-584704</a> <span class='dim'>OD111 T1.3</span></li>
+<li class='pass'><a href='round715_stator-123x57-s24-bot-527360/'>stator-123x57-s24-bot-527360</a> <span class='dim'>OD111 T0.5</span></li>
+<li class='pass'><a href='round723_stator-160x80-s24v6-620032/'>stator-160x80-s24v6-620032</a> <span class='dim'>OD158 T0.5</span></li>
+<li class='pass'><a href='round724_stator-160x80-s24v3-705536/'>stator-160x80-s24v3-705536</a> <span class='dim'>OD158 T0.5</span></li>
+<li class='pass'><a href='round726_stator-164x80-s24-385536/'>stator-164x80-s24-385536</a> <span class='dim'>OD162 T0.5</span></li>
+<li class='pass'><a href='round733_stator-128x80-s36s-596480/'>stator-128x80-s36s-596480</a> <span class='dim'>OD128 T0.5</span></li>
+<li class='pass'><a href='round734_stator-128x80-s36-504320/'>stator-128x80-s36-504320</a> <span class='dim'>OD127 T0.5</span></li>
+<li class='pass'><a href='round735_stator-160x80-s24v1-737792/'>stator-160x80-s24v1-737792</a> <span class='dim'>OD158 T0.5</span></li>
+<li class='pass'><a href='round736_stator-160x80-s24s1-733696/'>stator-160x80-s24s1-733696</a> <span class='dim'>OD158 T0.5</span></li>
+<li class='pass'><a href='round742_stator-100x53-s24inner-537600/'>stator-100x53-s24inner-537600</a> <span class='dim'>OD97.5 T0.5</span></li>
+<li class='pass'><a href='round743_stator-single-normal-386048/'>stator-single-normal-386048</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round744_stator-single-487936/'>stator-single-487936</a> <span class='dim'>OD82 T0.5</span></li>
+<li class='pass'><a href='round745_stator-single03-517632/'>stator-single03-517632</a> <span class='dim'>OD82 T0.5</span></li>
+<li class='pass'><a href='round746_stator-rijiu03-406016/'>stator-rijiu03-406016</a> <span class='dim'>OD69 T0.5</span></li>
+<li class='pass'><a href='round747_stator-rijiu-408576/'>stator-rijiu-408576</a> <span class='dim'>OD69 T0.5</span></li>
+<li class='skip'><a href='round748_stator-04818-17l-581120/'>stator-04818-17l-581120</a> <span class='dim'></span></li>
+<li class='pass'><a href='round749_stator-117x60-s24bot-619520/'>stator-117x60-s24bot-619520</a> <span class='dim'>OD114 T0.5</span></li>
+<li class='pass'><a href='round750_stator-121x60-s24inner06-759808/'>stator-121x60-s24inner06-759808</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round753_stator-100x53-s24inner1-444416/'>stator-100x53-s24inner1-444416</a> <span class='dim'>OD100 T0.5</span></li>
+<li class='pass'><a href='round754_stator-100x53-s24-556032/'>stator-100x53-s24-556032</a> <span class='dim'>OD97.5 T1.3</span></li>
+<li class='pass'><a href='round755_stator-100x53-s24bot-484352/'>stator-100x53-s24bot-484352</a> <span class='dim'>OD97.5 T0.5</span></li>
+<li class='pass'><a href='round757_stator-121x72-s36-641024/'>stator-121x72-s36-641024</a> <span class='dim'>OD121.8 T1.3</span></li>
+<li class='pass'><a href='round758_stator-121x72-s36bot-698880/'>stator-121x72-s36bot-698880</a> <span class='dim'>OD121.8 T0.5</span></li>
+<li class='pass'><a href='round759_stator-140x90-s36-419840/'>stator-140x90-s36-419840</a> <span class='dim'>OD138 T0.5</span></li>
+<li class='pass'><a href='round760_stator-140x90-s36v8-471552/'>stator-140x90-s36v8-471552</a> <span class='dim'>OD138 T0.35</span></li>
+<li class='pass'><a href='round761_stator-136x81-s36-495616/'>stator-136x81-s36-495616</a> <span class='dim'>OD136.3 T0.5</span></li>
+<li class='pass'><a href='round762_stator-121x71-s36std-604672/'>stator-121x71-s36std-604672</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round763_stator-121x71-s36inner4-627200/'>stator-121x71-s36inner4-627200</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round764_stator-121x71-s36outer2-633856/'>stator-121x71-s36outer2-633856</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round765_stator-121x71-s36combo-638976/'>stator-121x71-s36combo-638976</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round767_stator-90x60-s36-1306112/'>stator-90x60-s36-1306112</a> <span class='dim'>OD89.66 T0.35</span></li>
+<li class='pass'><a href='round768_stator-90x60-s36v2-808448/'>stator-90x60-s36v2-808448</a> <span class='dim'>OD89.66 T0.35</span></li>
+<li class='pass'><a href='round769_stator-121x72-s36rot3-791552/'>stator-121x72-s36rot3-791552</a> <span class='dim'>OD121.8 T1.3</span></li>
+<li class='pass'><a href='round773_stator-135x73-304128/'>stator-135x73-304128</a> <span class='dim'>OD132 T0.5</span></li>
+<li class='pass'><a href='round776_stator-70x35-s12-433664/'>stator-70x35-s12-433664</a> <span class='dim'>OD69 T1.3</span></li>
+<li class='pass'><a href='round777_stator-70x35-s12bot-374272/'>stator-70x35-s12bot-374272</a> <span class='dim'>OD69 T0.5</span></li>
+<li class='pass'><a href='round783_stator-92x52-s18-402432/'>stator-92x52-s18-402432</a> <span class='dim'>OD90 T0.5</span></li>
+<li class='pass'><a href='round784_stator-90x51-s18-299520/'>stator-90x51-s18-299520</a> <span class='dim'>OD90 T0.5</span></li>
+<li class='pass'><a href='round785_stator-90x50-s18-496128/'>stator-90x50-s18-496128</a> <span class='dim'>OD89.64 T0.5</span></li>
+<li class='pass'><a href='round786_stator-110x59-s18-435200/'>stator-110x59-s18-435200</a> <span class='dim'>OD110 T0.5</span></li>
+<li class='pass'><a href='round787_stator-110x64-s18-354816/'>stator-110x64-s18-354816</a> <span class='dim'>OD110 T0.5</span></li>
+<li class='pass'><a href='round788_stator-90x48-s18-2157056/'>stator-90x48-s18-2157056</a> <span class='dim'>OD327.27 T0.5</span></li>
+<li class='pass'><a href='round859_stator-94x53-89s24-inner2-540160/'>stator-94x53-89s24-inner2-540160</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round860_stator-94x53-89s24-inner2-0006-545280/'>stator-94x53-89s24-inner2-0006-545280</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round861_stator-90x48-89s24-normal-453120/'>stator-90x48-89s24-normal-453120</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round862_stator-90x48-89s24-outer4-485376/'>stator-90x48-89s24-outer4-485376</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round863_stator-121x60-s24-inner4-549376/'>stator-121x60-s24-inner4-549376</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round864_stator-stopper-110592/'>stator-stopper-110592</a> <span class='dim'>OD53 T53</span></li>
+<li class='pass'><a href='round865_stator-94x53-92s24-652800/'>stator-94x53-92s24-652800</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round866_stator-121x60-s24-normalsheet-824832/'>stator-121x60-s24-normalsheet-824832</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round867_stator-121x60-s24inner4-normalgrnd-0013-770560/'>stator-121x60-s24inner4-normalgrnd-0013-770560</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round868_stator-121x60-s24inner4-btmgrnd-0012-666112/'>stator-121x60-s24inner4-btmgrnd-0012-666112</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round869_stator-121x60-s24inner4-btm-0011-670720/'>stator-121x60-s24inner4-btm-0011-670720</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round870_stator-121x60-s24inner4-btmgrnd-705024/'>stator-121x60-s24inner4-btmgrnd-705024</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round871_stator-121x60-s24inner4-normalgrnd-764928/'>stator-121x60-s24inner4-normalgrnd-764928</a> <span class='dim'>OD119 T1.3</span></li>
+<li class='pass'><a href='round872_stator-121x60-s24inner4-btm-old-710656/'>stator-121x60-s24inner4-btm-old-710656</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round873_stator-121x60-s24inner4-btm-0007-760320/'>stator-121x60-s24inner4-btm-0007-760320</a> <span class='dim'>OD119 T0.5</span></li>
+<li class='pass'><a href='round874_stator-94x53-92s24-btm-0006-623616/'>stator-94x53-92s24-btm-0006-623616</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round875_stator-94x53-92s24-btm-569856/'>stator-94x53-92s24-btm-569856</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round876_stator-94x53-92s24-old2-622592/'>stator-94x53-92s24-old2-622592</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round877_stator-117x60-114s24-670208/'>stator-117x60-114s24-670208</a> <span class='dim'>OD114 T1.3</span></li>
+<li class='pass'><a href='round878_stator-117x60-114s24-v2-669696/'>stator-117x60-114s24-v2-669696</a> <span class='dim'>OD114 T1.3</span></li>
+<li class='pass'><a href='round879_stator-singlesheet-bottom-353792/'>stator-singlesheet-bottom-353792</a> <span class='dim'>OD58 T0.5</span></li>
+<li class='pass'><a href='round880_stator-94x53-92s24-0002-610304/'>stator-94x53-92s24-0002-610304</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round881_stator-singlesheet-0005-443392/'>stator-singlesheet-0005-443392</a> <span class='dim'>OD58 T1.3</span></li>
+<li class='pass'><a href='round882_stator-singlesheet-btm-0002-348672/'>stator-singlesheet-btm-0002-348672</a> <span class='dim'>OD58 T0.5</span></li>
+<li class='pass'><a href='round883_stator-singlesheet-384000/'>stator-singlesheet-384000</a> <span class='dim'>OD58 T1.3</span></li>
+<li class='pass'><a href='round884_stator-singlesheet-btm-rev-358400/'>stator-singlesheet-btm-rev-358400</a> <span class='dim'>OD58 T0.5</span></li>
+<li class='pass'><a href='round885_stator-singlesheet-rev-444416/'>stator-singlesheet-rev-444416</a> <span class='dim'>OD58 T1.3</span></li>
+<li class='pass'><a href='round886_stator-94x53-92s24-btm-main-609792/'>stator-94x53-92s24-btm-main-609792</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round887_stator-94x53-92s24-btm-inner4-608768/'>stator-94x53-92s24-btm-inner4-608768</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round888_stator-94x53-92s24-inner2-665088/'>stator-94x53-92s24-inner2-665088</a> <span class='dim'>OD92 T1.3</span></li>
+<li class='pass'><a href='round889_stator-94x53-92s24-btm-inner2-605696/'>stator-94x53-92s24-btm-inner2-605696</a> <span class='dim'>OD92 T0.5</span></li>
+<li class='pass'><a href='round890_stator-94x53-89s24-504832/'>stator-94x53-89s24-504832</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round891_stator-94x53-89s24-inner2-562688/'>stator-94x53-89s24-inner2-562688</a> <span class='dim'>OD89.5 T0.5</span></li>
+<li class='pass'><a href='round892_stator-singlesheet-t25-459264/'>stator-singlesheet-t25-459264</a> <span class='dim'>OD88 T25</span></li>
+<li class='pass'><a href='round893_stator-singlesheet-outer4-483328/'>stator-singlesheet-outer4-483328</a> <span class='dim'>OD88 T0.5</span></li>
+<li class='pass'><a href='round894_stator-singlesheet-outer2-482816/'>stator-singlesheet-outer2-482816</a> <span class='dim'>OD88 T0.5</span></li>
+<li class='pass'><a href='round895_stator-90x48-89s24-outer4-old-596992/'>stator-90x48-89s24-outer4-old-596992</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round896_stator-singlesheet-0002-477696/'>stator-singlesheet-0002-477696</a> <span class='dim'>OD82 T0.5</span></li>
+<li class='pass'><a href='round897_stator-singlesheet-normal-old-368640/'>stator-singlesheet-normal-old-368640</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round898_stator-90x48-89s24-normal-old-522752/'>stator-90x48-89s24-normal-old-522752</a> <span class='dim'>OD89 T0.5</span></li>
+<li class='pass'><a href='round899_stator-singlesheet-204288/'>stator-singlesheet-204288</a> <span class='dim'>OD111.4 T0.5</span></li>
+<li class='pass'><a href='round901_stator-mag003-191488/'>stator-mag003-191488</a> <span class='dim'>OD41.66 T0.5</span></li>
+<li class='pass'><a href='round902_stator-teco-1298944/'>stator-teco-1298944</a> <span class='dim'>OD85.65 T0.5</span></li>
+<li class='pass'><a href='round903_stator-singlesheet-271872/'>stator-singlesheet-271872</a> <span class='dim'>OD66.5 T0.5</span></li>
+<li class='pass'><a href='round904_stator-singlesheet-186368/'>stator-singlesheet-186368</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round905_stator-singlesheet-196608/'>stator-singlesheet-196608</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round906_stator-mag003-161792/'>stator-mag003-161792</a> <span class='dim'>OD42.1 T0.5</span></li>
+<li class='pass'><a href='round907_stator-singlesheet-284160/'>stator-singlesheet-284160</a> <span class='dim'>OD65.35 T67.5</span></li>
+<li class='pass'><a href='round908_stator-singlesheet-194048/'>stator-singlesheet-194048</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round909_stator-singlesheet-189440/'>stator-singlesheet-189440</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round910_stator-singlesheet-0005-192512/'>stator-singlesheet-0005-192512</a> <span class='dim'>OD111.5 T0.5</span></li>
+<li class='pass'><a href='round911_stator-nomag-158720/'>stator-nomag-158720</a> <span class='dim'>OD112.6 T0.5</span></li>
+<li class='pass'><a href='round912_stator-mag003-0008-180224/'>stator-mag003-0008-180224</a> <span class='dim'>OD41.66 T0.5</span></li>
+<li class='pass'><a href='round948_stator-448512/'>stator-448512</a> <span class='dim'>OD140 T125</span></li>
+
+  </ul>
+</details><details class='cat' id='rotor'>
+  <summary>
+    <span class='cat-name'>Rotor</span>
+    <span class='cat-stats'>178 parts ??178 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1010_rotor-single-276480/'>rotor-single-276480</a> <span class='dim'></span></li>
+<li class='pass'><a href='round522_rotor-94x53-r22-293376/'>rotor-94x53-r22-293376</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round523_rotor-121x72-r48-223744/'>rotor-121x72-r48-223744</a> <span class='dim'>OD71.4 T76</span></li>
+<li class='pass'><a href='round524_rotor-60x45-133120/'>rotor-60x45-133120</a> <span class='dim'>OD60 T60.24</span></li>
+<li class='pass'><a href='round525_rotor-177664/'>rotor-177664</a> <span class='dim'>OD93.4 T123</span></li>
+<li class='pass'><a href='round526_rotor-magnet-core-245248/'>rotor-magnet-core-245248</a> <span class='dim'>OD63.96 T0.5</span></li>
+<li class='pass'><a href='round527_rotor-r53-29-199680/'>rotor-r53-29-199680</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round530_rotor-121x60-r30-19-424960/'>rotor-121x60-r30-19-424960</a> <span class='dim'>OD60 T55</span></li>
+<li class='pass'><a href='round531_rotor-94x53-r34-323072/'>rotor-94x53-r34-323072</a> <span class='dim'>OD53 T35</span></li>
+<li class='pass'><a href='round532_rotor-94x53-r22-old-242688/'>rotor-94x53-r22-old-242688</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round533_rotor-94x53-r22-243712/'>rotor-94x53-r22-243712</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round534_rotor-120x68-r34-502784/'>rotor-120x68-r34-502784</a> <span class='dim'>OD68.1 T0.5</span></li>
+<li class='pass'><a href='round535_rotor-117x60-r30-old-198656/'>rotor-117x60-r30-old-198656</a> <span class='dim'>OD60 T0.5</span></li>
+<li class='pass'><a href='round536_rotor-121x60-r30-417280/'>rotor-121x60-r30-417280</a> <span class='dim'>OD60 T0.5</span></li>
+<li class='pass'><a href='round537_rotor-100x53-r21-192512/'>rotor-100x53-r21-192512</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round538_rotor-100x53-r21-v2-193536/'>rotor-100x53-r21-v2-193536</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round539_rotor-160x80-r28-294912/'>rotor-160x80-r28-294912</a> <span class='dim'>OD80 T0.5</span></li>
+<li class='pass'><a href='round540_rotor-140x85-r44-303104/'>rotor-140x85-r44-303104</a> <span class='dim'>OD85 T0.5</span></li>
+<li class='pass'><a href='round541_rotor-160x80-r28-old-310784/'>rotor-160x80-r28-old-310784</a> <span class='dim'>OD80 T0.5</span></li>
+<li class='pass'><a href='round542_rotor-140x90-r34-471040/'>rotor-140x90-r34-471040</a> <span class='dim'>OD90 T0.5</span></li>
+<li class='pass'><a href='round543_rotor-135x73-455168/'>rotor-135x73-455168</a> <span class='dim'>OD73 T0.5</span></li>
+<li class='pass'><a href='round544_rotor-136x80-r48-547840/'>rotor-136x80-r48-547840</a> <span class='dim'>OD80.8 T0.5</span></li>
+<li class='pass'><a href='round545_rotor-123x57-r29-430592/'>rotor-123x57-r29-430592</a> <span class='dim'>OD57 T0.5</span></li>
+<li class='pass'><a href='round546_rotor-92x52-r22-195584/'>rotor-92x52-r22-195584</a> <span class='dim'>OD52 T0.5</span></li>
+<li class='pass'><a href='round547_rotor-110x55-r28-276480/'>rotor-110x55-r28-276480</a> <span class='dim'>OD55 T0.5</span></li>
+<li class='pass'><a href='round548_rotor-94x53-r34-v2-317952/'>rotor-94x53-r34-v2-317952</a> <span class='dim'>OD53 T35</span></li>
+<li class='pass'><a href='round549_rotor-94x53-serial-363008/'>rotor-94x53-serial-363008</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round550_rotor-94x53-r34-313344/'>rotor-94x53-r34-313344</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round551_rotor-94x53-r34-315904/'>rotor-94x53-r34-315904</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round552_rotor-120x68-r34-30-579584/'>rotor-120x68-r34-30-579584</a> <span class='dim'>OD68.1 T30</span></li>
+<li class='pass'><a href='round553_rotor-117x60-r30-200192/'>rotor-117x60-r30-200192</a> <span class='dim'>OD60 T125</span></li>
+<li class='pass'><a href='round575_rotor-121x57-r29-428032/'>rotor-121x57-r29-428032</a> <span class='dim'>OD57 T0.5</span></li>
+<li class='pass'><a href='round576_rotor-111x57-r29-428544/'>rotor-111x57-r29-428544</a> <span class='dim'>OD57 T0.5</span></li>
+<li class='pass'><a href='round580_rotor-120x68-r34-496640/'>rotor-120x68-r34-496640</a> <span class='dim'>OD68.1 T0.5</span></li>
+<li class='pass'><a href='round581_rotor-121x60-r30-523264/'>rotor-121x60-r30-523264</a> <span class='dim'>OD60 T0.5</span></li>
+<li class='pass'><a href='round582_rotor-140x90-r48-823808/'>rotor-140x90-r48-823808</a> <span class='dim'>OD90 T0.35</span></li>
+<li class='pass'><a href='round583_rotor-140x90-r48old-911872/'>rotor-140x90-r48old-911872</a> <span class='dim'>OD89.98 T0.5</span></li>
+<li class='pass'><a href='round596_rotor-121x71-s36-std-472576/'>rotor-121x71-s36-std-472576</a> <span class='dim'>OD71.1 T0.5</span></li>
+<li class='pass'><a href='round601_rotor-185x90-r36-404480/'>rotor-185x90-r36-404480</a> <span class='dim'>OD90 T0.5</span></li>
+<li class='pass'><a href='round611_rotor-140x90-r48-80-634368/'>rotor-140x90-r48-80-634368</a> <span class='dim'>OD90 T80</span></li>
+<li class='pass'><a href='round612_rotor-140x90-r48-o21-624640/'>rotor-140x90-r48-o21-624640</a> <span class='dim'>OD90 T0.5</span></li>
+<li class='pass'><a href='round613_rotor-140x90-r48-60-628736/'>rotor-140x90-r48-60-628736</a> <span class='dim'>OD90 T60</span></li>
+<li class='pass'><a href='round614_rotor-140x90-r48-820736/'>rotor-140x90-r48-820736</a> <span class='dim'>OD90 T0.35</span></li>
+<li class='pass'><a href='round615_rotor-140x90-r48-45-629760/'>rotor-140x90-r48-45-629760</a> <span class='dim'>OD90 T45</span></li>
+<li class='pass'><a href='round617_rotor-90x48-r34-311296/'>rotor-90x48-r34-311296</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round619_rotor-117x60-r30-200192/'>rotor-117x60-r30-200192</a> <span class='dim'>OD60 T0.5</span></li>
+<li class='pass'><a href='round625_rotor-94x53-r34-325632/'>rotor-94x53-r34-325632</a> <span class='dim'>OD53 T35</span></li>
+<li class='pass'><a href='round627_rotor-140x90-r48-75-629248/'>rotor-140x90-r48-75-629248</a> <span class='dim'>OD90 T75</span></li>
+<li class='pass'><a href='round628_rotor-90x48-r8-465408/'>rotor-90x48-r8-465408</a> <span class='dim'>OD48 T30</span></li>
+<li class='pass'><a href='round629_rotor-90x48-r34-60-314368/'>rotor-90x48-r34-60-314368</a> <span class='dim'>OD48 T60</span></li>
+<li class='pass'><a href='round636_rotor-140x90-r34-80-477184/'>rotor-140x90-r34-80-477184</a> <span class='dim'>OD90 T80</span></li>
+<li class='pass'><a href='round637_rotor-140x90-r34-40-476672/'>rotor-140x90-r34-40-476672</a> <span class='dim'>OD90 T40</span></li>
+<li class='pass'><a href='round638_rotor-140x90-r34-30-477696/'>rotor-140x90-r34-30-477696</a> <span class='dim'>OD90 T30</span></li>
+<li class='pass'><a href='round641_rotor-121x72-r48-308736/'>rotor-121x72-r48-308736</a> <span class='dim'>OD72.1 T0.5</span></li>
+<li class='pass'><a href='round642_rotor-90x47-r18-t30-350208/'>rotor-90x47-r18-t30-350208</a> <span class='dim'>OD47 T30</span></li>
+<li class='pass'><a href='round643_rotor-90x47-t80-298496/'>rotor-90x47-t80-298496</a> <span class='dim'>OD47 T92</span></li>
+<li class='pass'><a href='round644_rotor-90x47-t60-302080/'>rotor-90x47-t60-302080</a> <span class='dim'>OD47 T72</span></li>
+<li class='pass'><a href='round653_rotor-60x30-r18-t12-271360/'>rotor-60x30-r18-t12-271360</a> <span class='dim'>OD30 T12</span></li>
+<li class='pass'><a href='round654_rotor-121x60-integrated-611840/'>rotor-121x60-integrated-611840</a> <span class='dim'>OD119 T62.5</span></li>
+<li class='pass'><a href='round657_rotor-90x47-r8-344064/'>rotor-90x47-r8-344064</a> <span class='dim'>OD47 T0.5</span></li>
+<li class='pass'><a href='round658_rotor-90x47-r14-346624/'>rotor-90x47-r14-346624</a> <span class='dim'>OD47 T0.5</span></li>
+<li class='pass'><a href='round659_rotor-90x47-t25-306176/'>rotor-90x47-t25-306176</a> <span class='dim'>OD47 T37</span></li>
+<li class='pass'><a href='round662_rotor-60x30-r18-t90-248320/'>rotor-60x30-r18-t90-248320</a> <span class='dim'>OD30 T90</span></li>
+<li class='pass'><a href='round664_rotor-60x30-r18-t45-252416/'>rotor-60x30-r18-t45-252416</a> <span class='dim'>OD30 T45</span></li>
+<li class='pass'><a href='round665_rotor-60x30-r18-t20-257024/'>rotor-60x30-r18-t20-257024</a> <span class='dim'>OD30 T20</span></li>
+<li class='pass'><a href='round669_rotor-121x60-integrated-0009-616448/'>rotor-121x60-integrated-0009-616448</a> <span class='dim'>OD119 T45</span></li>
+<li class='pass'><a href='round670_rotor-70x35-r17-t12-228864/'>rotor-70x35-r17-t12-228864</a> <span class='dim'>OD32 T32</span></li>
+<li class='pass'><a href='round671_rotor-90x60-r30-217088/'>rotor-90x60-r30-217088</a> <span class='dim'>OD59.65 T0.35</span></li>
+<li class='pass'><a href='round677_rotor-121x60-r30-t90-423424/'>rotor-121x60-r30-t90-423424</a> <span class='dim'>OD60 T90</span></li>
+<li class='pass'><a href='round679_rotor-117x60-r30-t70-178688/'>rotor-117x60-r30-t70-178688</a> <span class='dim'>OD58.8 T58.8</span></li>
+<li class='pass'><a href='round680_rotor-117x60-r30-199168/'>rotor-117x60-r30-199168</a> <span class='dim'>OD60 T90</span></li>
+<li class='pass'><a href='round681_rotor-117x60-r30-194048/'>rotor-117x60-r30-194048</a> <span class='dim'>OD60 T140</span></li>
+<li class='pass'><a href='round682_rotor-117x60-r30-198144/'>rotor-117x60-r30-198144</a> <span class='dim'>OD60 T120</span></li>
+<li class='pass'><a href='round683_rotor-90x47-r11-347648/'>rotor-90x47-r11-347648</a> <span class='dim'>OD47 T0.5</span></li>
+<li class='pass'><a href='round690_rotor-140x90-r34-477184/'>rotor-140x90-r34-477184</a> <span class='dim'>OD90 T80</span></li>
+<li class='pass'><a href='round693_rotor-90x48-r34-311296/'>rotor-90x48-r34-311296</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round694_rotor-90x48-r17-215040/'>rotor-90x48-r17-215040</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round695_rotor-140x90-r34-t30-477696/'>rotor-140x90-r34-t30-477696</a> <span class='dim'>OD90 T30</span></li>
+<li class='pass'><a href='round696_rotor-140x90-r34-t40-476672/'>rotor-140x90-r34-t40-476672</a> <span class='dim'>OD90 T40</span></li>
+<li class='pass'><a href='round700_rotor-90x48-r17-214528/'>rotor-90x48-r17-214528</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round702_rotor-121x72-r48-226816/'>rotor-121x72-r48-226816</a> <span class='dim'>OD71.4 T76</span></li>
+<li class='pass'><a href='round704_rotor-160x80-949248/'>rotor-160x80-949248</a> <span class='dim'>OD364.41 T0.5</span></li>
+<li class='pass'><a href='round709_rotor-60x30-r18-10158592/'>rotor-60x30-r18-10158592</a> <span class='dim'>OD29.4 T20</span></li>
+<li class='pass'><a href='round711_rotor-42x20-v8-244224/'>rotor-42x20-v8-244224</a> <span class='dim'>OD41.65 T0.35</span></li>
+<li class='pass'><a href='round712_rotor-42x20-v7-227328/'>rotor-42x20-v7-227328</a> <span class='dim'>OD52.65 T0.35</span></li>
+<li class='pass'><a href='round713_rotor-magweld-232448/'>rotor-magweld-232448</a> <span class='dim'>OD52.65 T0.35</span></li>
+<li class='pass'><a href='round716_rotor-123x57-r29-429568/'>rotor-123x57-r29-429568</a> <span class='dim'>OD57 T60</span></li>
+<li class='pass'><a href='round717_rotor-magcore-v20-183296/'>rotor-magcore-v20-183296</a> <span class='dim'>OD63.8 T3</span></li>
+<li class='pass'><a href='round718_rotor-magcore-pin-238080/'>rotor-magcore-pin-238080</a> <span class='dim'>OD63.96 T65</span></li>
+<li class='pass'><a href='round719_rotor-magcore-cover-206336/'>rotor-magcore-cover-206336</a> <span class='dim'>OD63.72 T3</span></li>
+<li class='pass'><a href='round720_rotor-magcore-kbv3-258560/'>rotor-magcore-kbv3-258560</a> <span class='dim'>OD63.96 T0.5</span></li>
+<li class='pass'><a href='round721_rotor-magcore-whitecov03-201728/'>rotor-magcore-whitecov03-201728</a> <span class='dim'>OD63.92 T0.5</span></li>
+<li class='pass'><a href='round722_rotor-magcore-magnet-91136/'>rotor-magcore-magnet-91136</a> <span class='dim'>OD35.1 T32.3</span></li>
+<li class='pass'><a href='round725_rotor-160x80-r34-296448/'>rotor-160x80-r34-296448</a> <span class='dim'>OD80 T0.5</span></li>
+<li class='pass'><a href='round727_rotor-160x80-r28x42-334848/'>rotor-160x80-r28x42-334848</a> <span class='dim'>OD80 T0.5</span></li>
+<li class='pass'><a href='round728_rotor-160x80-r28x32-336384/'>rotor-160x80-r28x32-336384</a> <span class='dim'>OD80 T0.5</span></li>
+<li class='pass'><a href='round729_rotor-164x80-r34-392192/'>rotor-164x80-r34-392192</a> <span class='dim'>OD80 T0.5</span></li>
+<li class='pass'><a href='round730_rotor-121x60-80s-606208/'>rotor-121x60-80s-606208</a> <span class='dim'>OD119 T80</span></li>
+<li class='pass'><a href='round731_rotor-160x80x130-r28-309760/'>rotor-160x80x130-r28-309760</a> <span class='dim'>OD80 T0.5</span></li>
+<li class='pass'><a href='round732_rotor-160x80-r28v1-297984/'>rotor-160x80-r28v1-297984</a> <span class='dim'>OD80 T130</span></li>
+<li class='pass'><a href='round737_rotor-140x90-r48x17-625664/'>rotor-140x90-r48x17-625664</a> <span class='dim'>OD90 T80</span></li>
+<li class='pass'><a href='round738_rotor-136x80-assm-1144832/'>rotor-136x80-assm-1144832</a> <span class='dim'>OD322.23 T0.5</span></li>
+<li class='pass'><a href='round739_rotor-160x80-r28t30-202752/'>rotor-160x80-r28t30-202752</a> <span class='dim'>OD77 T77</span></li>
+<li class='pass'><a href='round740_rotor-160x80-punch1-95744/'>rotor-160x80-punch1-95744</a> <span class='dim'>OD48 T19</span></li>
+<li class='pass'><a href='round741_rotor-160x80-punch-103936/'>rotor-160x80-punch-103936</a> <span class='dim'>OD45.95 T58</span></li>
+<li class='pass'><a href='round751_rotor-single-338944/'>rotor-single-338944</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round752_rotor-precut-163840/'>rotor-precut-163840</a> <span class='dim'>OD34 T27</span></li>
+<li class='pass'><a href='round756_rotor-100x53-r21t75-242176/'>rotor-100x53-r21t75-242176</a> <span class='dim'>OD53 T75</span></li>
+<li class='pass'><a href='round766_rotor-121x71-s36std-472576/'>rotor-121x71-s36std-472576</a> <span class='dim'>OD71.1 T0.5</span></li>
+<li class='pass'><a href='round770_rotor-73x-146944/'>rotor-73x-146944</a> <span class='dim'>OD73.14 T73.14</span></li>
+<li class='pass'><a href='round771_rotor-73x-141312/'>rotor-73x-141312</a> <span class='dim'>OD73.2 T73.2</span></li>
+<li class='pass'><a href='round772_rotor-135x73-455168/'>rotor-135x73-455168</a> <span class='dim'>OD73 T0.5</span></li>
+<li class='pass'><a href='round789_rotor-121x60-r30-523264/'>rotor-121x60-r30-523264</a> <span class='dim'>OD60 T0.5</span></li>
+<li class='pass'><a href='round790_rotor-121x60-r30v5-553472/'>rotor-121x60-r30v5-553472</a> <span class='dim'>OD60 T0.5</span></li>
+<li class='pass'><a href='round791_rotor-121x60-r30v4-550400/'>rotor-121x60-r30v4-550400</a> <span class='dim'>OD60 T0.5</span></li>
+<li class='pass'><a href='round792_rotor-121x60x55-r30-424960/'>rotor-121x60x55-r30-424960</a> <span class='dim'>OD60 T55</span></li>
+<li class='pass'><a href='round793_rotor-121x60-r30single-84480/'>rotor-121x60-r30single-84480</a> <span class='dim'>OD57 T57</span></li>
+<li class='pass'><a href='round794_rotor-117x60-r30t22v2-220160/'>rotor-117x60-r30t22v2-220160</a> <span class='dim'>OD58.5 T58.5</span></li>
+<li class='pass'><a href='round795_rotor-117x60-r30t22-226816/'>rotor-117x60-r30t22-226816</a> <span class='dim'>OD58.5 T58.5</span></li>
+<li class='pass'><a href='round796_rotor-117x60-r30-201216/'>rotor-117x60-r30-201216</a> <span class='dim'>OD60 T125</span></li>
+<li class='pass'><a href='round797_rotor-117x60-r30alt-217600/'>rotor-117x60-r30alt-217600</a> <span class='dim'>OD60 T40</span></li>
+<li class='pass'><a href='round798_rotor-90x60-r30v1-128512/'>rotor-90x60-r30v1-128512</a> <span class='dim'>OD59.65 T0.35</span></li>
+<li class='pass'><a href='round799_rotor-90x60-r30-217088/'>rotor-90x60-r30-217088</a> <span class='dim'>OD59.65 T0.35</span></li>
+<li class='pass'><a href='round809_rotor-140x90-r48-823808/'>rotor-140x90-r48-823808</a> <span class='dim'>OD90 T0.35</span></li>
+<li class='pass'><a href='round810_rotor-140x90-r48v8-820736/'>rotor-140x90-r48v8-820736</a> <span class='dim'>OD90 T0.35</span></li>
+<li class='pass'><a href='round811_rotor-140x90-r48old-911872/'>rotor-140x90-r48old-911872</a> <span class='dim'>OD89.98 T0.5</span></li>
+<li class='pass'><a href='round812_rotor-90x48-r34-311296/'>rotor-90x48-r34-311296</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round813_rotor-90x48-r17-215040/'>rotor-90x48-r17-215040</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round838_rotor-magcore-53x25-165376/'>rotor-magcore-53x25-165376</a> <span class='dim'>OD53 T0.35</span></li>
+<li class='pass'><a href='round839_rotor-magcore-42x20-168448/'>rotor-magcore-42x20-168448</a> <span class='dim'>OD42.1 T0.35</span></li>
+<li class='pass'><a href='round840_rotor-94x53-r22-0006-294912/'>rotor-94x53-r22-0006-294912</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round841_rotor-94x53-r22-293376/'>rotor-94x53-r22-293376</a> <span class='dim'>OD53 T0.5</span></li>
+<li class='pass'><a href='round842_rotor-magcore-largeweld-232448/'>rotor-magcore-largeweld-232448</a> <span class='dim'>OD52.65 T0.35</span></li>
+<li class='pass'><a href='round843_rotor-magcore-largeweld1-291840/'>rotor-magcore-largeweld1-291840</a> <span class='dim'>OD52.65 T1</span></li>
+<li class='pass'><a href='round844_rotor-2021magcore-cover0008-225792/'>rotor-2021magcore-cover0008-225792</a> <span class='dim'>OD63.72 T3</span></li>
+<li class='pass'><a href='round845_rotor-2021magcore-cover-203264/'>rotor-2021magcore-cover-203264</a> <span class='dim'>OD63.72 T3</span></li>
+<li class='pass'><a href='round846_rotor-121x72-r48-20-223744/'>rotor-121x72-r48-20-223744</a> <span class='dim'>OD71.4 T76</span></li>
+<li class='pass'><a href='round847_rotor-60x45L-133120/'>rotor-60x45L-133120</a> <span class='dim'>OD60 T60.24</span></li>
+<li class='pass'><a href='round848_rotor-single-276480/'>rotor-single-276480</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round849_rotor-single2-275968/'>rotor-single2-275968</a> <span class='dim'>OD48 T0.5</span></li>
+<li class='pass'><a href='round850_rotor-castalum-0001-176640/'>rotor-castalum-0001-176640</a> <span class='dim'>OD112.65 T50.2</span></li>
+<li class='pass'><a href='round900_rotor-42slot-119808/'>rotor-42slot-119808</a> <span class='dim'>OD42 T42</span></li>
+<li class='pass'><a href='round913_rotor-177664/'>rotor-177664</a> <span class='dim'>OD93.4 T123</span></li>
+<li class='pass'><a href='round914_rotor-mag-42x20-244224/'>rotor-mag-42x20-244224</a> <span class='dim'>OD41.65 T0.35</span></li>
+<li class='pass'><a href='round915_rotor-dc-99328/'>rotor-dc-99328</a> <span class='dim'>OD29.3 T0.5</span></li>
+<li class='pass'><a href='round916_rotor-induction-219648/'>rotor-induction-219648</a> <span class='dim'>OD35 T0.5</span></li>
+<li class='pass'><a href='round917_rotor-2021mag-cover-183296/'>rotor-2021mag-cover-183296</a> <span class='dim'>OD63.8 T3</span></li>
+<li class='pass'><a href='round918_rotor-2021mag-stacked-238080/'>rotor-2021mag-stacked-238080</a> <span class='dim'>OD63.96 T65</span></li>
+<li class='pass'><a href='round919_rotor-blank-m3-166400/'>rotor-blank-m3-166400</a> <span class='dim'>OD34 T27</span></li>
+<li class='pass'><a href='round920_rotor-a1-263680/'>rotor-a1-263680</a> <span class='dim'>OD89.4 T67.5</span></li>
+<li class='pass'><a href='round921_rotor-b1-171008/'>rotor-b1-171008</a> <span class='dim'>OD89.4 T50.6</span></li>
+<li class='pass'><a href='round922_rotor-b2-72704/'>rotor-b2-72704</a> <span class='dim'>OD92.5 T10.5</span></li>
+<li class='pass'><a href='round923_rotor-1-112128/'>rotor-1-112128</a> <span class='dim'>OD120 T650</span></li>
+<li class='pass'><a href='round924_rotor-3-109056/'>rotor-3-109056</a> <span class='dim'>OD120 T650</span></li>
+<li class='pass'><a href='round925_rotor-est500-jig-73216/'>rotor-est500-jig-73216</a> <span class='dim'>OD127.05 T2</span></li>
+<li class='pass'><a href='round926_rotor-1-92160/'>rotor-1-92160</a> <span class='dim'>OD120 T650</span></li>
+<li class='pass'><a href='round927_rotor-3-105984/'>rotor-3-105984</a> <span class='dim'>OD120 T760</span></li>
+<li class='pass'><a href='round928_rotor-jig-lower-124416/'>rotor-jig-lower-124416</a> <span class='dim'>OD200 T1.5</span></li>
+<li class='pass'><a href='round929_rotor-jig-lower-0005-184320/'>rotor-jig-lower-0005-184320</a> <span class='dim'>OD200 T1.5</span></li>
+<li class='pass'><a href='round930_rotor-jig-lower-0006-186880/'>rotor-jig-lower-0006-186880</a> <span class='dim'>OD200 T1.5</span></li>
+<li class='pass'><a href='round931_rotor-jig-grind-v-upper-0005-135680/'>rotor-jig-grind-v-upper-0005-135680</a> <span class='dim'>OD153 T32</span></li>
+<li class='pass'><a href='round932_rotor-jig-grind-v-upper-158208/'>rotor-jig-grind-v-upper-158208</a> <span class='dim'>OD153 T32</span></li>
+<li class='pass'><a href='round933_rotor-2021mag-magnet-0001-82944/'>rotor-2021mag-magnet-0001-82944</a> <span class='dim'>OD35.1 T32.3</span></li>
+<li class='pass'><a href='round934_rotor-2021mag-stacked-pinhole-0004-259072/'>rotor-2021mag-stacked-pinhole-0004-259072</a> <span class='dim'>OD63.96 T0.5</span></li>
+<li class='pass'><a href='round935_rotor-2021mag-stacked-0002-245248/'>rotor-2021mag-stacked-0002-245248</a> <span class='dim'>OD63.96 T0.5</span></li>
+<li class='pass'><a href='round936_rotor-2021mag-0001-171520/'>rotor-2021mag-0001-171520</a> <span class='dim'>OD64.03 T0.5</span></li>
+<li class='pass'><a href='round937_rotor-jig-0002-125952/'>rotor-jig-0002-125952</a> <span class='dim'>OD7 T460</span></li>
+<li class='pass'><a href='round938_rotor-jig-126464/'>rotor-jig-126464</a> <span class='dim'>OD7 T460</span></li>
+<li class='pass'><a href='round939_rotor-mag-weld-1-289280/'>rotor-mag-weld-1-289280</a> <span class='dim'>OD52.65 T1</span></li>
+<li class='pass'><a href='round940_rotor-mag-weld-229888/'>rotor-mag-weld-229888</a> <span class='dim'>OD52.65 T0.35</span></li>
+<li class='pass'><a href='round941_rotor-94x53-r34-0003-325632/'>rotor-94x53-r34-0003-325632</a> <span class='dim'>OD53 T35</span></li>
+<li class='pass'><a href='round942_rotor-94x53-r34-323072/'>rotor-94x53-r34-323072</a> <span class='dim'>OD53 T35</span></li>
+<li class='pass'><a href='round943_rotor-single-sheet-0003-317440/'>rotor-single-sheet-0003-317440</a> <span class='dim'>OD30.08 T0.5</span></li>
+<li class='pass'><a href='round944_rotor-tube-connector-169472/'>rotor-tube-connector-169472</a> <span class='dim'>OD188 T160</span></li>
+<li class='pass'><a href='round945_rotor-tube-socket-143360/'>rotor-tube-socket-143360</a> <span class='dim'>OD80 T80</span></li>
+<li class='pass'><a href='round946_rotor-tube-socket-0001-144384/'>rotor-tube-socket-0001-144384</a> <span class='dim'>OD80 T80</span></li>
+<li class='pass'><a href='round947_rotor-tube-connector-0001-152064/'>rotor-tube-connector-0001-152064</a> <span class='dim'>OD188 T160</span></li>
+<li class='pass'><a href='round996_rotor-punch-118784/'>rotor-punch-118784</a> <span class='dim'></span></li>
+
+  </ul>
+</details><details class='cat' id='ring'>
+  <summary>
+    <span class='cat-name'>Ring</span>
+    <span class='cat-stats'>71 parts ??69 PASS (97.2%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round102_RING/'>RING</a> <span class='dim'>OD457.71 T457.71</span></li>
+<li class='pass'><a href='round104_TUBE_SEAL_RING/'>TUBE_SEAL_RING</a> <span class='dim'>OD330 T330</span></li>
+<li class='pass'><a href='round1073_spring-478720/'>spring-478720</a> <span class='dim'></span></li>
+<li class='pass'><a href='round113_Spring_Bushing_P5000/'>Spring_Bushing_P5000</a> <span class='dim'>OD29.6 T23.6</span></li>
+<li class='pass'><a href='round173_SD90-ring/'>SD90-ring</a> <span class='dim'>OD16 T10</span></li>
+<li class='pass'><a href='round28_clamp_ring/'>clamp_ring</a> <span class='dim'></span></li>
+<li class='pass'><a href='round297_snap-ring-29.4x25/'>snap-ring-29.4x25</a> <span class='dim'></span></li>
+<li class='pass'><a href='round300_end-ring-pour/'>end-ring-pour</a> <span class='dim'>OD48.2 T10.55</span></li>
+<li class='pass'><a href='round301_end-ring-flat/'>end-ring-flat</a> <span class='dim'>OD49 T13.5</span></li>
+<li class='pass'><a href='round307_snap-ring-29.4x25-old/'>snap-ring-29.4x25-old</a> <span class='dim'>OD29.4 T29.18</span></li>
+<li class='pass'><a href='round317_8inch-adapter-ring/'>8inch-adapter-ring</a> <span class='dim'>OD208.3 T2</span></li>
+<li class='pass'><a href='round318_passive-ring/'>passive-ring</a> <span class='dim'>OD120 T100</span></li>
+<li class='pass'><a href='round322_aluminum-ring/'>aluminum-ring</a> <span class='dim'>OD52 T52</span></li>
+<li class='pass'><a href='round323_end-ring-2015/'>end-ring-2015</a> <span class='dim'>OD75.5 T75.5</span></li>
+<li class='pass'><a href='round328_copper-ring-0001/'>copper-ring-0001</a> <span class='dim'>OD8 T8</span></li>
+<li class='pass'><a href='round337_circular-ring-91648/'>circular-ring-91648</a> <span class='dim'>OD388 T40</span></li>
+<li class='pass'><a href='round338_snap-ring-161280/'>snap-ring-161280</a> <span class='dim'>OD203.7 T0.5</span></li>
+<li class='pass'><a href='round34_O-ring_3mm_3100/'>O-ring_3mm_3100</a> <span class='dim'></span></li>
+<li class='pass'><a href='round340_copper-ring-124928/'>copper-ring-124928</a> <span class='dim'>OD12 T12</span></li>
+<li class='pass'><a href='round342_copper-ring-117760/'>copper-ring-117760</a> <span class='dim'>OD25 T20</span></li>
+<li class='pass'><a href='round343_end-ring-104448/'>end-ring-104448</a> <span class='dim'>OD71.2 T71.2</span></li>
+<li class='pass'><a href='round344_drill-jig-ring-94208/'>drill-jig-ring-94208</a> <span class='dim'>OD60 T13</span></li>
+<li class='pass'><a href='round346_teflon-ring-135680/'>teflon-ring-135680</a> <span class='dim'>OD100 T50</span></li>
+<li class='pass'><a href='round347_snap-ring-157696/'>snap-ring-157696</a> <span class='dim'>OD8.45 T0.4</span></li>
+<li class='pass'><a href='round348_motor-liner-ring-180736/'>motor-liner-ring-180736</a> <span class='dim'>OD80.2 T35.1</span></li>
+<li class='pass'><a href='round349_snap-ring-178176/'>snap-ring-178176</a> <span class='dim'>OD8.45 T0.4</span></li>
+<li class='pass'><a href='round351_purge-retainer-ring/'>purge-retainer-ring</a> <span class='dim'>OD50 T10</span></li>
+<li class='pass'><a href='round352_spring-washer-ring/'>spring-washer-ring</a> <span class='dim'>OD18.5 T18.5</span></li>
+<li class='pass'><a href='round353_hoop-ring-126464/'>hoop-ring-126464</a> <span class='dim'>OD40 T5</span></li>
+<li class='skip'><a href='round355_retainer-ring-51200/'>retainer-ring-51200</a> <span class='dim'></span></li>
+<li class='pass'><a href='round357_8inch-ring-71680/'>8inch-ring-71680</a> <span class='dim'>OD200 T1.5</span></li>
+<li class='pass'><a href='round358_temp-probe-retainer-ring-88064/'>temp-probe-retainer-ring-88064</a> <span class='dim'>OD10 T2</span></li>
+<li class='pass'><a href='round359_PR47A-dummy-ring-130048/'>PR47A-dummy-ring-130048</a> <span class='dim'>OD47.5 T4</span></li>
+<li class='pass'><a href='round360_limit-ring-113664/'>limit-ring-113664</a> <span class='dim'>OD71.6 T6</span></li>
+<li class='pass'><a href='round361_end-ring-02-80384/'>end-ring-02-80384</a> <span class='dim'>OD89 T3</span></li>
+<li class='pass'><a href='round362_tilter-liner-ring-small-179200/'>tilter-liner-ring-small-179200</a> <span class='dim'>OD31.5 T6.48</span></li>
+<li class='pass'><a href='round363_metal-ring-190976/'>metal-ring-190976</a> <span class='dim'>OD87.8 T30</span></li>
+<li class='pass'><a href='round364_conductive-iron-ring-73728/'>conductive-iron-ring-73728</a> <span class='dim'>OD135.5 T1.1</span></li>
+<li class='pass'><a href='round365_aluminum-ring-148480/'>aluminum-ring-148480</a> <span class='dim'>OD52 T52</span></li>
+<li class='pass'><a href='round366_passive-ring-246272/'>passive-ring-246272</a> <span class='dim'>OD120 T120</span></li>
+<li class='pass'><a href='round367_housing-airtest-ring2-164864/'>housing-airtest-ring2-164864</a> <span class='dim'>OD107.15 T6.8</span></li>
+<li class='pass'><a href='round368_housing-airtest-ring-168448/'>housing-airtest-ring-168448</a> <span class='dim'>OD107.55 T6.8</span></li>
+<li class='pass'><a href='round369_conductive-ring-R1-76800/'>conductive-ring-R1-76800</a> <span class='dim'>OD111.5 T1.1</span></li>
+<li class='pass'><a href='round373_motor-liner-ring-mod-192000/'>motor-liner-ring-mod-192000</a> <span class='dim'>OD80.2 T35.1</span></li>
+<li class='skip'><a href='round374_teflon-backup-ring1-122880/'>teflon-backup-ring1-122880</a> <span class='dim'></span></li>
+<li class='pass'><a href='round375_o-ring-99328/'>o-ring-99328</a> <span class='dim'>OD119.58 T144.98</span></li>
+<li class='pass'><a href='round380_spring-bushing-P5000-v2-97792/'>spring-bushing-P5000-v2-97792</a> <span class='dim'>OD29.4 T23.6</span></li>
+<li class='pass'><a href='round391_spring-seat-101376/'>spring-seat-101376</a> <span class='dim'>OD34.25 T55</span></li>
+<li class='pass'><a href='round406_tube-seal-ring-131584/'>tube-seal-ring-131584</a> <span class='dim'>OD330 T330</span></li>
+<li class='pass'><a href='round407_conductive-iron-ring-245760/'>conductive-iron-ring-245760</a> <span class='dim'>OD177.8 T4.8</span></li>
+<li class='pass'><a href='round408_E17174360-conductive-iron-ring-410112/'>E17174360-conductive-iron-ring-410112</a> <span class='dim'>OD177.8 T4.8</span></li>
+<li class='pass'><a href='round473_rubber-ring-semicircle-142336/'>rubber-ring-semicircle-142336</a> <span class='dim'>OD634 T25.3</span></li>
+<li class='pass'><a href='round479_shaft-seal-outer-ring-90112/'>shaft-seal-outer-ring-90112</a> <span class='dim'>OD142.7 T36.36</span></li>
+<li class='pass'><a href='round480_water-channel-ring-133632/'>water-channel-ring-133632</a> <span class='dim'>OD156.4 T6</span></li>
+<li class='pass'><a href='round506_spring-474624/'>spring-474624</a> <span class='dim'>OD25.43 T52.87</span></li>
+<li class='pass'><a href='round507_spring-478720/'>spring-478720</a> <span class='dim'>OD36.91 T90.04</span></li>
+<li class='pass'><a href='round775_ring-72x73-75264/'>ring-72x73-75264</a> <span class='dim'>OD73 T12.7</span></li>
+<li class='pass'><a href='round778_ring-127488/'>ring-127488</a> <span class='dim'>OD457.71 T457.71</span></li>
+<li class='pass'><a href='round779_ring-tube-seal-135168/'>ring-tube-seal-135168</a> <span class='dim'>OD330 T330</span></li>
+<li class='pass'><a href='round780_ring-tube-seal-v2-131584/'>ring-tube-seal-v2-131584</a> <span class='dim'>OD330 T330</span></li>
+<li class='pass'><a href='round800_ring-60x30-float-104960/'>ring-60x30-float-104960</a> <span class='dim'>OD10.1 T10.1</span></li>
+<li class='pass'><a href='round801_ring-60x30-float-112640/'>ring-60x30-float-112640</a> <span class='dim'>OD10.1 T10.1</span></li>
+<li class='pass'><a href='round802_ring-oring-85504/'>ring-oring-85504</a> <span class='dim'>OD106 T106</span></li>
+<li class='pass'><a href='round803_ring-oring-bottom-93184/'>ring-oring-bottom-93184</a> <span class='dim'>OD585.63 T5.62</span></li>
+<li class='pass'><a href='round804_ring-oring-bottom-92672/'>ring-oring-bottom-92672</a> <span class='dim'>OD576.47 T5.33</span></li>
+<li class='pass'><a href='round805_ring-oring-pvc-138752/'>ring-oring-pvc-138752</a> <span class='dim'>OD7 T7</span></li>
+<li class='pass'><a href='round807_ring-oring-disk-156672/'>ring-oring-disk-156672</a> <span class='dim'>OD84.1 T19.18</span></li>
+<li class='pass'><a href='round808_ring-oring-vacuum-150016/'>ring-oring-vacuum-150016</a> <span class='dim'>OD327.02 T222.25</span></li>
+<li class='pass'><a href='round951_rubber-ring-quarter-134656/'>rubber-ring-quarter-134656</a> <span class='dim'>OD317 T25.3</span></li>
+<li class='pass'><a href='round952_rubber-ring-half-142336/'>rubber-ring-half-142336</a> <span class='dim'>OD634 T25.3</span></li>
+<li class='pass'><a href='round976_hole-ring-29x25-150016/'>hole-ring-29x25-150016</a> <span class='dim'>OD29.4 T29.18</span></li>
+
+  </ul>
+</details><details class='cat' id='sleeve'>
+  <summary>
+    <span class='cat-name'>Sleeve</span>
+    <span class='cat-stats'>47 parts ??46 PASS (97.9%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1070_sde300-stainless-sleeve-94720/'>sde300-stainless-sleeve-94720</a> <span class='dim'></span></li>
+<li class='pass'><a href='round115_KE-SL-036_A150-BP-M-SLEEVE/'>KE-SL-036_A150-BP-M-SLEEVE</a> <span class='dim'>OD73 T32</span></li>
+<li class='pass'><a href='round116_KE-SL-037_A150-BP-G-SLEEVE/'>KE-SL-037_A150-BP-G-SLEEVE</a> <span class='dim'>OD73 T25</span></li>
+<li class='pass'><a href='round117_KE-SL-038_KMB1201_SLEEVE/'>KE-SL-038_KMB1201_SLEEVE</a> <span class='dim'>OD75 T15</span></li>
+<li class='pass'><a href='round118_KE-SL-043_30x25x51_SLEEVE/'>KE-SL-043_30x25x51_SLEEVE</a> <span class='dim'>OD30 T51</span></li>
+<li class='pass'><a href='round132_sleeve-tube/'>sleeve-tube</a> <span class='dim'>OD20 T45</span></li>
+<li class='pass'><a href='round168_MU100-sleeve/'>MU100-sleeve</a> <span class='dim'>OD25 T8.5</span></li>
+<li class='doc'><a href='round210_v3_check_downloaded_sleeves_114_118/'>v3_check_downloaded_sleeves_114_118</a> <span class='dim'></span></li>
+<li class='pass'><a href='round246_KE-SL-052-HC60-motor-sleeve/'>KE-SL-052-HC60-motor-sleeve</a> <span class='dim'>OD33 T23.5</span></li>
+<li class='pass'><a href='round260_SL-057-KMB1201-sleeve/'>SL-057-KMB1201-sleeve</a> <span class='dim'>OD78.1 T15</span></li>
+<li class='pass'><a href='round261_SL-057-KMB1202-sleeve/'>SL-057-KMB1202-sleeve</a> <span class='dim'>OD78.1 T15</span></li>
+<li class='pass'><a href='round276_KMB1203-sleeve/'>KMB1203-sleeve</a> <span class='dim'>OD38 T50</span></li>
+<li class='pass'><a href='round283_KMB1203E-sleeve/'>KMB1203E-sleeve</a> <span class='dim'>OD36.8 T45.4</span></li>
+<li class='pass'><a href='round284_KY-sleeve/'>KY-sleeve</a> <span class='dim'>OD97.5 T23</span></li>
+<li class='pass'><a href='round285_KMB603_1203-sleeve/'>KMB603_1203-sleeve</a> <span class='dim'>OD64 T38.5</span></li>
+<li class='pass'><a href='round288_KE-SL-040-KMB1203-sleeve/'>KE-SL-040-KMB1203-sleeve</a> <span class='dim'>OD38 T50</span></li>
+<li class='pass'><a href='round291_SDE300-SS-sleeve-Leelon/'>SDE300-SS-sleeve-Leelon</a> <span class='dim'>OD112.6 T82</span></li>
+<li class='pass'><a href='round292_SDE300-SS-sleeve/'>SDE300-SS-sleeve</a> <span class='dim'>OD112 T72.3</span></li>
+<li class='pass'><a href='round313_shaft-sleeve/'>shaft-sleeve</a> <span class='dim'>OD25 T70</span></li>
+<li class='pass'><a href='round314_wheel-axle-sleeve/'>wheel-axle-sleeve</a> <span class='dim'>OD70 T19</span></li>
+<li class='pass'><a href='round324_sleeve-ring-2017/'>sleeve-ring-2017</a> <span class='dim'>OD6.35 T6.1</span></li>
+<li class='pass'><a href='round325_inner-sleeve/'>inner-sleeve</a> <span class='dim'>OD580 T214</span></li>
+<li class='pass'><a href='round326_copper-sleeve/'>copper-sleeve</a> <span class='dim'>OD17.8 T5.3</span></li>
+<li class='pass'><a href='round331_sleeve-ring-2018/'>sleeve-ring-2018</a> <span class='dim'>OD60 T60</span></li>
+<li class='pass'><a href='round339_lifter-sleeve-ring-94x53/'>lifter-sleeve-ring-94x53</a> <span class='dim'>OD10.5 T10.5</span></li>
+<li class='pass'><a href='round350_sleeve-ring-103424/'>sleeve-ring-103424</a> <span class='dim'>OD15 T15</span></li>
+<li class='pass'><a href='round354_sleeve-ring-116224/'>sleeve-ring-116224</a> <span class='dim'>OD91 T91</span></li>
+<li class='pass'><a href='round356_sleeve-ring-113152/'>sleeve-ring-113152</a> <span class='dim'>OD91 T91</span></li>
+<li class='pass'><a href='round386_SDE300-ss-sleeve-93184/'>SDE300-ss-sleeve-93184</a> <span class='dim'>OD112.6 T82</span></li>
+<li class='pass'><a href='round387_SDE300-ss-sleeve-94720/'>SDE300-ss-sleeve-94720</a> <span class='dim'>OD112 T72.3</span></li>
+<li class='pass'><a href='round389_inner-sleeve-weld-100864/'>inner-sleeve-weld-100864</a> <span class='dim'>OD66.7 T150</span></li>
+<li class='pass'><a href='round411_A70W-gear-sleeve-156160/'>A70W-gear-sleeve-156160</a> <span class='dim'>OD29.8 T7</span></li>
+<li class='pass'><a href='round413_motor-shaft-sleeve-162816/'>motor-shaft-sleeve-162816</a> <span class='dim'>OD16.25 T16</span></li>
+<li class='pass'><a href='round414_pivot-shaft-sleeve-176128/'>pivot-shaft-sleeve-176128</a> <span class='dim'>OD18.85 T39.56</span></li>
+<li class='pass'><a href='round416_inner-sleeve-159232/'>inner-sleeve-159232</a> <span class='dim'>OD580 T214</span></li>
+<li class='pass'><a href='round419_fake-sleeve-140800/'>fake-sleeve-140800</a> <span class='dim'>OD218 T70</span></li>
+<li class='pass'><a href='round421_sleeve2-001-277504/'>sleeve2-001-277504</a> <span class='dim'>OD25.4 T25.4</span></li>
+<li class='pass'><a href='round422_sleeve2-259072/'>sleeve2-259072</a> <span class='dim'>OD25.4 T25.4</span></li>
+<li class='pass'><a href='round429_cable-sleeve-143872/'>cable-sleeve-143872</a> <span class='dim'>OD155.99 T240.54</span></li>
+<li class='pass'><a href='round430_cable-sleeve-140288/'>cable-sleeve-140288</a> <span class='dim'>OD155.99 T240.54</span></li>
+<li class='pass'><a href='round78_KE-SL-010_ESR-BP-M_sleeve/'>KE-SL-010_ESR-BP-M_sleeve</a> <span class='dim'>OD60 T15</span></li>
+<li class='pass'><a href='round79_KE-SL-006_AA-BP-G_sleeve/'>KE-SL-006_AA-BP-G_sleeve</a> <span class='dim'>OD52 T28</span></li>
+<li class='pass'><a href='round80_KE-SL-013_sleeve/'>KE-SL-013_sleeve</a> <span class='dim'>OD74.2 T74.2</span></li>
+<li class='pass'><a href='round81_KE-SL-018_sleeve/'>KE-SL-018_sleeve</a> <span class='dim'>OD51.6 T15</span></li>
+<li class='pass'><a href='round84_KE-SL-014_disc_sleeve/'>KE-SL-014_disc_sleeve</a> <span class='dim'>OD62.2 T57</span></li>
+<li class='pass'><a href='round86_KE-SL-015_disc_sleeve/'>KE-SL-015_disc_sleeve</a> <span class='dim'>OD80 T57</span></li>
+<li class='pass'><a href='round969_sleeve-0002-107008/'>sleeve-0002-107008</a> <span class='dim'>OD20 T45</span></li>
+
+  </ul>
+</details><details class='cat' id='spacer'>
+  <summary>
+    <span class='cat-name'>Spacer</span>
+    <span class='cat-stats'>37 parts ??37 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1008_spacer-102912/'>spacer-102912</a> <span class='dim'></span></li>
+<li class='pass'><a href='round101_spacer_2025_11/'>spacer_2025_11</a> <span class='dim'>OD20 T80</span></li>
+<li class='pass'><a href='round1029_belt-guide-spacer-117248/'>belt-guide-spacer-117248</a> <span class='dim'></span></li>
+<li class='pass'><a href='round105_SPACER_2014/'>SPACER_2014</a> <span class='dim'>OD12.7 T11.3</span></li>
+<li class='pass'><a href='round106_HgfZGGr_spacer/'>HgfZGGr_spacer</a> <span class='dim'>OD20 T80</span></li>
+<li class='pass'><a href='round1126_al-spacer-107520/'>al-spacer-107520</a> <span class='dim'>OD50.5 T5.5</span></li>
+<li class='pass'><a href='round131_IGX-spacer/'>IGX-spacer</a> <span class='dim'>OD61.3 T10.61</span></li>
+<li class='pass'><a href='round135_EV-L200-BP-spacer/'>EV-L200-BP-spacer</a> <span class='dim'>OD44.7 T4</span></li>
+<li class='pass'><a href='round22_IGX_spacer/'>IGX_spacer</a> <span class='dim'></span></li>
+<li class='pass'><a href='round223_EV-L200-BP-spacer-v2026/'>EV-L200-BP-spacer-v2026</a> <span class='dim'>OD44.7 T4</span></li>
+<li class='pass'><a href='round232_EV-L200-BP-small-spacer/'>EV-L200-BP-small-spacer</a> <span class='dim'>OD44.7 T4</span></li>
+<li class='pass'><a href='round243_KMB601-oil-seal-spacer/'>KMB601-oil-seal-spacer</a> <span class='dim'>OD60 T7.5</span></li>
+<li class='pass'><a href='round244_KMB602PT-oil-seal-spacer/'>KMB602PT-oil-seal-spacer</a> <span class='dim'>OD62.1 T7.5</span></li>
+<li class='pass'><a href='round245_IGX-spacer-ring/'>IGX-spacer-ring</a> <span class='dim'>OD61.3 T10.61</span></li>
+<li class='pass'><a href='round249_aluminum-spacer/'>aluminum-spacer</a> <span class='dim'>OD49 T49</span></li>
+<li class='pass'><a href='round258_EV-L200-BP-spacer/'>EV-L200-BP-spacer</a> <span class='dim'>OD44.7 T4</span></li>
+<li class='pass'><a href='round262_IGX-spacer-ring/'>IGX-spacer-ring</a> <span class='dim'>OD61.3 T10.61</span></li>
+<li class='pass'><a href='round263_PTFE-spacer-ring-1/'>PTFE-spacer-ring-1</a> <span class='dim'>OD307.7 T8</span></li>
+<li class='pass'><a href='round264_PTFE-spacer-ring/'>PTFE-spacer-ring</a> <span class='dim'>OD307.7 T3</span></li>
+<li class='pass'><a href='round286_PEEK-spacer/'>PEEK-spacer</a> <span class='dim'>OD63.5 T63.5</span></li>
+<li class='pass'><a href='round287_spacer-O-ring/'>spacer-O-ring</a> <span class='dim'>OD29 T29</span></li>
+<li class='pass'><a href='round295_spacer-128k/'>spacer-128k</a> <span class='dim'>OD20 T80</span></li>
+<li class='pass'><a href='round296_spacer-102k/'>spacer-102k</a> <span class='dim'>OD20 T80</span></li>
+<li class='pass'><a href='round299_motor-copper-spacer/'>motor-copper-spacer</a> <span class='dim'>OD60 T1</span></li>
+<li class='pass'><a href='round302_axle-spacer/'>axle-spacer</a> <span class='dim'>OD62 T0.8</span></li>
+<li class='pass'><a href='round32_SD120H_spacer/'>SD120H_spacer</a> <span class='dim'></span></li>
+<li class='pass'><a href='round377_spacer-17a0505-146432/'>spacer-17a0505-146432</a> <span class='dim'>OD44 T41.7</span></li>
+<li class='pass'><a href='round378_peek-spacer-266752/'>peek-spacer-266752</a> <span class='dim'>OD88.9 T88.9</span></li>
+<li class='pass'><a href='round5_BP_spacer_ring/'>BP_spacer_ring</a> <span class='dim'></span></li>
+<li class='pass'><a href='round55_SD120H_SPACER_2020/'>SD120H_SPACER_2020</a> <span class='dim'></span></li>
+<li class='pass'><a href='round57_Teflon_spacer/'>Teflon_spacer</a> <span class='dim'></span></li>
+<li class='pass'><a href='round58_IGX_spacer/'>IGX_spacer</a> <span class='dim'></span></li>
+<li class='pass'><a href='round59_O-shape_spacer/'>O-shape_spacer</a> <span class='dim'></span></li>
+<li class='pass'><a href='round60_simple_spacer_2012/'>simple_spacer_2012</a> <span class='dim'></span></li>
+<li class='pass'><a href='round9_KE-SP-018_big_spacer/'>KE-SP-018_big_spacer</a> <span class='dim'></span></li>
+<li class='pass'><a href='round955_ev-l200-bp-spacer-ring-115712/'>ev-l200-bp-spacer-ring-115712</a> <span class='dim'>OD44.7 T4</span></li>
+<li class='pass'><a href='round991_igx-spacer-137216/'>igx-spacer-137216</a> <span class='dim'>OD61.3 T10.61</span></li>
+
+  </ul>
+</details><details class='cat' id='bearing'>
+  <summary>
+    <span class='cat-name'>Bearing</span>
+    <span class='cat-stats'>25 parts ??25 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1015_bearing-6902lu-0002-287232/'>bearing-6902lu-0002-287232</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1017_bearing-6902lu-286208/'>bearing-6902lu-286208</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1018_bearing-6001zz-272384/'>bearing-6001zz-272384</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1023_bearing-6901lu-0002-155136/'>bearing-6901lu-0002-155136</a> <span class='dim'></span></li>
+<li class='pass'><a href='round103_BEARING_SPACER_RING/'>BEARING_SPACER_RING</a> <span class='dim'>OD4.83 T0.33</span></li>
+<li class='pass'><a href='round298_bearing-retainer-ring/'>bearing-retainer-ring</a> <span class='dim'>OD18 T18</span></li>
+<li class='pass'><a href='round304_bearing-bushing/'>bearing-bushing</a> <span class='dim'>OD52 T52</span></li>
+<li class='pass'><a href='round309_bearing-6902LU/'>bearing-6902LU</a> <span class='dim'>OD28 T28</span></li>
+<li class='pass'><a href='round310_bearing-6001ZZ/'>bearing-6001ZZ</a> <span class='dim'>OD28 T28</span></li>
+<li class='pass'><a href='round379_bearing-spacer-181760/'>bearing-spacer-181760</a> <span class='dim'>OD79.2 T79.2</span></li>
+<li class='pass'><a href='round384_end-plate-bearing-bushing-154112/'>end-plate-bearing-bushing-154112</a> <span class='dim'>OD52 T52</span></li>
+<li class='pass'><a href='round388_end-plate-bearing-bushing2-151552/'>end-plate-bearing-bushing2-151552</a> <span class='dim'>OD52 T52</span></li>
+<li class='pass'><a href='round400_upper-bearing-retainer-182272/'>upper-bearing-retainer-182272</a> <span class='dim'>OD42.08 T7.25</span></li>
+<li class='pass'><a href='round402_lower-bearing-retainer-131072/'>lower-bearing-retainer-131072</a> <span class='dim'>OD28.8 T3.45</span></li>
+<li class='pass'><a href='round425_bearing-nut-sleeve-183808/'>bearing-nut-sleeve-183808</a> <span class='dim'>OD30 T45</span></li>
+<li class='pass'><a href='round442_bearing-spacer-160768/'>bearing-spacer-160768</a> <span class='dim'>OD71.95 T27</span></li>
+<li class='pass'><a href='round443_drive-shaft-bearing-78336/'>drive-shaft-bearing-78336</a> <span class='dim'>OD28.52 T3.95</span></li>
+<li class='pass'><a href='round444_gear-end-bearing-105984/'>gear-end-bearing-105984</a> <span class='dim'>OD22.22 T5.54</span></li>
+<li class='pass'><a href='round445_bearing-housing-274944/'>bearing-housing-274944</a> <span class='dim'>OD123 T27</span></li>
+<li class='pass'><a href='round446_linear-bearing-220672/'>linear-bearing-220672</a> <span class='dim'>OD29.9 T21.03</span></li>
+<li class='pass'><a href='round508_gear-end-bearing-98816/'>gear-end-bearing-98816</a> <span class='dim'>OD22.22 T5.54</span></li>
+<li class='pass'><a href='round590_bearing-spacer-ring-75776/'>bearing-spacer-ring-75776</a> <span class='dim'>OD4.83 T0.33</span></li>
+<li class='pass'><a href='round781_ring-bearing-75776/'>ring-bearing-75776</a> <span class='dim'>OD4.83 T0.33</span></li>
+<li class='pass'><a href='round782_ring-bearing-77312/'>ring-bearing-77312</a> <span class='dim'>OD4.83 T0.33</span></li>
+<li class='pass'><a href='round977_bearing-sleeve-154112/'>bearing-sleeve-154112</a> <span class='dim'>OD52 T52</span></li>
+
+  </ul>
+</details><details class='cat' id='punch'>
+  <summary>
+    <span class='cat-name'>Punch</span>
+    <span class='cat-stats'>25 parts ??25 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1044_56x35-10hole-punch-119296/'>56x35-10hole-punch-119296</a> <span class='dim'></span></li>
+<li class='pass'><a href='round814_punch-94x53-118784/'>punch-94x53-118784</a> <span class='dim'>OD7.6 T61.5</span></li>
+<li class='pass'><a href='round815_punch-56x35-10hole-119296/'>punch-56x35-10hole-119296</a> <span class='dim'>OD86.3 T15</span></li>
+<li class='pass'><a href='round816_punch-upper-96768/'>punch-upper-96768</a> <span class='dim'>OD49 T9</span></li>
+<li class='pass'><a href='round817_punch-upper-0001-97792/'>punch-upper-0001-97792</a> <span class='dim'>OD50 T7</span></li>
+<li class='pass'><a href='round818_punch-18top-2-100352/'>punch-18top-2-100352</a> <span class='dim'>OD21.5 T21.5</span></li>
+<li class='pass'><a href='round819_punch-18top-1-86016/'>punch-18top-1-86016</a> <span class='dim'>OD50 T21.5</span></li>
+<li class='pass'><a href='round820_punch-18shoulder-113152/'>punch-18shoulder-113152</a> <span class='dim'>OD21 T21</span></li>
+<li class='pass'><a href='round821_punch-1006-0001-105472/'>punch-1006-0001-105472</a> <span class='dim'>OD62.6 T12</span></li>
+<li class='pass'><a href='round822_punch-1006-103424/'>punch-1006-103424</a> <span class='dim'>OD62.5 T12</span></li>
+<li class='pass'><a href='round823_punch-upper-general-174080/'>punch-upper-general-174080</a> <span class='dim'>OD10.75 T57.6</span></li>
+<li class='pass'><a href='round824_punch-160x80-shoulder-96256/'>punch-160x80-shoulder-96256</a> <span class='dim'>OD48 T18.7</span></li>
+<li class='pass'><a href='round825_punch-outer-fixblock-122880/'>punch-outer-fixblock-122880</a> <span class='dim'>OD40.3 T14.6</span></li>
+<li class='pass'><a href='round826_punch-outer-2hole-fixplate-149504/'>punch-outer-2hole-fixplate-149504</a> <span class='dim'>OD12 T2.7</span></li>
+<li class='pass'><a href='round827_punch-upper-general-0001-174592/'>punch-upper-general-0001-174592</a> <span class='dim'>OD10.75 T57.5</span></li>
+<li class='pass'><a href='round828_punch-middle-2-tail5mm-157184/'>punch-middle-2-tail5mm-157184</a> <span class='dim'>OD5 T57.95</span></li>
+<li class='pass'><a href='round829_punch-middle-2-tail5mm-0001-157696/'>punch-middle-2-tail5mm-0001-157696</a> <span class='dim'>OD5 T58</span></li>
+<li class='pass'><a href='round830_punch-middle-6-mobile-0001-155136/'>punch-middle-6-mobile-0001-155136</a> <span class='dim'>OD5 T72</span></li>
+<li class='pass'><a href='round831_punch-middle-6-mobile-155648/'>punch-middle-6-mobile-155648</a> <span class='dim'>OD5 T72</span></li>
+<li class='pass'><a href='round832_punch-selfrivet-115712/'>punch-selfrivet-115712</a> <span class='dim'>OD5.01 T70</span></li>
+<li class='pass'><a href='round833_punch-79872/'>punch-79872</a> <span class='dim'>OD98 T10</span></li>
+<li class='pass'><a href='round834_punch-3003-77824/'>punch-3003-77824</a> <span class='dim'>OD30.03 T65</span></li>
+<li class='pass'><a href='round835_punch-1803-83456/'>punch-1803-83456</a> <span class='dim'>OD22.06 T63.5</span></li>
+<li class='pass'><a href='round836_punch-1803b-87552/'>punch-1803b-87552</a> <span class='dim'>OD22.06 T63.5</span></li>
+<li class='pass'><a href='round837_punch-3003b-80384/'>punch-3003b-80384</a> <span class='dim'>OD30.03 T65</span></li>
+
+  </ul>
+</details><details class='cat' id='tube'>
+  <summary>
+    <span class='cat-name'>Tube</span>
+    <span class='cat-stats'>24 parts ??23 PASS (95.8%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round141_tube-2017/'>tube-2017</a> <span class='dim'>OD326 T1.5</span></li>
+<li class='pass'><a href='round142_inner-tube/'>inner-tube</a> <span class='dim'>OD11 T51</span></li>
+<li class='pass'><a href='round143_tube-2015/'>tube-2015</a> <span class='dim'>OD25 T32</span></li>
+<li class='pass'><a href='round144_tube-2013/'>tube-2013</a> <span class='dim'>OD176 T1.5</span></li>
+<li class='pass'><a href='round381_tube-107008/'>tube-107008</a> <span class='dim'>OD20 T45</span></li>
+<li class='pass'><a href='round427_dual-tube-holder-B-177152/'>dual-tube-holder-B-177152</a> <span class='dim'>OD60 T15</span></li>
+<li class='pass'><a href='round428_dual-tube-holder-B008-154624/'>dual-tube-holder-B008-154624</a> <span class='dim'>OD60 T15</span></li>
+<li class='pass'><a href='round431_dual-tube-B-81408/'>dual-tube-B-81408</a> <span class='dim'>OD11.75 T157.9</span></li>
+<li class='pass'><a href='round432_dual-tube-A-69120/'>dual-tube-A-69120</a> <span class='dim'>OD9 T150</span></li>
+<li class='pass'><a href='round433_dual-tube-A-70656/'>dual-tube-A-70656</a> <span class='dim'>OD9 T150</span></li>
+<li class='pass'><a href='round434_straight-tube-142848/'>straight-tube-142848</a> <span class='dim'>OD89 T164</span></li>
+<li class='pass'><a href='round435_exhaust-pipe-198656/'>exhaust-pipe-198656</a> <span class='dim'>OD586 T216.3</span></li>
+<li class='pass'><a href='round436_threaded-tube-425472/'>threaded-tube-425472</a> <span class='dim'>OD63.18 T44</span></li>
+<li class='pass'><a href='round437_connecting-tube-67072/'>connecting-tube-67072</a> <span class='dim'>OD3.1 T90</span></li>
+<li class='pass'><a href='round438_cooling-copper-tube-354304/'>cooling-copper-tube-354304</a> <span class='dim'>OD192.94 T191.39</span></li>
+<li class='pass'><a href='round439_copper-tube-100-v2-275456/'>copper-tube-100-v2-275456</a> <span class='dim'>OD115.75 T106.34</span></li>
+<li class='pass'><a href='round440_copper-tube-100-v1-358912/'>copper-tube-100-v1-358912</a> <span class='dim'>OD192.94 T191.39</span></li>
+<li class='pass'><a href='round441_copper-tube-100-276992/'>copper-tube-100-276992</a> <span class='dim'>OD115.92 T106.51</span></li>
+<li class='pass'><a href='round447_straight-tube-v8-115200/'>straight-tube-v8-115200</a> <span class='dim'>OD89 T164</span></li>
+<li class='pass'><a href='round450_pipe-fitting-v2-203776/'>pipe-fitting-v2-203776</a> <span class='dim'>OD27.9 T18.24</span></li>
+<li class='pass'><a href='round471_pipe-fitting-101888/'>pipe-fitting-101888</a> <span class='dim'>OD19.63 T15</span></li>
+<li class='pass'><a href='round474_round-tube-60416/'>round-tube-60416</a> <span class='dim'>OD19 T460</span></li>
+<li class='pass'><a href='round477_cooling-copper-tube-v2-353792/'>cooling-copper-tube-v2-353792</a> <span class='dim'>OD192.94 T191.39</span></li>
+<li class='skip'><a href='round478_copper-tube-a-64512/'>copper-tube-a-64512</a> <span class='dim'></span></li>
+
+  </ul>
+</details><details class='cat' id='flinger'>
+  <summary>
+    <span class='cat-name'>Flinger</span>
+    <span class='cat-stats'>21 parts ??20 PASS (95.2%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1_EV-L200-MP_Flinger/'>EV-L200-MP_Flinger</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='pass'><a href='round1049_evm-flinger-342016/'>evm-flinger-342016</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1053_evm-flinger-semi-115200/'>evm-flinger-semi-115200</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1111_flinger-2025-0007-272896/'>flinger-2025-0007-272896</a> <span class='dim'>OD122.3 T121.51</span></li>
+<li class='pass'><a href='round1112_flinger-1-250417-0006-270848/'>flinger-1-250417-0006-270848</a> <span class='dim'>OD120 T119.34</span></li>
+<li class='pass'><a href='round1113_flinger-250417-0004-259584/'>flinger-250417-0004-259584</a> <span class='dim'>OD117 T117.01</span></li>
+<li class='pass'><a href='round12_R1_redo_MP_Flinger/'>R1_redo_MP_Flinger</a> <span class='dim'></span></li>
+<li class='pass'><a href='round136_EV-L200-BP-flinger/'>EV-L200-BP-flinger</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round137_EV-L200-MP-flinger/'>EV-L200-MP-flinger</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='pass'><a href='round140_EV-L200-MP-flinger2/'>EV-L200-MP-flinger2</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='doc'><a href='round205_v3_check_KESP_flinger/'>v3_check_KESP_flinger</a> <span class='dim'></span></li>
+<li class='pass'><a href='round224_EV-L200-MP-flinger-v0001/'>EV-L200-MP-flinger-v0001</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='pass'><a href='round231_EV-L200-MP-flinger-main/'>EV-L200-MP-flinger-main</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='pass'><a href='round259_EV-L200-BP-Flinger/'>EV-L200-BP-Flinger</a> <span class='dim'>OD62 T15.5</span></li>
+<li class='pass'><a href='round303_ESR200-BP-flinger-semi/'>ESR200-BP-flinger-semi</a> <span class='dim'>OD124 T1.5</span></li>
+<li class='pass'><a href='round308_ESR200-BP-flinger-final/'>ESR200-BP-flinger-final</a> <span class='dim'>OD123 T122.31</span></li>
+<li class='pass'><a href='round4_BP_Flinger/'>BP_Flinger</a> <span class='dim'></span></li>
+<li class='pass'><a href='round954_ev-l200-mp-flinger-166912/'>ev-l200-mp-flinger-166912</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='pass'><a href='round956_ev-l200-mp-flinger-0001-167936/'>ev-l200-mp-flinger-0001-167936</a> <span class='dim'>OD49 T15.5</span></li>
+<li class='pass'><a href='round988_esr200-flinger-semi-116736/'>esr200-flinger-semi-116736</a> <span class='dim'>OD124 T1.5</span></li>
+<li class='pass'><a href='round989_esr200-flinger-275968/'>esr200-flinger-275968</a> <span class='dim'>OD123 T122.31</span></li>
+
+  </ul>
+</details><details class='cat' id='magnet'>
+  <summary>
+    <span class='cat-name'>Magnet</span>
+    <span class='cat-stats'>17 parts ??17 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1038_magnet-92672/'>magnet-92672</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1081_sde300-magnet-shield-92160/'>sde300-magnet-shield-92160</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1082_sde300-arc-magnet-2-0001-96768/'>sde300-arc-magnet-2-0001-96768</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1124_50x18-magnet-0002-235008/'>50x18-magnet-0002-235008</a> <span class='dim'>OD50.5 T5.1</span></li>
+<li class='pass'><a href='round1125_50x18-magnet-0001-237056/'>50x18-magnet-0001-237056</a> <span class='dim'>OD50.5 T5</span></li>
+<li class='pass'><a href='round18_AlNiCo_magnet/'>AlNiCo_magnet</a> <span class='dim'></span></li>
+<li class='pass'><a href='round19_SDE300_arc_magnet/'>SDE300_arc_magnet</a> <span class='dim'></span></li>
+<li class='pass'><a href='round25_ring_magnet_40.8/'>ring_magnet_40.8</a> <span class='dim'></span></li>
+<li class='pass'><a href='round26_N52_44.4_magnet/'>N52_44.4_magnet</a> <span class='dim'></span></li>
+<li class='pass'><a href='round3_magnet/'>magnet</a> <span class='dim'></span></li>
+<li class='pass'><a href='round345_magnet-ring-83968/'>magnet-ring-83968</a> <span class='dim'>OD40.8 T4</span></li>
+<li class='pass'><a href='round390_magnet-sleeve-95232/'>magnet-sleeve-95232</a> <span class='dim'>OD47.5 T26.3</span></li>
+<li class='pass'><a href='round417_magnet-cover-71168/'>magnet-cover-71168</a> <span class='dim'>OD166.5 T0.4</span></li>
+<li class='pass'><a href='round509_magnet-97792/'>magnet-97792</a> <span class='dim'>OD51 T51</span></li>
+<li class='pass'><a href='round514_arc-magnet-235520/'>arc-magnet-235520</a> <span class='dim'>OD51 T5.1</span></li>
+<li class='pass'><a href='round515_arc-magnet-235008/'>arc-magnet-235008</a> <span class='dim'>OD50.5 T5.1</span></li>
+<li class='pass'><a href='round516_arc-magnet-237056/'>arc-magnet-237056</a> <span class='dim'>OD50.5 T5</span></li>
+
+  </ul>
+</details><details class='cat' id='screw'>
+  <summary>
+    <span class='cat-name'>Screw</span>
+    <span class='cat-stats'>17 parts ??17 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1003_m5x20-v2-278016/'>m5x20-v2-278016</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1004_m5x20-setscrew-162304/'>m5x20-setscrew-162304</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1025_m4x12-0001-193536/'>m4x12-0001-193536</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1027_m5x20-0001-189952/'>m5x20-0001-189952</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1030_al-screw-151552/'>al-screw-151552</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1035_screw-rod-0001-98304/'>screw-rod-0001-98304</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1037_screw-rod-98816/'>screw-rod-98816</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1086_m6x20-192000/'>m6x20-192000</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1110_stainless-screw-0001-148992/'>stainless-screw-0001-148992</a> <span class='dim'>OD15 T25.1</span></li>
+<li class='pass'><a href='round1116_m6x55-0002-185856/'>m6x55-0002-185856</a> <span class='dim'>OD61 T10</span></li>
+<li class='pass'><a href='round1118_m6x55-186368/'>m6x55-186368</a> <span class='dim'>OD61 T10</span></li>
+<li class='pass'><a href='round29_M2x5_spring_pin/'>M2x5_spring_pin</a> <span class='dim'></span></li>
+<li class='pass'><a href='round68_M5x50_spring_pin/'>M5x50_spring_pin</a> <span class='dim'></span></li>
+<li class='pass'><a href='round980_m5x20-190976/'>m5x20-190976</a> <span class='dim'>OD25 T8.5</span></li>
+<li class='pass'><a href='round981_m3x6-193024/'>m3x6-193024</a> <span class='dim'>OD9 T5.5</span></li>
+<li class='pass'><a href='round982_m3x8-194560/'>m3x8-194560</a> <span class='dim'>OD11 T5.5</span></li>
+<li class='pass'><a href='round987_al-screw-0002-146944/'>al-screw-0002-146944</a> <span class='dim'>OD12.7 T10</span></li>
+
+  </ul>
+</details><details class='cat' id='cover_housing'>
+  <summary>
+    <span class='cat-name'>Cover/Housing</span>
+    <span class='cat-stats'>17 parts ??17 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1046_pps-base-243200/'>pps-base-243200</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1072_base-114176/'>base-114176</a> <span class='dim'>OD500 T220</span></li>
+<li class='pass'><a href='round1088_base-camera-252416/'>base-camera-252416</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1120_bottom-cover-213504/'>bottom-cover-213504</a> <span class='dim'>OD112.3 T10</span></li>
+<li class='pass'><a href='round403_e-clamp-retainer-base-174592/'>e-clamp-retainer-base-174592</a> <span class='dim'>OD177.8 T4.32</span></li>
+<li class='pass'><a href='round488_acrylic-vacuum-cover-149504/'>acrylic-vacuum-cover-149504</a> <span class='dim'>OD302 T20.8</span></li>
+<li class='pass'><a href='round489_acrylic-vacuum-cover-150528/'>acrylic-vacuum-cover-150528</a> <span class='dim'>OD302 T20.8</span></li>
+<li class='pass'><a href='round490_acrylic-vacuum-cover-191488/'>acrylic-vacuum-cover-191488</a> <span class='dim'>OD300 T20</span></li>
+<li class='pass'><a href='round69_oil_sight_cover_Ebara_small/'>oil_sight_cover_Ebara_small</a> <span class='dim'></span></li>
+<li class='pass'><a href='round953_al-base-half-104960/'>al-base-half-104960</a> <span class='dim'>OD644 T50</span></li>
+<li class='pass'><a href='round960_base-plate-226304/'>base-plate-226304</a> <span class='dim'>OD260 T50</span></li>
+<li class='pass'><a href='round962_al-base-91648/'>al-base-91648</a> <span class='dim'>OD500 T10</span></li>
+<li class='pass'><a href='round975_6inch-base-ear-163840/'>6inch-base-ear-163840</a> <span class='dim'>OD260 T50</span></li>
+<li class='pass'><a href='round992_base-left-291840/'>base-left-291840</a> <span class='dim'>OD140 T99</span></li>
+<li class='pass'><a href='round993_base-right-286720/'>base-right-286720</a> <span class='dim'>OD140 T99</span></li>
+<li class='pass'><a href='round994_base-left-v2-265728/'>base-left-v2-265728</a> <span class='dim'></span></li>
+<li class='pass'><a href='round995_base-right-v2-260096/'>base-right-v2-260096</a> <span class='dim'></span></li>
+
+  </ul>
+</details><details class='cat' id='flange'>
+  <summary>
+    <span class='cat-name'>Flange</span>
+    <span class='cat-stats'>17 parts ??17 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round392_flange-201216/'>flange-201216</a> <span class='dim'>OD165 T12</span></li>
+<li class='pass'><a href='round393_flange-175104/'>flange-175104</a> <span class='dim'>OD185 T12</span></li>
+<li class='pass'><a href='round394_flange-220160/'>flange-220160</a> <span class='dim'>OD165 T10</span></li>
+<li class='pass'><a href='round395_flange-186368/'>flange-186368</a> <span class='dim'>OD130 T12</span></li>
+<li class='pass'><a href='round396_flange-193536/'>flange-193536</a> <span class='dim'>OD235 T52.5</span></li>
+<li class='pass'><a href='round397_flange8-123904/'>flange8-123904</a> <span class='dim'>OD285 T15</span></li>
+<li class='pass'><a href='round398_flange10-132608/'>flange10-132608</a> <span class='dim'>OD350 T15</span></li>
+<li class='pass'><a href='round405_cone-flange-308224/'>cone-flange-308224</a> <span class='dim'>OD161.93 T53.09</span></li>
+<li class='pass'><a href='round456_flange-025-250880/'>flange-025-250880</a> <span class='dim'>OD98 T76</span></li>
+<li class='pass'><a href='round457_flange-027v20-265216/'>flange-027v20-265216</a> <span class='dim'>OD123 T25</span></li>
+<li class='pass'><a href='round458_flange-019-467968/'>flange-019-467968</a> <span class='dim'>OD104 T35.1</span></li>
+<li class='pass'><a href='round459_flange-020-516608/'>flange-020-516608</a> <span class='dim'>OD114 T38.3</span></li>
+<li class='pass'><a href='round461_flange-021v11-537088/'>flange-021v11-537088</a> <span class='dim'>OD120 T41</span></li>
+<li class='pass'><a href='round462_flange-021-553472/'>flange-021-553472</a> <span class='dim'>OD120 T41</span></li>
+<li class='pass'><a href='round463_flange-021-574464/'>flange-021-574464</a> <span class='dim'>OD120 T41</span></li>
+<li class='pass'><a href='round467_exhaust-flange-153600/'>exhaust-flange-153600</a> <span class='dim'>OD267.4 T267.4</span></li>
+<li class='pass'><a href='round521_flange-bp-g-456704/'>flange-bp-g-456704</a> <span class='dim'>OD114 T38.3</span></li>
+
+  </ul>
+</details><details class='cat' id='bushing'>
+  <summary>
+    <span class='cat-name'>Bushing</span>
+    <span class='cat-stats'>16 parts ??16 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round112_IGUS_BUSHING/'>IGUS_BUSHING</a> <span class='dim'>OD11.11 T11.11</span></li>
+<li class='pass'><a href='round311_belt-wheel-bushing/'>belt-wheel-bushing</a> <span class='dim'>OD15 T15</span></li>
+<li class='pass'><a href='round315_aluminum-bushing/'>aluminum-bushing</a> <span class='dim'>OD12.01 T9.64</span></li>
+<li class='pass'><a href='round316_copper-bushing/'>copper-bushing</a> <span class='dim'>OD13 T16</span></li>
+<li class='pass'><a href='round321_tilter-motor-bushing/'>tilter-motor-bushing</a> <span class='dim'>OD25.4 T24.91</span></li>
+<li class='pass'><a href='round327_trimming-bushing/'>trimming-bushing</a> <span class='dim'>OD35 T8.5</span></li>
+<li class='pass'><a href='round329_ss-bushing-2016/'>ss-bushing-2016</a> <span class='dim'>OD6.3 T10</span></li>
+<li class='pass'><a href='round330_ss-bushing-0010/'>ss-bushing-0010</a> <span class='dim'>OD6.3 T10</span></li>
+<li class='pass'><a href='round382_belt-guide-bushing-117248/'>belt-guide-bushing-117248</a> <span class='dim'>OD15 T15</span></li>
+<li class='pass'><a href='round383_timing-belt-bushing-119808/'>timing-belt-bushing-119808</a> <span class='dim'>OD22 T22</span></li>
+<li class='pass'><a href='round409_bushing-176640/'>bushing-176640</a> <span class='dim'>OD21 T21</span></li>
+<li class='pass'><a href='round410_bushing-120832/'>bushing-120832</a> <span class='dim'>OD45 T45</span></li>
+<li class='pass'><a href='round415_plastic-bushing-86016/'>plastic-bushing-86016</a> <span class='dim'>OD12 T14.5</span></li>
+<li class='pass'><a href='round418_bushing-0002-152576/'>bushing-0002-152576</a> <span class='dim'>OD15 T19</span></li>
+<li class='pass'><a href='round423_stripper-bushing-170496/'>stripper-bushing-170496</a> <span class='dim'>OD11 T13.15</span></li>
+<li class='pass'><a href='round424_stripper-bushing-157184/'>stripper-bushing-157184</a> <span class='dim'>OD5.5 T12.8</span></li>
+
+  </ul>
+</details><details class='cat' id='disc'>
+  <summary>
+    <span class='cat-name'>Disc</span>
+    <span class='cat-stats'>14 parts ??14 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1000_clean-disc-6mm-1007616/'>clean-disc-6mm-1007616</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1040_6mm-sieve-disc-786432/'>6mm-sieve-disc-786432</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1045_al-disc-0002-196096/'>al-disc-0002-196096</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1078_rocking-disc-131072/'>rocking-disc-131072</a> <span class='dim'></span></li>
+<li class='pass'><a href='round305_IGX-oil-disc/'>IGX-oil-disc</a> <span class='dim'>OD116 T1.2</span></li>
+<li class='pass'><a href='round500_large-disc-153088/'>large-disc-153088</a> <span class='dim'>OD228.6 T27.94</span></li>
+<li class='pass'><a href='round501_wafer-cassette-disc-102400/'>wafer-cassette-disc-102400</a> <span class='dim'>OD240 T10</span></li>
+<li class='pass'><a href='round502_wafer-cassette-disc-66048/'>wafer-cassette-disc-66048</a> <span class='dim'>OD201 T2</span></li>
+<li class='pass'><a href='round503_calibration-disc-120320/'>calibration-disc-120320</a> <span class='dim'>OD65 T47.5</span></li>
+<li class='pass'><a href='round504_heatsink-disc-551936/'>heatsink-disc-551936</a> <span class='dim'>OD198.95 T40</span></li>
+<li class='pass'><a href='round85_KE-SL-014_disc/'>KE-SL-014_disc</a> <span class='dim'>OD130 T12</span></li>
+<li class='pass'><a href='round87_KE-SL-015_disc/'>KE-SL-015_disc</a> <span class='dim'>OD130.1 T2.3</span></li>
+<li class='pass'><a href='round998_clean-disc-1mm-6637056/'>clean-disc-1mm-6637056</a> <span class='dim'></span></li>
+<li class='pass'><a href='round999_igx-oil-disc-96256/'>igx-oil-disc-96256</a> <span class='dim'></span></li>
+
+  </ul>
+</details><details class='cat' id='seal'>
+  <summary>
+    <span class='cat-name'>Seal</span>
+    <span class='cat-stats'>14 parts ??12 PASS (85.7%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round126_KE-SL-053_oilseal/'>KE-SL-053_oilseal</a> <span class='dim'>OD62 T7.5</span></li>
+<li class='pass'><a href='round145_KMB601-oil-seal/'>KMB601-oil-seal</a> <span class='dim'>OD60 T7.5</span></li>
+<li class='pass'><a href='round146_KMB602PT-oil-seal/'>KMB602PT-oil-seal</a> <span class='dim'>OD62.1 T7.5</span></li>
+<li class='doc'><a href='round203_v3_oilseal_check/'>v3_oilseal_check</a> <span class='dim'></span></li>
+<li class='doc'><a href='round208_v3_check_oilseal_MSB_KMB/'>v3_check_oilseal_MSB_KMB</a> <span class='dim'></span></li>
+<li class='pass'><a href='round30_KMB601_oil_seal_gasket/'>KMB601_oil_seal_gasket</a> <span class='dim'></span></li>
+<li class='pass'><a href='round31_KMB602PT_oil_seal_62.1/'>KMB602PT_oil_seal_62.1</a> <span class='dim'></span></li>
+<li class='pass'><a href='round35_KMB1201T_oil_seal/'>KMB1201T_oil_seal</a> <span class='dim'></span></li>
+<li class='pass'><a href='round401_seal-retainer-145920/'>seal-retainer-145920</a> <span class='dim'>OD60.09 T2.25</span></li>
+<li class='pass'><a href='round466_sealed-connector-291840/'>sealed-connector-291840</a> <span class='dim'>OD43.18 T29.18</span></li>
+<li class='pass'><a href='round468_oil-seal-gasket-107520/'>oil-seal-gasket-107520</a> <span class='dim'>OD62 T7.5</span></li>
+<li class='pass'><a href='round51_KMB601PT_oil_seal_t10.4/'>KMB601PT_oil_seal_t10.4</a> <span class='dim'></span></li>
+<li class='pass'><a href='round74_Kashiyama_oil_seal_62/'>Kashiyama_oil_seal_62</a> <span class='dim'></span></li>
+<li class='pass'><a href='round75_Kashiyama_oil_seal/'>Kashiyama_oil_seal</a> <span class='dim'></span></li>
+
+  </ul>
+</details><details class='cat' id='shaft'>
+  <summary>
+    <span class='cat-name'>Shaft</span>
+    <span class='cat-stats'>12 parts ??12 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1059_shaft-0001-215040/'>shaft-0001-215040</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1060_shaft-221184/'>shaft-221184</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1091_shaft-sde-239104/'>shaft-sde-239104</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1107_shaft-0008-219136/'>shaft-0008-219136</a> <span class='dim'>OD146.6 T18.7</span></li>
+<li class='pass'><a href='round1119_shaft-248320/'>shaft-248320</a> <span class='dim'>OD112.3 T100</span></li>
+<li class='pass'><a href='round24_SDE300_shaft_gasket/'>SDE300_shaft_gasket</a> <span class='dim'></span></li>
+<li class='pass'><a href='round319_PP-main-shaft-retainer/'>PP-main-shaft-retainer</a> <span class='dim'>OD12.14 T0.6</span></li>
+<li class='pass'><a href='round320_PP-push-shaft-retainer/'>PP-push-shaft-retainer</a> <span class='dim'>OD6.12 T0.4</span></li>
+<li class='pass'><a href='round399_shaft-flange-173568/'>shaft-flange-173568</a> <span class='dim'>OD48.5 T37</span></li>
+<li class='pass'><a href='round412_shaft-bushing-89600/'>shaft-bushing-89600</a> <span class='dim'>OD8.2 T2.5</span></li>
+<li class='pass'><a href='round420_exhaust-inner-shaft-144896/'>exhaust-inner-shaft-144896</a> <span class='dim'>OD566 T17.3</span></li>
+<li class='pass'><a href='round505_eccentric-shaft-246784/'>eccentric-shaft-246784</a> <span class='dim'>OD15.88 T102.26</span></li>
+
+  </ul>
+</details><details class='cat' id='washer'>
+  <summary>
+    <span class='cat-name'>Washer</span>
+    <span class='cat-stats'>12 parts ??12 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round107_GB_Washer_10/'>GB_Washer_10</a> <span class='dim'>OD11.14 T11.14</span></li>
+<li class='pass'><a href='round108_position_WASHER_1/'>position_WASHER_1</a> <span class='dim'>OD28.5 T1</span></li>
+<li class='pass'><a href='round109_position_WASHER_2/'>position_WASHER_2</a> <span class='dim'>OD28.5 T2</span></li>
+<li class='pass'><a href='round110_washer_1/'>washer_1</a> <span class='dim'>OD15 T15</span></li>
+<li class='pass'><a href='round153_EV-S200P-G-washer/'>EV-S200P-G-washer</a> <span class='dim'>OD45 T2</span></li>
+<li class='pass'><a href='round16_S200P_G_gasket/'>S200P_G_gasket</a> <span class='dim'></span></li>
+<li class='pass'><a href='round21_motor_copper_gasket/'>motor_copper_gasket</a> <span class='dim'></span></li>
+<li class='pass'><a href='round376_washer-GB-181248/'>washer-GB-181248</a> <span class='dim'>OD18 T18</span></li>
+<li class='pass'><a href='round385_motor-copper-washer-171520/'>motor-copper-washer-171520</a> <span class='dim'>OD60 T1</span></li>
+<li class='pass'><a href='round475_teflon-gasket-123392/'>teflon-gasket-123392</a> <span class='dim'>OD6 T6</span></li>
+<li class='pass'><a href='round61_brass_gasket/'>brass_gasket</a> <span class='dim'></span></li>
+<li class='pass'><a href='round66_brass_gasket_2/'>brass_gasket_2</a> <span class='dim'></span></li>
+
+  </ul>
+</details><details class='cat' id='connector'>
+  <summary>
+    <span class='cat-name'>Connector</span>
+    <span class='cat-stats'>12 parts ??12 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round448_sma-connector-188928/'>sma-connector-188928</a> <span class='dim'>OD19 T15</span></li>
+<li class='pass'><a href='round449_npt-fitting-v2-203264/'>npt-fitting-v2-203264</a> <span class='dim'>OD27.9 T18.24</span></li>
+<li class='pass'><a href='round451_npt-fitting-207360/'>npt-fitting-207360</a> <span class='dim'>OD25.55 T14.66</span></li>
+<li class='pass'><a href='round452_sma-connector-v2-209920/'>sma-connector-v2-209920</a> <span class='dim'>OD9.5 T13.8</span></li>
+<li class='pass'><a href='round453_sma-connector-v3-211456/'>sma-connector-v3-211456</a> <span class='dim'>OD8.9 T13.8</span></li>
+<li class='pass'><a href='round454_teflon-connector-214016/'>teflon-connector-214016</a> <span class='dim'>OD51.3 T34.4</span></li>
+<li class='pass'><a href='round455_sma-connector-216576/'>sma-connector-216576</a> <span class='dim'>OD8.7 T13.3</span></li>
+<li class='pass'><a href='round464_connector-219648/'>connector-219648</a> <span class='dim'>OD26.5 T26</span></li>
+<li class='pass'><a href='round465_connector-199168/'>connector-199168</a> <span class='dim'>OD33.52 T35.82</span></li>
+<li class='pass'><a href='round469_peek-connector-2-273408/'>peek-connector-2-273408</a> <span class='dim'>OD102.5 T80</span></li>
+<li class='pass'><a href='round470_peek-connector-1-252928/'>peek-connector-1-252928</a> <span class='dim'>OD102.5 T59</span></li>
+<li class='pass'><a href='round472_hose-copper-fitting-157696/'>hose-copper-fitting-157696</a> <span class='dim'>OD16.17 T28.1</span></li>
+
+  </ul>
+</details><details class='cat' id='gearbox'>
+  <summary>
+    <span class='cat-name'>Gearbox</span>
+    <span class='cat-stats'>10 parts ??10 PASS (100%)</span>
+  </summary>
+  <ul class='part-list'>
+<li class='pass'><a href='round1012_gearbox-0010-443904/'>gearbox-0010-443904</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1013_gearbox-0009-442880/'>gearbox-0009-442880</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1047_gearbox-0002-275456/'>gearbox-0002-275456</a> <span class='dim'></span></li>
+<li class='pass'><a href='round1048_gearbox-280064/'>gearbox-280064</a> <span class='dim'></span></li>
+<li class='pass'><a href='round33_gear/'>gear</a> <span class='dim'></span></li>
+<li class='pass'><a href='round510_spur-gear-modified-370688/'>spur-gear-modified-370688</a> <span class='dim'>OD76.48 T23.34</span></li>
+<li class='pass'><a href='round511_spur-gear11-521216/'>spur-gear11-521216</a> <span class='dim'>OD60.32 T23.5</span></li>
+<li class='pass'><a href='round512_spur-gear12-749568/'>spur-gear12-749568</a> <span class='dim'>OD34.92 T8.76</span></li>
+<li class='pass'><a href='round513_spur-gear12-old-687104/'>spur-gear12-old-687104</a> <span class='dim'>OD34.92 T8.76</span></li>
+<li class='pass'><a href='round986_gearbox-439296/'>gearbox-439296</a> <span class='dim'>OD168 T138</span></li>
+
+  </ul>
+</details>
+
+<p style='color: #8b949e; font-size: 11px; margin-top: 24px'>
+  <a href='index.html'>??Browser</a> ??  <a href='stats.html'>?? Stats</a> ??  <a href='categories.html'>Categories (chart view)</a>
+</p>
+</body>
+</html>
