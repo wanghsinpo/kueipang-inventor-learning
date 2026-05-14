@@ -836,7 +836,7 @@
 "round745_stator-single03-517632","PASS","82","","0.5",""
 "round746_stator-rijiu03-406016","PASS","69","","0.5",""
 "round747_stator-rijiu-408576","PASS","69","","0.5",""
-"round748_stator-04818-17l-581120","SKIP","","","",""
+"round748_stator-04818-17l-581120","FAIL","","","",""
 "round749_stator-117x60-s24bot-619520","PASS","114","","0.5",""
 "round75_Kashiyama_oil_seal","PASS","","22.0517","","11185.372"
 "round750_stator-121x60-s24inner06-759808","PASS","119","","0.5",""
