@@ -1,4 +1,4 @@
-## build_evolution_html.ps1
+﻿## build_evolution_html.ps1
 ## Auto-generate motor_flange_demo/evolution.html from all existing motor_flange_v*.ipt files.
 
 $desk = "$env:USERPROFILE\Desktop\test"
@@ -54,6 +54,10 @@ $descMap[39] = 'v39: M6 mount holes'
 $descMap[40] = 'v40: CSink D16'
 $descMap[41] = 'v41: compact 75mm'
 $descMap[42] = 'v42: large 100mm'
+
+$descMap[43] = 'v43: extra wide pocket OD 90'
+$descMap[44] = 'v44: reset to v25 defaults variant'
+$descMap[45] = 'v45: deeper keyway 6mm'
 
 $cards = ""
 foreach ($v in $versions) {
