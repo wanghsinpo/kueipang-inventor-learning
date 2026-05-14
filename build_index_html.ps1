@@ -57,15 +57,19 @@ $rows = foreach ($f in $folders) {
         "<div class='no-thumb'>No thumbnail</div>"
     }
 
-    $idStr = if ($idR -ne '') { "ID_R=$idR" } else { '' }
-    $dimStr = @($od, $idStr, $thick) | Where-Object { $_ -ne '' } | ForEach-Object { $_ }
+    # Compact dimension display: OD x T (ID R inline)
+    $dimParts = New-Object 'System.Collections.ArrayList'
+    if ($od -and $od -ne '0') { [void]$dimParts.Add("OD$od") }
+    if ($idR -and $idR -ne '0' -and $idR -ne '') { [void]$dimParts.Add("IDR$idR") }
+    if ($thick -and $thick -ne '0') { [void]$dimParts.Add("T$thick") }
+    $dimStr = if ($dimParts.Count -gt 0) { $dimParts -join ' ' } else { '' }
 
     @"
 <div class='card $colorClass' title='$($f.Name)'>
   <a href='$($f.Name)/' target='_blank'>$imgTag</a>
   <div class='label'>
     <span class='name'>$($f.Name -replace '^round\d+_','')</span>
-    <span class='dims'>$($dimStr -join ' | ')</span>
+    <span class='dims'>$dimStr</span>
     <span class='vol'>$(if ($vol) { "Vol=$vol mm³" })</span>
     <span class='result result-$($result.ToLower())'>$result$(if ($diffStr) { " ($diffStr)" })</span>
   </div>
@@ -123,7 +127,8 @@ $html = @"
 <body>
 <h1>🔧 Inventor Parts Browser
   <a href='stats.html' style='font-size: 13px; color: #888; margin-left: 12px'>📊 Stats</a>
-  <a href='motor_flange_demo/evolution.html' style='font-size: 13px; color: #888; margin-left: 12px'>🎨 Motor Flange v1-v19</a>
+  <a href='categories.html' style='font-size: 13px; color: #888; margin-left: 12px'>📦 Categories</a>
+  <a href='motor_flange_demo/evolution.html' style='font-size: 13px; color: #888; margin-left: 12px'>🎨 Motor Flange</a>
   <a href='motor_flange_demo/compare.html' style='font-size: 13px; color: #888; margin-left: 12px'>📸 Photo vs Model</a>
   <a href='cheatsheet.html' style='font-size: 13px; color: #888; margin-left: 12px'>📖 Cheatsheet</a>
 </h1>
