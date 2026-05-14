@@ -105,6 +105,13 @@ powershell -File quality_check.ps1
 
 # 生成 Categories dashboard
 powershell -File build_categories_html.ps1
+
+# 一鍵更新所有 dashboards + CSV
+powershell -File refresh_all.ps1
+
+# 查零件詳情（檔案、result.md、CSV entry）
+powershell -File get_part_info.ps1 -Folder round1116_m6x55-0002-185856
+powershell -File get_part_info.ps1 -Pattern "stator"  # 模糊找
 ```
 
 ## 🎯 手動修正腳本（單一問題）
