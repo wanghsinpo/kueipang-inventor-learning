@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>Parts by Category</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0d1117; color: #c9d1d9; padding: 24px; max-width: 1100px; margin: 0 auto; }
+  h1 { color: #f0c040; }
+  .cat-row { display: grid; grid-template-columns: 200px 100px 1fr 100px; align-items: center; gap: 12px; padding: 8px; border-bottom: 1px solid #21262d; }
+  .cat-name { color: #58a6ff; font-weight: bold; }
+  .cat-count { color: #8b949e; font-size: 13px; }
+  .cat-bar { background: #161b22; height: 18px; border-radius: 4px; overflow: hidden; display: flex; }
+  .bar { height: 100%; }
+  .bar.pass { background: #3fb950; }
+  .bar.fail { background: #f85149; }
+  .bar.skip { background: #d29922; }
+  .bar.doc { background: #888; }
+  .cat-pct { color: #3fb950; font-size: 13px; font-weight: bold; text-align: right; }
+  a { color: #58a6ff; }
+</style>
+</head>
+<body>
+<h1>? Parts by Category</h1>
+<p style='color: #8b949e'>Auto-grouped from folder names. Total: 1116 parts.</p>
+
+<div class='cat-row'>
+  <div class='cat-name'>Other</div>
+  <div class='cat-count'>330 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 93.9393939393939%' title='PASS 310'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 1.21212121212121%' title='SKIP 4'></div>
+    <div class='bar doc' style='width: 4.84848484848485%' title='DOC 16'></div>
+  </div>
+  <div class='cat-pct'>94% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Stator</div>
+  <div class='cat-count'>200 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 99.5%' title='PASS 199'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0.5%' title='SKIP 1'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Rotor</div>
+  <div class='cat-count'>178 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 178'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Ring</div>
+  <div class='cat-count'>71 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 97.1830985915493%' title='PASS 69'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 2.8169014084507%' title='SKIP 2'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>97% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Sleeve</div>
+  <div class='cat-count'>47 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 97.8723404255319%' title='PASS 46'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 2.12765957446809%' title='DOC 1'></div>
+  </div>
+  <div class='cat-pct'>98% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Spacer</div>
+  <div class='cat-count'>37 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 37'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Punch</div>
+  <div class='cat-count'>25 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 25'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Bearing</div>
+  <div class='cat-count'>25 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 25'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Tube</div>
+  <div class='cat-count'>24 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 95.8333333333333%' title='PASS 23'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 4.16666666666667%' title='SKIP 1'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>96% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Flinger</div>
+  <div class='cat-count'>21 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 95.2380952380952%' title='PASS 20'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 4.76190476190476%' title='DOC 1'></div>
+  </div>
+  <div class='cat-pct'>95% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Cover / Housing</div>
+  <div class='cat-count'>17 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 17'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Flange</div>
+  <div class='cat-count'>17 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 17'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Screw / Bolt</div>
+  <div class='cat-count'>17 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 17'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Magnet</div>
+  <div class='cat-count'>17 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 17'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Bushing</div>
+  <div class='cat-count'>16 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 16'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Disc</div>
+  <div class='cat-count'>14 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 14'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Seal</div>
+  <div class='cat-count'>14 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 85.7142857142857%' title='PASS 12'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 14.2857142857143%' title='DOC 2'></div>
+  </div>
+  <div class='cat-pct'>86% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Shaft</div>
+  <div class='cat-count'>12 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 12'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Washer</div>
+  <div class='cat-count'>12 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 12'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Connector</div>
+  <div class='cat-count'>12 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 12'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div><div class='cat-row'>
+  <div class='cat-name'>Gearbox / Gear</div>
+  <div class='cat-count'>10 parts</div>
+  <div class='cat-bar'>
+    <div class='bar pass' style='width: 100%' title='PASS 10'></div>
+    <div class='bar fail' style='width: 0%' title='FAIL 0'></div>
+    <div class='bar skip' style='width: 0%' title='SKIP 0'></div>
+    <div class='bar doc' style='width: 0%' title='DOC 0'></div>
+  </div>
+  <div class='cat-pct'>100% PASS</div>
+</div>
+
+<p style='color: #8b949e; font-size: 11px; margin-top: 24px'>
+  <a href='index.html'>??Browser</a> ??  <a href='stats.html'>?? Stats</a> ??  <a href='cheatsheet.html'>?? Cheatsheet</a>
+</p>
+</body>
+</html>
