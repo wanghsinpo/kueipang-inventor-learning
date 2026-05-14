@@ -30,9 +30,17 @@ foreach ($f in $folders) {
 
     $content = Get-Content $rm -Raw
 
-    # Extract Result
+    # Extract Result — preserve manual SKIP/DEFER/DOC from existing CSV if result.md doesn't clearly say
     $result = 'UNKNOWN'
-    if ($content -match 'Result:\s*(PASS|FAIL|SKIP|DEFER)') { $result = $matches[1] }
+    if ($content -match 'Result:\s*(PASS|FAIL|SKIP|DEFER|DOC)') {
+        $result = $matches[1]
+    } elseif ($content -match 'auto_ring_v\d:?\s*\*?\*?(SKIP|FAIL|PASS)') {
+        # Old format: "- auto_ring_v3: **SKIP** ..."
+        $result = $matches[1]
+    } elseif ($existing.ContainsKey($f.Name) -and $existing[$f.Name].Result -in @('SKIP','DEFER','DOC')) {
+        # Preserve manual classification
+        $result = $existing[$f.Name].Result
+    }
 
     # Extract dimensions
     $od = ''; $idR = ''; $thick = ''; $vol = ''
